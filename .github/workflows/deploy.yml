@@ -1,0 +1,72 @@
+name: Deploy to VPS
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    environment: production
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Upload site to VPS staging
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          port: ${{ secrets.VPS_PORT || 22 }}
+          source: "index.html,logo.jpg,privacy.html,robots.txt,sitemap.xml,ads.txt,marketing-config.js,marketing.js,hub-content.js,content,learn,images"
+          target: "/home/${{ secrets.VPS_USER }}/ai-workflows-deploy"
+          strip_components: 0
+          overwrite: true
+
+      - name: Install files on web root
+        uses: appleboy/ssh-action@v1.2.0
+        env:
+          VPS_SUDO_PASSWORD: ${{ secrets.VPS_SUDO_PASSWORD }}
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          port: ${{ secrets.VPS_PORT || 22 }}
+          envs: VPS_SUDO_PASSWORD
+          script: |
+            set -e
+            DEPLOY_DIR="/home/${{ secrets.VPS_USER }}/ai-workflows-deploy"
+            WEB_ROOT="/var/www/ai-workflows.cloud"
+            run_sudo() {
+              if [ -n "$VPS_SUDO_PASSWORD" ]; then
+                echo "$VPS_SUDO_PASSWORD" | sudo -S "$@"
+              else
+                sudo "$@"
+              fi
+            }
+            run_sudo mkdir -p "$WEB_ROOT/content" "$WEB_ROOT/learn" "$WEB_ROOT/images/projects"
+            run_sudo cp "$DEPLOY_DIR/index.html" "$WEB_ROOT/index.html"
+            run_sudo cp "$DEPLOY_DIR/logo.jpg" "$WEB_ROOT/logo.jpg"
+            run_sudo cp "$DEPLOY_DIR/privacy.html" "$WEB_ROOT/privacy.html"
+            run_sudo cp "$DEPLOY_DIR/robots.txt" "$WEB_ROOT/robots.txt"
+            run_sudo cp "$DEPLOY_DIR/sitemap.xml" "$WEB_ROOT/sitemap.xml"
+            run_sudo cp "$DEPLOY_DIR/ads.txt" "$WEB_ROOT/ads.txt"
+            run_sudo cp "$DEPLOY_DIR/marketing-config.js" "$WEB_ROOT/marketing-config.js"
+            run_sudo cp "$DEPLOY_DIR/marketing.js" "$WEB_ROOT/marketing.js"
+            run_sudo cp "$DEPLOY_DIR/hub-content.js" "$WEB_ROOT/hub-content.js"
+            if [ -d "$DEPLOY_DIR/content" ]; then
+              run_sudo cp -r "$DEPLOY_DIR/content/." "$WEB_ROOT/content/"
+            fi
+            if [ -d "$DEPLOY_DIR/learn" ]; then
+              run_sudo cp -r "$DEPLOY_DIR/learn/." "$WEB_ROOT/learn/"
+            fi
+            if [ -d "$DEPLOY_DIR/images" ]; then
+              run_sudo cp -r "$DEPLOY_DIR/images/." "$WEB_ROOT/images/"
+            fi
+            run_sudo chown -R www-data:www-data "$WEB_ROOT"
+            run_sudo chmod -R 755 "$WEB_ROOT"
+            rm -rf "$DEPLOY_DIR"
+            echo "Deployed to $WEB_ROOT"

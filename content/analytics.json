@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "AI Workflows Market Pulse",
+    "updatedAt": "2026-06-06T14:14:37+05:30",
+    "refreshNote": "Daily trend scan — what's hot, cooling, and stable."
+  },
+  "items": [
+    {
+      "id": "daily-2026-06-06-analytics",
+      "title": "Market Pulse: Owner dashboards",
+      "summary": "Single-screen ops beats scattered spreadsheets.",
+      "trend": "rising",
+      "signal": "Strong pull",
+      "date": "2026-06-06",
+      "publishedAt": "2026-06-06T14:14:36+05:30",
+      "tags": [
+        "Daily",
+        "Market"
+      ],
+      "proof": "Rising: WhatsApp automation, Owner dashboards, Vertical SaaS landing · Cooling: Static brochure sites, AI agent chat only",
+      "source": "AI Workflows Analytics",
+      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#analytics",
+      "body": "Trending up: WhatsApp automation, Owner dashboards, Vertical SaaS landing. Cooling: Static brochure sites, AI agent chat only. Stable niches still pay when tied to real workflows."
+    },
+    {
+      "id": "whatsapp-ai-bots-rising",
+      "title": "WhatsApp AI Bots — Rising Fast in India",
+      "summary": "Restaurants and shops want order + FAQ automation inside WhatsApp. Demand up; generic chatbots without local language support are cooling off.",
+      "trend": "rising",
+      "signal": "High demand",
+      "date": "2026-06-06",
+      "publishedAt": "2026-06-06T08:00:00+05:30",
+      "tags": [
+        "WhatsApp",
+        "Automation",
+        "SMB"
+      ],
+      "proof": "Live client demos + Meta Business API adoption in India SMB segment",
+      "source": "AI Workflows field research",
+      "sourceUrl": "https://ai-workflows.cloud/#showcase",
+      "body": "Trending: bilingual button flows, menu carts, staff handoff, payment links. Not trending: generic English-only bots with no CRM handoff. Action: pair bot + owner dashboard."
+    },
+    {
+      "id": "static-brochure-sites-cooling",
+      "title": "Static Brochure Sites — Cooling",
+      "summary": "Plain 5-page websites without WhatsApp, forms, or analytics are harder to sell. Buyers want proof of leads and automation.",
+      "trend": "falling",
+      "signal": "Low ROI perception",
+      "date": "2026-06-06",
+      "publishedAt": "2026-06-06T08:00:00+05:30",
+      "tags": [
+        "Websites",
+        "Strategy"
+      ],
+      "proof": "Enquiry patterns from 2026 demo calls — owners ask for dashboards, not just design",
+      "source": "AI Workflows sales notes",
+      "sourceUrl": "https://ai-workflows.cloud/",
+      "body": "Falling: design-only sites with no CTA tracking. Rising: landing + waitlist + WhatsApp + simple owner metrics. Package websites with one measurable outcome."
+    },
+    {
+      "id": "ai-form-ocr-stable",
+      "title": "Document OCR + Form Fill — Stable Niche",
+      "summary": "Cyber cafés, consultants, and small offices still pay for time saved on repetitive forms. Accuracy and privacy matter more than flashy UI.",
+      "trend": "stable",
+      "signal": "Steady niche",
+      "date": "2026-06-05",
+      "publishedAt": "2026-06-05T09:00:00+05:30",
+      "tags": [
+        "OCR",
+        "AI Tools",
+        "India"
+      ],
+      "proof": "Ongoing formfiller.ai-workflows.cloud preview usage",
+      "source": "AI Workflows product demo",
+      "sourceUrl": "https://formfiller.ai-workflows.cloud/",
+      "body": "Stable demand in document-heavy workflows. Winners: scan → extract → review → save customer. Losers: black-box auto-submit without staff review."
+    },
+    {
+      "id": "owner-dashboards-rising",
+      "title": "Owner Dashboards — Rising for Local Ops",
+      "summary": "Single-screen views for orders, leads, and staff tasks beat scattered spreadsheets for restaurants, distributors, and coaching centers.",
+      "trend": "rising",
+      "signal": "Strong pull",
+      "date": "2026-06-04",
+      "publishedAt": "2026-06-04T10:30:00+05:30",
+      "tags": [
+        "Dashboard",
+        "Operations"
+      ],
+      "proof": "Mirch app demo kitchen + owner panels in production use",
+      "source": "Mirch App Demo",
+      "sourceUrl": "https://mirchapp.ai-workflows.cloud/",
+      "body": "Trending metrics: today's orders, pending tasks, response time, repeat customers. Avoid 20-chart dashboards nobody opens daily."
+    }
+  ]
+}

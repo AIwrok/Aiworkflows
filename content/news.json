@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "title": "AI Workflows Daily News",
+    "updatedAt": "2026-06-06T14:14:37+05:30",
+    "refreshNote": "Updated daily at 6 AM IST — date, time, and source proof."
+  },
+  "items": [
+    {
+      "id": "daily-2026-06-06-news",
+      "title": "Don't post generated/AI-edited comments. HN is for conversation between humans",
+      "summary": "Today's top AI story — 4229 points, 1668 comments on Hacker News.",
+      "category": "AI News",
+      "date": "2026-06-06",
+      "publishedAt": "2026-06-06T14:14:36+05:30",
+      "readMinutes": 2,
+      "tags": [
+        "Today",
+        "AI",
+        "HN"
+      ],
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/newsguidelines.html#generated",
+      "proof": "Verified HN story #47340079 — open source to confirm",
+      "body": "Fresh daily pull at 6 AM IST. Read the source, then check our learning & ideas tabs for what to build next."
+    },
+    {
+      "id": "hn-44163063",
+      "title": "My AI skeptic friends are all nuts",
+      "summary": "Trending on Hacker News — 2356 points, 2826 comments.",
+      "category": "AI News",
+      "date": "2026-06-06",
+      "publishedAt": "2026-06-06T12:45:16+05:30",
+      "readMinutes": 2,
+      "tags": [
+        "HN",
+        "AI",
+        "Trending"
+      ],
+      "source": "Hacker News",
+      "sourceUrl": "https://fly.io/blog/youre-all-nuts/",
+      "proof": "HN story id 44163063 — points/comments visible on source",
+      "body": "Automated daily pull. Open source link for full article. We add editorial context on ai-workflows.cloud/learn/hub.html."
+    },
+    {
+      "id": "hn-41046773",
+      "title": "Open source AI is the path forward",
+      "summary": "Trending on Hacker News — 2360 points, 887 comments.",
+      "category": "AI News",
+      "date": "2026-06-06",
+      "publishedAt": "2026-06-06T12:45:16+05:30",
+      "readMinutes": 2,
+      "tags": [
+        "HN",
+        "AI",
+        "Trending"
+      ],
+      "source": "Hacker News",
+      "sourceUrl": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/",
+      "proof": "HN story id 41046773 — points/comments visible on source",
+      "body": "Automated daily pull. Open source link for full article. We add editorial context on ai-workflows.cloud/learn/hub.html."
+    },
+    {
+      "id": "hn-39526057",
+      "title": "Airfoil",
+      "summary": "Trending on Hacker News — 2544 points, 296 comments.",
+      "category": "AI News",
+      "date": "2026-06-06",
+      "publishedAt": "2026-06-06T12:45:16+05:30",
+      "readMinutes": 2,
+      "tags": [
+        "HN",
+        "AI",
+        "Trending"
+      ],
+      "source": "Hacker News",
+      "sourceUrl": "https://ciechanow.ski/airfoil/",
+      "proof": "HN story id 39526057 — points/comments visible on source",
+      "body": "Automated daily pull. Open source link for full article. We add editorial context on ai-workflows.cloud/learn/hub.html."
+    },
+    {
+      "id": "hn-47340079",
+      "title": "Don't post generated/AI-edited comments. HN is for conversation between humans",
+      "summary": "Trending on Hacker News — 4229 points, 1668 comments.",
+      "category": "AI News",
+      "date": "2026-06-06",
+      "publishedAt": "2026-06-06T12:45:16+05:30",
+      "readMinutes": 2,
+      "tags": [
+        "HN",
+        "AI",
+        "Trending"
+      ],
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/newsguidelines.html#generated",
+      "proof": "HN story id 47340079 — points/comments visible on source",
+      "body": "Automated daily pull. Open source link for full article. We add editorial context on ai-workflows.cloud/learn/hub.html."
+    },
+    {
+      "id": "daily-2026-06-06-agent-tools",
+      "title": "AI Agent Tools Moving From Chat to Real Workflows",
+      "summary": "Teams want agents that trigger forms, dashboards, and WhatsApp — not just text replies.",
+      "category": "AI News",
+      "date": "2026-06-06",
+      "publishedAt": "2026-06-06T09:15:00+05:30",
+      "readMinutes": 3,
+      "tags": [
+        "Agents",
+        "Automation",
+        "SMB"
+      ],
+      "source": "Hacker News + AI Workflows editorial",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "proof": "Cross-checked with top HN AI discussions and our live automation demos",
+      "body": "Business buyers in India ask for one outcome: fewer manual steps. Agents win when connected to order flows, document OCR, and owner alerts — not standalone chat windows."
+    },
+    {
+      "id": "daily-2026-06-05-gemini-india",
+      "title": "Multilingual AI Assistants Gain Traction for Indian SMBs",
+      "summary": "Hindi/English mixed support in bots and form tools is becoming a default expectation.",
+      "category": "AI News",
+      "date": "2026-06-05",
+      "publishedAt": "2026-06-05T11:00:00+05:30",
+      "readMinutes": 4,
+      "tags": [
+        "India",
+        "Language",
+        "Chatbots"
+      ],
+      "source": "Industry reports + client feedback",
+      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#news",
+      "proof": "Mirch WhatsApp bot uses bilingual buttons; form filler demo handles ID OCR in Roman fields",
+      "body": "Products that ignore Hinglish UX lose trust fast. Prefer short button flows over long typed conversations for food, retail, and service businesses."
+    },
+    {
+      "id": "ai-websites-2026",
+      "title": "How AI Is Changing Business Websites in 2026",
+      "summary": "Smart forms, chat assistants, and analytics dashboards are becoming standard for Indian SMB websites.",
+      "category": "Web Development",
+      "date": "2026-06-01",
+      "publishedAt": "2026-06-01T08:00:00+05:30",
+      "readMinutes": 5,
+      "tags": [
+        "AI",
+        "Websites",
+        "SMB"
+      ],
+      "source": "AI Workflows research",
+      "sourceUrl": "https://ai-workflows.cloud/",
+      "proof": "Backed by live launches: Mirch, Mast Magan, Bhuvan Bhaskar Dham",
+      "body": "Business owners no longer want static brochure websites. They want pages that capture leads, answer questions, and connect to WhatsApp or dashboards."
+    },
+    {
+      "id": "whatsapp-automation-roi",
+      "title": "WhatsApp Automation ROI for Local Businesses",
+      "summary": "Restaurants, shops, and service businesses save hours weekly with auto-replies and order updates.",
+      "category": "Automation",
+      "date": "2026-05-28",
+      "publishedAt": "2026-05-28T10:00:00+05:30",
+      "readMinutes": 4,
+      "tags": [
+        "WhatsApp",
+        "Automation"
+      ],
+      "source": "AI Workflows Mirch case",
+      "sourceUrl": "https://mirch.ai-workflows.cloud/",
+      "proof": "Live restaurant flow: menu → cart → staff approval → kitchen updates",
+      "body": "When customers message on WhatsApp, speed matters. Automation handles FAQs, shares menus, confirms orders, and routes serious enquiries to staff."
+    }
+  ]
+}

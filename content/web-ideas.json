@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "title": "Daily Web & Product Ideas",
+    "updatedAt": "2026-06-06T14:14:37+05:30",
+    "refreshNote": "One practical website or app idea every morning."
+  },
+  "items": [
+    {
+      "id": "daily-2026-06-06-idea",
+      "title": "Idea of the Day: Salon booking slot",
+      "summary": "Pick service → pick slot → WhatsApp confirm.",
+      "ideaType": "Daily Idea",
+      "difficulty": "Easy",
+      "buildTime": "4–6 days",
+      "date": "2026-06-06",
+      "publishedAt": "2026-06-06T14:14:36+05:30",
+      "tags": [
+        "Booking",
+        "SMB",
+        "Today"
+      ],
+      "proof": "Buildable pattern — see live demos on ai-workflows.cloud/#showcase",
+      "source": "AI Workflows Ideas",
+      "sourceUrl": "https://ai-workflows.cloud/#showcase",
+      "body": "No app install; owner sees calendar."
+    },
+    {
+      "id": "idea-2026-06-06-waitlist-hub",
+      "title": "Niche Waitlist + Content Hub",
+      "summary": "Combine Stitch-style landing, daily AI news feed, and email/WhatsApp waitlist for any vertical (coaching, decor, food).",
+      "ideaType": "SaaS landing",
+      "difficulty": "Easy",
+      "buildTime": "3–5 days",
+      "date": "2026-06-06",
+      "publishedAt": "2026-06-06T07:30:00+05:30",
+      "tags": [
+        "Landing",
+        "Waitlist",
+        "Content"
+      ],
+      "proof": "Live on ai-workflows.cloud — news, learning, analytics, ideas as daily tools",
+      "source": "AI Workflows",
+      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html",
+      "body": "Stack: static site + JSON feeds + optional automation script. Monetize: lead gen for your service or paid templates. Ship one vertical per week."
+    },
+    {
+      "id": "idea-2026-06-05-menu-qr-whatsapp",
+      "title": "QR Menu → WhatsApp Order Flow",
+      "summary": "Table QR opens mobile menu; cart summary posts to WhatsApp with table number. Kitchen gets structured message.",
+      "ideaType": "Restaurant tech",
+      "difficulty": "Medium",
+      "buildTime": "1–2 weeks",
+      "date": "2026-06-05",
+      "publishedAt": "2026-06-05T07:30:00+05:30",
+      "tags": [
+        "Restaurant",
+        "WhatsApp",
+        "QR"
+      ],
+      "proof": "Working pattern on mirch.ai-workflows.cloud",
+      "source": "Mirch Masala demo",
+      "sourceUrl": "https://mirch.ai-workflows.cloud/",
+      "body": "No app download for customers. Owner sees orders in admin web app. Add UPI link in chat for prepaid orders."
+    },
+    {
+      "id": "idea-2026-06-04-coaching-daily-drop",
+      "title": "Coaching Center Daily Tip Drop",
+      "summary": "One micro-lesson + PDF upload per day on a simple learning page. Parents bookmark; admissions CTA on every post.",
+      "ideaType": "Education site",
+      "difficulty": "Easy",
+      "buildTime": "2–4 days",
+      "date": "2026-06-04",
+      "publishedAt": "2026-06-04T07:30:00+05:30",
+      "tags": [
+        "Education",
+        "Content",
+        "Leads"
+      ],
+      "proof": "Radiant Classes preview structure",
+      "source": "AI Workflows learning hub pattern",
+      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#learning",
+      "body": "Use learning.json for daily uploads. SEO: one URL per topic. WhatsApp button: 'Ask about batches'."
+    },
+    {
+      "id": "idea-2026-06-03-distributor-otp",
+      "title": "Distributor Delivery OTP Panel",
+      "summary": "Shops order online; rider app marks delivered with OTP; owner sees live map-style status list (even without GPS at v1).",
+      "ideaType": "B2B software",
+      "difficulty": "Hard",
+      "buildTime": "3–6 weeks",
+      "date": "2026-06-03",
+      "publishedAt": "2026-06-03T07:30:00+05:30",
+      "tags": [
+        "Logistics",
+        "Dashboard",
+        "OTP"
+      ],
+      "proof": "Planned module in AI Workflows project pipeline",
+      "source": "AI Workflows projects",
+      "sourceUrl": "https://ai-workflows.cloud/#showcase",
+      "body": "Start with web dashboard + rider mobile web. OTP proof reduces delivery disputes. Phase 2: GPS + inventory sync."
+    }
+  ]
+}

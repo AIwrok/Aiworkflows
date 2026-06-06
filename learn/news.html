@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AI News & Insights — Web Development, AI & Analytics | AI Workflows</title>
+<meta name="description" content="Latest updates on web development, AI automation, analytics, and business software for Indian businesses."/>
+<link rel="canonical" href="https://ai-workflows.cloud/learn/news.html"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&display=swap"/>
+<link rel="stylesheet" href="/learn/learn.css"/>
+</head>
+<body>
+<header class="learn-nav">
+  <a class="home-link" href="/">← AI Workflows</a>
+  <nav class="tabs" aria-label="Learn sections">
+    <a class="tab" href="/learn/hub.html#news">Daily Hub</a>
+    <a class="tab active" href="/learn/news.html">AI News</a>
+    <a class="tab" href="/learn/">Learning</a>
+    <a class="tab" href="/learn/hub.html#analytics">Analytics</a>
+    <a class="tab" href="/learn/hub.html#ideas">Web Ideas</a>
+  </nav>
+</header>
+<section class="learn-hero">
+  <div class="eyebrow">AI Pulse</div>
+  <h1>Latest <span class="grad-text">News & Insights</span></h1>
+  <p>Short updates on web development, AI tools, analytics, and automation — written for business owners and builders.</p>
+</section>
+<main class="learn-main">
+  <div class="learn-grid" id="news-grid">Loading articles…</div>
+</main>
+<script src="/learn/learn.js"></script>
+<script>
+loadLearnData("/content/news.json")
+  .then(function (data) { renderCards(data.items || [], document.getElementById("news-grid"), { tagKey: "tags" }); })
+  .catch(function () {
+    document.getElementById("news-grid").innerHTML = '<p class="learn-empty">Could not load articles. Please try again later.</p>';
+  });
+</script>
+</body>
+</html>

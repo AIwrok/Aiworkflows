@@ -3,14 +3,17 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AI Workflows — Smart Websites, AI Automation & Business Software in India</title>
-<meta name="description" content="AI Workflows builds smart websites, dashboards, WhatsApp automation, AI tools, and custom business software for restaurants, cyber cafés, distributors, shops, and local businesses across India."/>
-<meta name="keywords" content="AI automation India, business website Bihar, WhatsApp automation, restaurant website, cyber cafe software, custom dashboard, AI Workflows"/>
+<title>AI Workflows — AI News, Learning & Analytics Hub</title>
+<meta name="description" content="Website building, AI chatbots, WhatsApp automation, and web app design — plus daily AI news, learning, and analytics. AI Workflows, India."/>
+<meta name="keywords" content="website building India, AI chatbots, WhatsApp automation, web app design, AI automation Bihar, business website, custom dashboard, AI Workflows"/>
 <meta name="author" content="AI Workflows"/>
 <meta name="theme-color" content="#050510"/>
 <meta name="robots" content="index, follow, max-image-preview:large"/>
 <link rel="canonical" href="https://ai-workflows.cloud/"/>
 <link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
+<script src="marketing-config.js"></script>
+<script src="marketing.js" defer></script>
+<script src="hub-content.js" defer></script>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://ai-workflows.cloud/"/>
 <meta property="og:title" content="AI Workflows — Smart Websites, AI Automation & Business Software in India"/>
@@ -40,7 +43,7 @@
       "telephone": "+91-79996-14511",
       "founder": { "@type": "Person", "name": "Ashok" },
       "sameAs": ["https://www.linkedin.com/company/112720692/"],
-      "description": "AI Workflows builds smart websites, WhatsApp automation, AI dashboards, and custom business software for Indian businesses."
+      "description": "AI Workflows builds business websites, AI chatbots, WhatsApp automation, web app design, and custom software for Indian businesses."
     },
     {
       "@type": "WebSite",
@@ -247,14 +250,16 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 
 /* ── Hero ─────────────────────────────────────────────────── */
 .hero {
-  min-height: auto; display: flex; align-items: center;
-  padding: 120px 40px 80px;
+  min-height: 680px; display: flex; align-items: center;
+  padding: 96px 40px 68px;
   position: relative; overflow: hidden;
   border-bottom: 1px solid var(--border);
 }
 .hero-bg {
   position: absolute; inset: 0; z-index: 0;
-  background: radial-gradient(ellipse 60% 50% at 70% 20%, rgba(99,102,241,0.10) 0%, transparent 65%), var(--bg);
+  background:
+    radial-gradient(ellipse 56% 70% at 76% 28%, rgba(99,102,241,0.26), transparent 62%),
+    linear-gradient(115deg, #050508 0%, #080912 48%, #252638 100%);
 }
 .hero-bg::before,
 .hero-bg::after {
@@ -262,7 +267,9 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
   filter: blur(80px); opacity: 0.18; pointer-events: none;
   animation: orbDrift 13s ease-in-out infinite;
 }
-.ambient-particles { display: none; }
+.ambient-particles {
+  position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden;
+}
 .ambient-particles-hidden {
   position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden;
 }
@@ -278,13 +285,60 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .ambient-particles span:nth-child(4) { left: 68%; top: 68%; animation-delay: -10s; width: 5px; height: 5px; }
 .ambient-particles span:nth-child(5) { left: 84%; top: 32%; animation-delay: -6s; }
 .ambient-particles span:nth-child(6) { left: 92%; top: 82%; animation-delay: -12s; width: 3px; height: 3px; }
+.ambient-particles span:nth-child(7) { left: 55%; top: 42%; animation-delay: -5s; width: 2px; height: 2px; }
+.ambient-particles span:nth-child(8) { left: 32%; top: 58%; animation-delay: -9s; }
+.ambient-particles span:nth-child(9) { left: 76%; top: 12%; animation-delay: -2s; width: 3px; height: 3px; }
+.ambient-particles span:nth-child(10) { left: 12%; top: 38%; animation-delay: -11s; width: 5px; height: 5px; }
 .hero-bg::before { left: -160px; top: 18%; background: #22d3ee; }
 .hero-bg::after { right: -140px; bottom: 8%; background: #a855f7; animation-delay: -5s; }
-.hero-grid-overlay, .hero-beams { display: none; }
+.hero-grid-overlay {
+  position: absolute; inset: 0; opacity: 0.35; pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, black 20%, transparent 75%);
+}
+.hero-beams {
+  position: absolute; inset: 0; overflow: hidden; pointer-events: none;
+}
+.hero-beams span {
+  position: absolute; width: 2px; height: 140%;
+  background: linear-gradient(to bottom, transparent, rgba(139,92,246,0.5), transparent);
+  transform-origin: top center;
+  animation: beamSweep 9s ease-in-out infinite;
+  opacity: 0.35;
+}
+.hero-beams span:nth-child(1) { left: 22%; transform: rotate(18deg); animation-delay: 0s; }
+.hero-beams span:nth-child(2) { left: 54%; transform: rotate(-8deg); animation-delay: -3s; background: linear-gradient(to bottom, transparent, rgba(34,211,238,0.45), transparent); }
+.hero-beams span:nth-child(3) { left: 78%; transform: rotate(12deg); animation-delay: -6s; }
+@keyframes beamSweep {
+  0%, 100% { opacity: 0.12; transform: rotate(var(--beam-rot, 12deg)) translateY(-8%); }
+  50% { opacity: 0.42; transform: rotate(var(--beam-rot, 12deg)) translateY(4%); }
+}
+.hero-mesh {
+  position: absolute; inset: -20%;
+  background:
+    radial-gradient(ellipse 40% 35% at 20% 30%, rgba(99,102,241,0.22), transparent 60%),
+    radial-gradient(ellipse 35% 40% at 80% 20%, rgba(34,211,238,0.14), transparent 55%),
+    radial-gradient(ellipse 50% 45% at 60% 80%, rgba(168,85,247,0.18), transparent 60%);
+  animation: meshPulse 12s ease-in-out infinite;
+}
+@keyframes meshPulse {
+  0%, 100% { opacity: 0.85; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.04); }
+}
+.hero-orb-float {
+  position: absolute; border-radius: 999px; pointer-events: none; filter: blur(60px);
+  animation: orbDrift 14s ease-in-out infinite;
+}
+.hero-orb-float--1 { width: 280px; height: 280px; left: 8%; top: 12%; background: rgba(99,102,241,0.35); }
+.hero-orb-float--2 { width: 220px; height: 220px; right: 12%; bottom: 18%; background: rgba(34,211,238,0.22); animation-delay: -7s; }
+.hero-orb-float--3 { width: 180px; height: 180px; left: 42%; bottom: 8%; background: rgba(168,85,247,0.28); animation-delay: -4s; }
 .hero-content {
   position: relative; z-index: 1;
   max-width: var(--container); margin: 0 auto; width: 100%;
-  display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(420px, 0.92fr); gap: clamp(44px, 6vw, 88px); align-items: center;
+  display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(380px, 0.92fr); gap: clamp(44px, 6vw, 84px); align-items: center;
 }
 .hero-badge {
   display: inline-flex; align-items: center; gap: 8px;
@@ -298,10 +352,11 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.6;transform:scale(1.3)} }
 .hero-title {
   font-family: var(--font-display);
-  font-size: clamp(36px, 5vw, 62px);
-  font-weight: 800; line-height: 1.12;
+  font-size: clamp(42px, 6.4vw, 76px);
+  font-weight: 500; line-height: 1.05;
   letter-spacing: -0.03em; margin-bottom: 20px;
 }
+.hero-title strong { font-weight: 900; color: var(--fg); }
 .hero-subtitle {
   font-size: clamp(17px, 1.7vw, 20px);
   color: var(--fg2); line-height: 1.65;
@@ -349,11 +404,74 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 
 /* Hero visual */
 .hero-visual {
-  position: relative; min-height: auto;
-  display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start;
-  background: var(--card-bg); border: 1px solid var(--border);
-  border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow-soft);
+  position: relative; min-height: 420px;
+  display: grid; place-items: center;
+  background: transparent; border: 0;
+  border-radius: 0; padding: 0; box-shadow: none;
 }
+.stitch-orb {
+  position: relative; width: min(360px, 86vw); aspect-ratio: 1;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 45% 35%, rgba(255,255,255,0.14), transparent 28%),
+    linear-gradient(135deg, rgba(99,102,241,0.42), rgba(15,23,42,0.48));
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow: 0 38px 110px rgba(99,102,241,0.24);
+  display: grid; place-items: center;
+}
+.stitch-orb-core {
+  width: 168px; height: 168px; border-radius: 44px;
+  display: grid; place-items: center;
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16);
+  backdrop-filter: blur(14px);
+  font-size: 58px; font-weight: 900;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 22px 50px rgba(0,0,0,0.28);
+}
+.stitch-ribbon {
+  position: absolute; width: 118%; height: 118%; border-radius: 999px;
+  border: 2px solid transparent;
+  border-top-color: rgba(34,211,238,0.72);
+  border-right-color: rgba(139,92,246,0.72);
+  transform: rotate(-22deg);
+  filter: drop-shadow(0 0 18px rgba(99,102,241,0.45));
+  animation: slowSpin 18s linear infinite;
+}
+.stitch-ribbon.second {
+  width: 86%; height: 86%; transform: rotate(38deg);
+  border-top-color: rgba(251,191,36,0.62);
+  border-right-color: rgba(34,211,238,0.55);
+  animation-duration: 24s;
+  animation-direction: reverse;
+}
+.floating-chip {
+  position: absolute; display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 13px; border-radius: 999px;
+  background: rgba(10,10,20,0.72); border: 1px solid rgba(255,255,255,0.14);
+  color: var(--fg2); font-size: 12px; font-weight: 800;
+  box-shadow: var(--shadow-soft);
+}
+.floating-chip.one { left: -16px; top: 18%; }
+.floating-chip.two { right: -22px; top: 52%; }
+.floating-chip.three { left: 18%; bottom: -10px; }
+@keyframes slowSpin { to { transform: rotate(338deg); } }
+.hero-tool-strip {
+  position: absolute; left: max(0px, calc((100vw - var(--container)) / 2)); bottom: -48px;
+  min-width: min(520px, calc(100vw - 32px));
+  display: flex; align-items: center; justify-content: center; gap: 18px;
+  padding: 28px 34px; border-radius: 0 999px 999px 0;
+  background: rgba(22,22,36,0.96); border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 22px 60px rgba(0,0,0,0.36);
+}
+.hero-tool-strip a,
+.hero-tool-strip button {
+  width: 38px; height: 38px; border-radius: 12px; display: grid; place-items: center;
+  background: linear-gradient(135deg, rgba(139,92,246,0.92), rgba(99,102,241,0.76));
+  color: #fff; font-size: 18px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.16);
+  transition: transform var(--motion-fast), opacity var(--motion-fast);
+}
+.hero-tool-strip a:hover,
+.hero-tool-strip button:hover { transform: translateY(-3px); opacity: 0.94; }
 .hero-dashboard, .hero-orb { display: none; }
 @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-18px)} }
 @keyframes orbDrift {
@@ -935,6 +1053,7 @@ section { padding: var(--section-y) 40px; position: relative; }
   animation: heroFadeUp var(--motion-slow) var(--ease-smooth) forwards;
 }
 .hero-copy .hero-badge { animation-delay: 80ms; }
+.hero-copy .hero-kicker { animation-delay: 60ms; }
 .hero-copy .hero-title { animation-delay: 200ms; }
 .hero-copy .hero-subtitle { animation-delay: 320ms; }
 .hero-copy .hero-buttons { animation-delay: 440ms; }
@@ -1193,6 +1312,262 @@ section { padding: var(--section-y) 40px; position: relative; }
   text-align: center; padding: 0 40px;
 }
 .ad-slot:empty { display: none; }
+
+/* ── Welcome overlay ──────────────────────────────────────── */
+.welcome-overlay {
+  position: fixed; inset: 0; z-index: 10000;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; padding: 24px;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 40%, rgba(99,102,241,0.22), transparent 60%),
+    #050510;
+  transition: opacity 0.9s var(--ease-smooth), visibility 0.9s;
+}
+.welcome-overlay.hide { opacity: 0; visibility: hidden; pointer-events: none; }
+body.welcome-active { overflow: hidden; }
+.welcome-logo {
+  width: 72px; height: 72px; border-radius: 18px; object-fit: cover;
+  margin-bottom: 28px; opacity: 0; animation: welcomePop 0.9s var(--ease-smooth) 0.1s forwards;
+  box-shadow: 0 20px 50px rgba(99,102,241,0.35);
+}
+.welcome-kicker {
+  font-size: 14px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+  color: #c4b5fd; margin-bottom: 14px; opacity: 0;
+  animation: welcomeUp 0.8s var(--ease-smooth) 0.35s forwards;
+}
+.welcome-title {
+  font-family: var(--font-display); font-size: clamp(32px, 7vw, 56px); font-weight: 850;
+  line-height: 1.1; margin-bottom: 14px; opacity: 0;
+  animation: welcomeUp 0.9s var(--ease-smooth) 0.65s forwards;
+}
+.welcome-sub {
+  font-size: clamp(15px, 2.5vw, 18px); color: var(--fg2); max-width: 36ch;
+  opacity: 0; animation: welcomeUp 0.9s var(--ease-smooth) 1s forwards;
+}
+.welcome-hint {
+  margin-top: 36px; font-size: 12px; color: var(--fg3); letter-spacing: 0.08em;
+  text-transform: uppercase; opacity: 0;
+  animation: welcomeUp 0.8s var(--ease-smooth) 1.4s forwards;
+}
+@keyframes welcomeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes welcomePop {
+  from { opacity: 0; transform: scale(0.82); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* ── Tool advertisement strip ─────────────────────────────── */
+.tool-ads {
+  padding: 20px 40px 34px;
+  background: linear-gradient(180deg, var(--bg), var(--bg2));
+}
+.tool-ads-inner {
+  max-width: var(--container); margin: 0 auto;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+}
+.tool-ad {
+  position: relative; overflow: hidden;
+  display: grid; gap: 10px; min-height: 170px;
+  padding: 20px; border-radius: var(--radius);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(34,211,238,0.16), transparent 34%),
+    var(--card-bg);
+  border: 1px solid rgba(255,255,255,0.16);
+  box-shadow: var(--shadow-soft);
+  transition: transform var(--motion-normal), border-color var(--motion-normal), box-shadow var(--motion-normal);
+}
+.tool-ad:hover {
+  transform: translateY(-4px);
+  border-color: rgba(34,211,238,0.42);
+  box-shadow: 0 18px 46px rgba(34,211,238,0.13);
+}
+.tool-ad-label {
+  width: max-content; padding: 4px 9px; border-radius: 999px;
+  background: rgba(251,191,36,0.14); border: 1px solid rgba(251,191,36,0.32);
+  color: #fde68a; font-size: 10px; font-weight: 900; letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.tool-ad h3 { font-family: var(--font-display); font-size: 19px; font-weight: 850; }
+.tool-ad p { color: var(--fg2); font-size: 13px; line-height: 1.55; }
+.tool-ad a, .tool-ad button {
+  width: max-content; margin-top: auto;
+  display: inline-flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 13px; font-weight: 850;
+  padding: 9px 14px; border-radius: 999px; background: var(--grad);
+}
+.knowledge-feed {
+  padding: clamp(92px, 10vw, 132px) 40px clamp(68px, 8vw, 108px);
+  background:
+    radial-gradient(ellipse 70% 40% at 50% 0%, rgba(139,92,246,0.16), transparent 60%),
+    linear-gradient(180deg, var(--bg2), var(--bg));
+  border-block: 1px solid var(--border);
+}
+.knowledge-inner { max-width: var(--container); margin: 0 auto; }
+.knowledge-top {
+  display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 28px; align-items: end;
+  margin-bottom: 32px;
+}
+.knowledge-kicker {
+  color: #c4b5fd; font-size: 12px; font-weight: 900; letter-spacing: 0.13em;
+  text-transform: uppercase; margin-bottom: 10px;
+}
+.knowledge-title {
+  font-family: var(--font-display); font-size: clamp(32px, 5vw, 54px);
+  line-height: 1.08; font-weight: 850; margin-bottom: 14px;
+}
+.knowledge-sub { color: var(--fg2); max-width: 64ch; line-height: 1.75; }
+.knowledge-join {
+  padding: 22px; border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, rgba(99,102,241,0.18), rgba(34,211,238,0.08));
+  border: 1px solid rgba(99,102,241,0.32);
+}
+.knowledge-join strong { display: block; font-size: 18px; margin-bottom: 8px; }
+.knowledge-join p { color: var(--fg2); font-size: 14px; line-height: 1.65; margin-bottom: 14px; }
+.knowledge-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;
+}
+.knowledge-card {
+  min-height: 220px; display: flex; flex-direction: column; gap: 12px;
+  padding: 22px; border-radius: var(--radius-lg); position: relative; overflow: hidden;
+  background: var(--card-bg); border: 1px solid var(--card-border);
+  transition: transform var(--motion-normal), border-color var(--motion-normal), box-shadow var(--motion-normal);
+}
+.knowledge-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: var(--grad-text);
+}
+.knowledge-card:hover {
+  transform: translateY(-5px); border-color: rgba(99,102,241,0.45);
+  box-shadow: var(--shadow-glow);
+}
+.knowledge-chip {
+  width: max-content; padding: 5px 10px; border-radius: 999px;
+  background: rgba(99,102,241,0.15); color: #c4b5fd;
+  font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.08em;
+}
+.knowledge-card h3 { font-size: 19px; font-weight: 850; line-height: 1.3; }
+.knowledge-card p { color: var(--fg2); font-size: 14px; line-height: 1.65; flex: 1; }
+.knowledge-card a, .knowledge-card button {
+  width: max-content; display: inline-flex; align-items: center; justify-content: center;
+  padding: 10px 15px; border-radius: 999px; color: #fff; font-size: 13px; font-weight: 850;
+  background: transparent; border: 1px solid var(--border-strong);
+}
+.knowledge-card.featured {
+  background:
+    radial-gradient(circle at 100% 0%, rgba(34,211,238,0.18), transparent 36%),
+    var(--card-bg);
+  border-color: rgba(34,211,238,0.28);
+}
+.knowledge-card.featured a { background: var(--grad); border-color: transparent; }
+.waitlist-form {
+  display: flex; gap: 10px; margin-top: 14px;
+}
+.waitlist-form input {
+  min-width: 0; flex: 1;
+  padding: 13px 14px; border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(255,255,255,0.07); color: var(--fg);
+}
+.waitlist-form input::placeholder { color: var(--fg3); }
+.waitlist-form button {
+  padding: 13px 18px; border-radius: 999px;
+  background: var(--grad); color: #fff; font-weight: 850;
+}
+
+/* ── Explore hub ──────────────────────────────────────────── */
+.explore-hub {
+  padding: clamp(48px, 6vw, 72px) 40px;
+  background: linear-gradient(180deg, var(--bg), var(--bg2));
+  border-bottom: 1px solid var(--border);
+}
+.explore-hub-inner { max-width: var(--container); margin: 0 auto; }
+.explore-hub-header { text-align: center; max-width: 640px; margin: 0 auto 40px; }
+.explore-hub-header .section-tag { margin-bottom: 12px; }
+.explore-hub-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+}
+.hub-card {
+  background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--radius-lg);
+  padding: 26px; display: flex; flex-direction: column; gap: 14px;
+  position: relative; overflow: hidden;
+  transition: border-color var(--motion-normal), transform var(--motion-normal), box-shadow var(--motion-normal);
+}
+.hub-card::before {
+  content: ''; position: absolute; inset: 0 0 auto; height: 4px;
+  background: var(--grad-text); opacity: 0.86;
+}
+.hub-card:hover {
+  border-color: rgba(99,102,241,0.45); transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+}
+.hub-card-icon {
+  width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center;
+  font-size: 26px; background: rgba(99,102,241,0.15); border: 1px solid rgba(99,102,241,0.25);
+}
+.hub-card h3 { font-family: var(--font-display); font-size: 20px; font-weight: 800; }
+.hub-card p { font-size: 14px; color: var(--fg2); line-height: 1.65; flex: 1; }
+.hub-tool-badge {
+  width: max-content; padding: 5px 10px; border-radius: 999px;
+  background: rgba(34,211,238,0.12); border: 1px solid rgba(34,211,238,0.26);
+  color: #67e8f9; font-size: 11px; font-weight: 800; letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.hub-tool-list {
+  display: grid; gap: 7px; margin: 2px 0 4px; color: var(--fg2);
+  font-size: 13px; list-style: none;
+}
+.hub-tool-list li::before { content: '✓'; color: #22d3ee; font-weight: 900; margin-right: 8px; }
+.hub-preview { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.hub-preview li a {
+  display: flex; justify-content: space-between; gap: 12px; align-items: flex-start;
+  padding: 10px 12px; border-radius: var(--radius-sm); background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06); font-size: 13px; transition: background var(--motion-fast);
+}
+.hub-preview li a:hover { background: rgba(99,102,241,0.12); }
+.hub-preview-title { color: var(--fg2); text-align: left; line-height: 1.4; }
+.hub-preview-date { color: var(--fg3); font-size: 11px; white-space: nowrap; flex-shrink: 0; }
+.hub-card-cta {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 12px 18px; border-radius: 999px; font-size: 13px; font-weight: 800;
+  background: var(--grad); color: #fff; margin-top: 4px;
+}
+.hub-card-cta.secondary {
+  background: transparent; border: 1px solid var(--border-strong); color: var(--fg);
+}
+.hub-card-cta:hover { opacity: 0.92; transform: translateY(-1px); }
+
+/* ── About section ────────────────────────────────────────── */
+.about-bg { background: linear-gradient(180deg, var(--bg2), var(--bg3)); }
+.about-grid {
+  display: grid; grid-template-columns: 1.2fr 1fr; gap: 32px; align-items: start;
+}
+.about-story p { color: var(--fg2); font-size: 15px; line-height: 1.75; margin-bottom: 16px; }
+.about-highlight {
+  margin-bottom: 16px; padding: 16px 18px; border-radius: var(--radius);
+  background: rgba(99,102,241,0.12); border: 1px solid rgba(99,102,241,0.26);
+  color: var(--fg); font-weight: 800; line-height: 1.55;
+}
+.about-pillars { display: grid; gap: 14px; }
+.about-pillar {
+  padding: 18px 20px; border-radius: var(--radius); background: var(--card-bg);
+  border: 1px solid var(--card-border);
+}
+.about-pillar strong { display: block; font-size: 15px; margin-bottom: 6px; color: #c4b5fd; }
+.about-pillar span { font-size: 14px; color: var(--fg2); line-height: 1.6; }
+@media (max-width: 900px) {
+  .explore-hub { padding: 40px 20px; }
+  .explore-hub-grid { grid-template-columns: 1fr; }
+  .tool-ads { padding: 14px 20px 30px; }
+  .tool-ads-inner { grid-template-columns: 1fr; }
+  .knowledge-feed { padding: 52px 20px; }
+  .knowledge-top { grid-template-columns: 1fr; }
+  .knowledge-grid { grid-template-columns: 1fr; }
+  .waitlist-form { flex-direction: column; }
+  .about-grid { grid-template-columns: 1fr; }
+}
+
 .footer-grid {
   max-width: var(--container); margin: 0 auto 28px;
   display: grid; grid-template-columns: 1.4fr repeat(3, 1fr); gap: 32px; text-align: left;
@@ -1218,12 +1593,707 @@ section { padding: var(--section-y) 40px; position: relative; }
   .footer-grid { grid-template-columns: 1fr; }
   .ad-slot { padding: 0 16px; }
 }
+
+/* ── Stitch-style minimal landing (premium) ───────────────── */
+.welcome-overlay { display: none !important; }
+.nav-links, .nav-hamburger, .mobile-menu, .nav-cta { display: none !important; }
+.nav-contact {
+  background: rgba(255,255,255,0.04); color: var(--fg);
+  border: 1px solid rgba(255,255,255,0.55);
+  font-size: 14px; font-weight: 700;
+  padding: 10px 22px; border-radius: 12px;
+  backdrop-filter: blur(12px);
+  transition: background var(--motion-fast), border-color var(--motion-fast), box-shadow var(--motion-fast);
+}
+.nav-contact:hover {
+  background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.8);
+  box-shadow: 0 8px 28px rgba(99,102,241,0.2);
+}
+.hero {
+  min-height: 92vh; padding: 88px 40px 140px; border-bottom: 0;
+  background: #050508;
+}
+.hero-bg {
+  background:
+    radial-gradient(ellipse 60% 55% at 72% 22%, rgba(99,102,241,0.32), transparent 62%),
+    radial-gradient(ellipse 45% 40% at 18% 68%, rgba(34,211,238,0.12), transparent 58%),
+    linear-gradient(160deg, #030308 0%, #08091a 42%, #12122a 100%);
+}
+.hero-badge, .hero-proof, .hero-trust { display: none; }
+.hero-copy .hero-kicker {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-bottom: 18px; padding: 7px 16px; border-radius: 999px;
+  background: rgba(139,92,246,0.12); border: 1px solid rgba(139,92,246,0.28);
+  font-size: 12px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase;
+  color: #c4b5fd;
+}
+.hero-kicker-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: #22d3ee; box-shadow: 0 0 12px rgba(34,211,238,0.8);
+  animation: pulse 2s ease-in-out infinite;
+}
+.hero-buttons { margin-top: 8px; }
+.hero-buttons .btn-secondary, .hero-buttons .btn-whatsapp { display: none; }
+.hero-buttons .btn-primary {
+  border-radius: 12px; padding: 16px 34px; font-size: 16px; font-weight: 800;
+  box-shadow: 0 20px 50px rgba(99,102,241,0.38);
+  position: relative; overflow: hidden;
+}
+.hero-buttons .btn-primary::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(105deg, transparent 35%, rgba(255,255,255,0.22) 50%, transparent 65%);
+  transform: translateX(-120%); animation: btnShine 4.5s ease-in-out infinite;
+}
+@keyframes btnShine {
+  0%, 70%, 100% { transform: translateX(-120%); }
+  85% { transform: translateX(120%); }
+}
+.hero-subtitle { font-size: clamp(16px, 2vw, 19px); max-width: 480px; margin-bottom: 32px; }
+.hero-visual { min-height: 380px; }
+.stitch-hero-img {
+  width: min(300px, 72vw); aspect-ratio: 1; border-radius: 999px; object-fit: cover;
+  border: 3px solid rgba(255,255,255,0.18);
+  box-shadow:
+    0 0 0 12px rgba(99,102,241,0.08),
+    0 30px 90px rgba(99,102,241,0.35),
+    inset 0 0 40px rgba(255,255,255,0.06);
+  position: relative; z-index: 2;
+  animation: heroImgFloat 6s ease-in-out infinite;
+}
+@keyframes heroImgFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.stitch-visual-ring {
+  position: absolute; width: 118%; height: 118%; border-radius: 999px;
+  background: radial-gradient(circle, rgba(99,102,241,0.4), transparent 68%);
+  animation: pulse 4s ease-in-out infinite;
+}
+.stitch-visual-ring::before {
+  content: ''; position: absolute; inset: 8%;
+  border-radius: 999px; border: 1px dashed rgba(255,255,255,0.14);
+  animation: slowSpin 28s linear infinite;
+}
+.floating-chip {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 10px 14px; border-radius: 999px;
+  background: rgba(8,8,20,0.82); border: 1px solid rgba(255,255,255,0.14);
+  color: var(--fg2); font-size: 11px; font-weight: 800;
+  box-shadow: 0 14px 36px rgba(0,0,0,0.35);
+  backdrop-filter: blur(14px);
+  animation: chipFloat 5s ease-in-out infinite;
+}
+.floating-chip.one { left: -8px; top: 14%; animation-delay: 0s; }
+.floating-chip.two { right: -18px; top: 48%; animation-delay: -1.6s; }
+.floating-chip.three { left: 12%; bottom: 4%; animation-delay: -3.2s; }
+@keyframes chipFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.stitch-ribbon {
+  display: block; position: absolute; width: 112%; height: 112%;
+  border-radius: 999px; border: 2px solid transparent;
+  border-top-color: rgba(34,211,238,0.65);
+  border-right-color: rgba(139,92,246,0.65);
+  transform: rotate(-18deg);
+  filter: drop-shadow(0 0 16px rgba(99,102,241,0.4));
+  animation: slowSpin 20s linear infinite;
+  z-index: 1;
+}
+.stitch-ribbon.second {
+  width: 88%; height: 88%; transform: rotate(42deg);
+  border-top-color: rgba(251,191,36,0.5);
+  border-right-color: rgba(34,211,238,0.45);
+  animation-duration: 26s; animation-direction: reverse;
+}
+.hero-tool-strip {
+  left: 50%; transform: translateX(-50%); bottom: 28px; border-radius: 999px;
+  min-width: auto; padding: 18px 28px; gap: 14px;
+  background: rgba(12,12,24,0.88);
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.45), 0 0 40px rgba(99,102,241,0.12);
+}
+.premium-keywords {
+  position: relative; overflow: hidden;
+  padding: 18px 0; border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  background: linear-gradient(90deg, rgba(99,102,241,0.06), rgba(34,211,238,0.04), rgba(99,102,241,0.06));
+}
+.premium-keywords-track {
+  display: flex; gap: 48px; width: max-content;
+  animation: keywordScroll 28s linear infinite;
+  font-size: 13px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;
+  color: rgba(196,181,253,0.75);
+}
+.premium-keywords-track span {
+  display: inline-flex; align-items: center; gap: 10px; white-space: nowrap;
+}
+.premium-keywords-track span::before {
+  content: ''; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--grad); box-shadow: 0 0 10px rgba(139,92,246,0.6);
+}
+@keyframes keywordScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.stitch-section {
+  position: relative; overflow: hidden;
+  padding: clamp(72px, 9vw, 110px) 40px;
+  text-align: center;
+}
+.stitch-section::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none; opacity: 0.5;
+  background: radial-gradient(ellipse 60% 40% at 50% 0%, rgba(99,102,241,0.12), transparent 70%);
+}
+.stitch-section h2 {
+  position: relative; z-index: 1;
+  font-family: var(--font-display); font-size: clamp(34px, 5vw, 58px);
+  font-weight: 500; line-height: 1.08; letter-spacing: -0.03em; margin-bottom: 14px;
+}
+.stitch-section h2 strong { font-weight: 900; }
+.stitch-lead {
+  position: relative; z-index: 1;
+  color: var(--fg2); font-size: clamp(15px, 2vw, 18px);
+  max-width: 42ch; margin: 0 auto 40px; line-height: 1.6;
+}
+.stitch-tools {
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 100%, rgba(99,102,241,0.1), transparent 65%),
+    var(--bg);
+}
+.stitch-tools-blob {
+  position: absolute; width: 420px; height: 420px; border-radius: 999px;
+  filter: blur(90px); opacity: 0.35; pointer-events: none;
+}
+.stitch-tools-blob--1 { left: -120px; top: 20%; background: #6366f1; }
+.stitch-tools-blob--2 { right: -100px; bottom: 10%; background: #22d3ee; }
+.stitch-tool-row {
+  position: relative; z-index: 1;
+  max-width: 980px; margin: 0 auto;
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px;
+}
+.stitch-tool {
+  display: grid; gap: 14px; justify-items: center;
+  padding: 22px 16px 18px; border-radius: 22px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: inherit; font: inherit; cursor: pointer;
+  backdrop-filter: blur(12px);
+  transition: transform var(--motion-normal), border-color var(--motion-normal), box-shadow var(--motion-normal);
+}
+.stitch-tool:hover {
+  transform: translateY(-8px); border-color: rgba(99,102,241,0.5);
+  box-shadow: 0 22px 50px rgba(99,102,241,0.22);
+}
+.stitch-tool-preview {
+  width: 100%; height: 72px; border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background-size: cover; background-position: center;
+  position: relative; overflow: hidden;
+}
+.stitch-tool-preview::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(5,5,16,0.65));
+}
+.stitch-tool-preview--news {
+  background-image:
+    linear-gradient(135deg, rgba(99,102,241,0.5), rgba(34,211,238,0.3)),
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.06) 0 1px, transparent 1px 24px);
+}
+.stitch-tool-preview--learn {
+  background-image:
+    linear-gradient(135deg, rgba(139,92,246,0.55), rgba(99,102,241,0.35)),
+    radial-gradient(circle at 30% 40%, rgba(255,255,255,0.15), transparent 45%);
+}
+.stitch-tool-preview--analytics {
+  background-image:
+    linear-gradient(180deg, rgba(34,211,238,0.25), rgba(99,102,241,0.4)),
+    linear-gradient(90deg, transparent 68%, rgba(34,211,238,0.5) 68% 72%, transparent 72%),
+    linear-gradient(90deg, transparent 38%, rgba(139,92,246,0.5) 38% 42%, transparent 42%),
+    linear-gradient(90deg, transparent 82%, rgba(251,191,36,0.45) 82% 86%, transparent 86%);
+  background-size: 100% 100%, 100% 80%, 100% 60%, 100% 90%;
+  background-position: center, bottom, bottom, bottom;
+  background-repeat: no-repeat;
+}
+.stitch-tool-preview--web {
+  background-image:
+    linear-gradient(135deg, #0b0b18, #1a1a32),
+    linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px);
+  background-size: 100% 100%, 18px 18px, 18px 18px;
+}
+.stitch-tool-preview--join {
+  background-image: linear-gradient(135deg, rgba(37,211,102,0.35), rgba(99,102,241,0.45));
+}
+.stitch-tool-preview--about {
+  background-image:
+    radial-gradient(circle at 50% 50%, rgba(251,191,36,0.35), transparent 55%),
+    linear-gradient(135deg, rgba(168,85,247,0.45), rgba(99,102,241,0.35));
+}
+.stitch-tool-icon {
+  width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center;
+  font-size: 22px; margin-top: -36px; position: relative; z-index: 2;
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+  box-shadow: 0 10px 24px rgba(99,102,241,0.35), inset 0 1px 0 rgba(255,255,255,0.2);
+  border: 2px solid rgba(255,255,255,0.12);
+}
+.stitch-tool-name {
+  font-size: 13px; font-weight: 800; color: var(--fg2); letter-spacing: 0.02em;
+}
+.stitch-join {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(99,102,241,0.24), transparent 60%),
+    radial-gradient(ellipse 40% 30% at 90% 80%, rgba(34,211,238,0.1), transparent 55%),
+    var(--bg2);
+}
+.stitch-join-panel {
+  position: relative; z-index: 1;
+  max-width: 560px; margin: 0 auto; padding: 36px 32px 32px;
+  border-radius: 28px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 28px 70px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.08);
+}
+.stitch-join-sparkle {
+  position: absolute; width: 120px; height: 120px; border-radius: 999px;
+  filter: blur(50px); pointer-events: none; opacity: 0.5;
+}
+.stitch-join-sparkle--1 { left: -40px; top: -20px; background: #8b5cf6; }
+.stitch-join-sparkle--2 { right: -30px; bottom: -30px; background: #22d3ee; }
+.stitch-join .waitlist-form {
+  max-width: 420px; margin: 28px auto 0; justify-content: center;
+}
+.stitch-join .waitlist-form input,
+.stitch-join .waitlist-form button { border-radius: 12px; }
+.stitch-perks {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 36px;
+}
+.stitch-perk {
+  min-width: 140px; padding: 16px 18px; border-radius: 16px;
+  background: rgba(14,14,26,0.9); border: 1px solid var(--card-border);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+.stitch-perk strong { display: block; font-size: 14px; margin-bottom: 4px; color: #c4b5fd; }
+.stitch-perk span { font-size: 12px; color: var(--fg3); }
+.stitch-contact {
+  background:
+    radial-gradient(ellipse 45% 35% at 80% 20%, rgba(37,211,102,0.08), transparent 55%),
+    radial-gradient(ellipse 40% 30% at 10% 80%, rgba(99,102,241,0.1), transparent 55%),
+    var(--bg2);
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.stitch-contact-panel {
+  position: relative; z-index: 1; max-width: 720px; margin: 0 auto;
+  padding: 32px 28px; border-radius: 24px;
+  background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+}
+.stitch-contact-grid {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px;
+  margin-bottom: 22px;
+}
+.stitch-contact-item {
+  display: flex; align-items: flex-start; gap: 12px; padding: 16px;
+  border-radius: 16px; background: rgba(8,8,20,0.6);
+  border: 1px solid rgba(255,255,255,0.08); text-align: left;
+}
+.stitch-contact-item-icon {
+  width: 40px; height: 40px; border-radius: 12px; flex-shrink: 0;
+  display: grid; place-items: center; font-size: 18px;
+  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08);
+}
+.stitch-contact-item-label {
+  font-size: 10px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--fg3); margin-bottom: 4px;
+}
+.stitch-contact-item-value {
+  font-size: 14px; font-weight: 700; color: var(--fg); line-height: 1.4;
+}
+.stitch-contact-item-value a {
+  color: #a5b4fc; text-decoration: none;
+}
+.stitch-contact-item-value a:hover { color: #c4b5fd; text-decoration: underline; text-underline-offset: 3px; }
+.stitch-contact-actions {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;
+}
+.stitch-contact-actions .btn-primary,
+.stitch-contact-actions .btn-whatsapp { border-radius: 12px; padding: 14px 24px; font-size: 14px; }
+.footer-contact {
+  display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+  gap: 8px 20px; margin-bottom: 16px; font-size: 14px;
+}
+.footer-contact a {
+  color: #a5b4fc; font-weight: 700; text-decoration: none;
+}
+.footer-contact a:hover { color: #c4b5fd; text-decoration: underline; text-underline-offset: 3px; }
+.footer-contact-sep { color: var(--fg3); user-select: none; }
+@media (max-width: 600px) {
+  .stitch-contact-grid { grid-template-columns: 1fr; }
+  .stitch-contact-panel { padding: 24px 18px; }
+  .footer-contact { flex-direction: column; gap: 10px; }
+  .footer-contact-sep { display: none; }
+}
+.stitch-about {
+  background:
+    radial-gradient(ellipse 50% 40% at 50% 100%, rgba(168,85,247,0.12), transparent 65%),
+    var(--bg3);
+  border-top: 1px solid var(--border);
+}
+.stitch-about p { color: var(--fg2); max-width: 52ch; margin: 0 auto 28px; line-height: 1.7; }
+.stitch-about-badges {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;
+  position: relative; z-index: 1;
+}
+.stitch-about-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 18px; border-radius: 999px;
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+  font-size: 12px; font-weight: 800; color: var(--fg2);
+}
+.stitch-about-badge em {
+  font-style: normal; font-size: 16px;
+}
+.stitch-showcase {
+  background:
+    radial-gradient(ellipse 55% 45% at 12% 30%, rgba(34,211,238,0.08), transparent 60%),
+    radial-gradient(ellipse 50% 40% at 88% 70%, rgba(139,92,246,0.12), transparent 55%),
+    var(--bg2);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.showcase-grid {
+  position: relative; z-index: 1;
+  max-width: 1080px; margin: 0 auto;
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px;
+}
+.showcase-card {
+  display: grid; grid-template-rows: auto 1fr;
+  border-radius: 22px; overflow: hidden; text-align: left;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  transition: transform var(--motion-normal), border-color var(--motion-normal), box-shadow var(--motion-normal);
+}
+.showcase-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(99,102,241,0.45);
+  box-shadow: 0 24px 56px rgba(99,102,241,0.2);
+}
+.showcase-preview {
+  min-height: 148px; padding: 16px;
+  display: flex; flex-direction: column; justify-content: space-between; gap: 12px;
+  position: relative; overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.showcase-shot {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: top center; z-index: 0;
+}
+.showcase-shot.is-missing { display: none; }
+.showcase-preview-overlay {
+  position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(180deg, rgba(5,5,16,0.15) 0%, rgba(5,5,16,0.72) 100%);
+}
+.showcase-preview-content {
+  position: relative; z-index: 2;
+  display: flex; flex-direction: column; justify-content: space-between; gap: 12px;
+  min-height: 116px;
+}
+.showcase-preview::before {
+  content: ''; position: absolute; inset: auto -20px -48px auto; z-index: 1;
+  width: 120px; height: 120px; border-radius: 999px;
+  background: rgba(139,92,246,0.25); filter: blur(32px); pointer-events: none;
+}
+.showcase-preview:has(.showcase-shot:not(.is-missing))::before { opacity: 0.35; }
+.showcase-preview-top {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  position: relative; z-index: 1;
+}
+.showcase-icon {
+  width: 40px; height: 40px; border-radius: 12px;
+  display: grid; place-items: center; font-size: 20px;
+  background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.12);
+}
+.showcase-status {
+  font-size: 10px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase;
+  padding: 5px 9px; border-radius: 999px; white-space: nowrap;
+}
+.showcase-status.live { background: rgba(16,185,129,0.12); color: #86efac; border: 1px solid rgba(16,185,129,0.28); }
+.showcase-status.store { background: rgba(59,130,246,0.14); color: #93c5fd; border: 1px solid rgba(59,130,246,0.28); }
+.showcase-status.ongoing { background: rgba(252,211,77,0.12); color: #fde68a; border: 1px solid rgba(252,211,77,0.3); }
+.showcase-status.preview { background: rgba(255,255,255,0.06); color: var(--fg2); border: 1px solid rgba(255,255,255,0.12); }
+.showcase-mock {
+  position: relative; z-index: 1;
+  display: grid; gap: 7px;
+}
+.showcase-mock-line {
+  height: 8px; border-radius: 999px;
+  background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.08);
+}
+.showcase-mock-line.short { width: 58%; }
+.showcase-mock-line.mid { width: 78%; }
+.showcase-mock-pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.showcase-mock-pills span {
+  font-size: 10px; color: var(--fg2); padding: 5px 8px; border-radius: 999px;
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.08);
+}
+.showcase-body { padding: 18px 20px 20px; display: grid; gap: 8px; }
+.showcase-type {
+  font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
+  color: #a5b4fc;
+}
+.showcase-title {
+  font-size: 18px; font-weight: 850; line-height: 1.2; letter-spacing: -0.02em;
+}
+.showcase-keywords {
+  font-size: 12px; color: var(--fg3); line-height: 1.5;
+}
+.showcase-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 6px; font-size: 12px; font-weight: 800; color: #c4b5fd;
+  transition: color var(--motion-fast), gap var(--motion-fast);
+}
+.showcase-card:hover .showcase-link { color: #e9d5ff; gap: 10px; }
+.showcase-preview--food {
+  background: radial-gradient(circle at 84% 18%, rgba(251,191,36,0.2), transparent 34%), linear-gradient(135deg, rgba(239,68,68,0.16), rgba(139,92,246,0.12));
+}
+.showcase-preview--app {
+  background: radial-gradient(circle at 84% 18%, rgba(34,211,238,0.22), transparent 34%), linear-gradient(135deg, rgba(59,130,246,0.18), rgba(139,92,246,0.12));
+}
+.showcase-preview--store {
+  background: radial-gradient(circle at 84% 18%, rgba(16,185,129,0.2), transparent 34%), linear-gradient(135deg, rgba(34,197,94,0.14), rgba(59,130,246,0.12));
+}
+.showcase-preview--form {
+  background: radial-gradient(circle at 84% 18%, rgba(34,211,238,0.2), transparent 34%), linear-gradient(135deg, rgba(14,165,233,0.16), rgba(168,85,247,0.1));
+}
+.showcase-preview--temple {
+  background: radial-gradient(circle at 84% 18%, rgba(251,191,36,0.22), transparent 34%), linear-gradient(135deg, rgba(245,158,11,0.14), rgba(139,92,246,0.1));
+}
+.showcase-preview--brand {
+  background: radial-gradient(circle at 84% 18%, rgba(244,114,182,0.18), transparent 34%), linear-gradient(135deg, rgba(244,114,182,0.13), rgba(59,130,246,0.1));
+}
+.showcase-preview--decor {
+  background: radial-gradient(circle at 84% 18%, rgba(168,85,247,0.2), transparent 34%), linear-gradient(135deg, rgba(139,92,246,0.14), rgba(34,211,238,0.1));
+}
+.showcase-preview--edu {
+  background: radial-gradient(circle at 84% 18%, rgba(96,165,250,0.2), transparent 34%), linear-gradient(135deg, rgba(37,99,235,0.16), rgba(139,92,246,0.1));
+}
+.showcase-cta-row {
+  position: relative; z-index: 1;
+  margin-top: 36px; display: flex; flex-wrap: wrap;
+  justify-content: center; gap: 12px;
+}
+.showcase-cta-row .btn-primary,
+.showcase-cta-row .btn-secondary { border-radius: 12px; padding: 14px 24px; font-size: 14px; }
+.stitch-services {
+  background:
+    radial-gradient(ellipse 50% 40% at 50% 0%, rgba(139,92,246,0.1), transparent 60%),
+    var(--bg2);
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.services-grid {
+  position: relative; z-index: 1;
+  max-width: 1080px; margin: 0 auto;
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px;
+}
+.service-card {
+  text-align: left; padding: 24px 22px; border-radius: 22px;
+  background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  transition: transform var(--motion-normal), border-color var(--motion-normal), box-shadow var(--motion-normal);
+}
+.service-card:hover {
+  transform: translateY(-6px); border-color: rgba(99,102,241,0.45);
+  box-shadow: 0 20px 48px rgba(99,102,241,0.18);
+}
+.service-card-icon {
+  width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center;
+  font-size: 24px; margin-bottom: 14px;
+  background: linear-gradient(135deg, rgba(139,92,246,0.35), rgba(99,102,241,0.2));
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.service-card--web .service-card-icon { background: linear-gradient(135deg, rgba(59,130,246,0.35), rgba(34,211,238,0.2)); }
+.service-card--ai .service-card-icon { background: linear-gradient(135deg, rgba(168,85,247,0.35), rgba(139,92,246,0.2)); }
+.service-card--wa .service-card-icon { background: linear-gradient(135deg, rgba(37,211,102,0.25), rgba(16,185,129,0.15)); }
+.service-card--app .service-card-icon { background: linear-gradient(135deg, rgba(251,191,36,0.25), rgba(244,114,182,0.2)); }
+.service-card h3 {
+  font-size: 18px; font-weight: 850; letter-spacing: -0.02em; margin-bottom: 8px;
+}
+.service-card p {
+  font-size: 14px; color: var(--fg2); line-height: 1.6; margin-bottom: 14px;
+}
+.service-tags {
+  display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px;
+}
+.service-tags span {
+  font-size: 10px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase;
+  padding: 5px 9px; border-radius: 999px;
+  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08);
+  color: var(--fg3);
+}
+.service-card-cta {
+  font-size: 13px; font-weight: 800; color: #a5b4fc;
+  background: none; border: none; padding: 0; cursor: pointer;
+}
+.service-card:hover .service-card-cta { color: #c4b5fd; }
+.services-cta-row {
+  margin-top: 32px; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;
+}
+.services-cta-row .btn-primary,
+.services-cta-row .btn-secondary { border-radius: 12px; padding: 14px 26px; font-size: 14px; }
+.daily-hub-tools {
+  position: relative; z-index: 1; max-width: 1080px; margin: 44px auto 0;
+  padding: 24px; border-radius: 24px;
+  background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+}
+.daily-hub-head {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 10px; margin-bottom: 18px;
+}
+.daily-hub-kicker {
+  font-size: 12px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #c4b5fd;
+}
+.daily-hub-updated { font-size: 12px; color: #86efac; font-weight: 700; }
+.daily-hub-open {
+  font-size: 13px; font-weight: 800; color: #a5b4fc; margin-left: auto;
+}
+.daily-hub-grid {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px;
+}
+.daily-hub-card {
+  padding: 16px; border-radius: 18px;
+  background: rgba(8,8,20,0.85); border: 1px solid rgba(255,255,255,0.08);
+}
+.daily-hub-card-top {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 12px; font-size: 13px; font-weight: 800;
+}
+.daily-hub-card-top a { font-size: 11px; color: #a5b4fc; }
+.hub-feed-list { display: grid; gap: 8px; }
+.hub-feed-item {
+  display: grid; gap: 4px; padding: 10px 12px; border-radius: 12px;
+  background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06);
+  transition: border-color 0.2s, background 0.2s;
+}
+.hub-feed-item:hover { border-color: rgba(99,102,241,0.4); background: rgba(99,102,241,0.08); }
+.hub-feed-item--hot { border-color: rgba(16,185,129,0.35); background: rgba(16,185,129,0.06); }
+.hub-feed-today {
+  display: inline-block; font-size: 9px; font-weight: 900; letter-spacing: 0.08em;
+  color: #86efac; margin-bottom: 4px;
+}
+.hub-feed-title { font-size: 12px; font-weight: 700; color: var(--fg2); line-height: 1.4; text-align: left; }
+.hub-feed-meta {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+  font-size: 10px; color: var(--fg3);
+}
+.hub-feed-badge {
+  padding: 2px 7px; border-radius: 999px; font-weight: 800; font-size: 9px;
+}
+.hub-feed-badge.trend-up { background: rgba(16,185,129,0.15); color: #86efac; }
+.hub-feed-badge.trend-down { background: rgba(239,68,68,0.15); color: #fca5a5; }
+.hub-feed-badge.trend-stable { background: rgba(251,191,36,0.14); color: #fde68a; }
+.hub-feed-proof { color: #67e8f9; font-weight: 800; }
+.hub-feed-empty { font-size: 12px; color: var(--fg3); }
+@media (max-width: 700px) {
+  .daily-hub-grid { grid-template-columns: 1fr; }
+  .daily-hub-open { margin-left: 0; width: 100%; }
+}
+.footer { padding: 40px 24px 32px; }
+.footer-grid { grid-template-columns: 1fr; text-align: center; gap: 16px; }
+.footer-col h4, .footer-logo-image { display: none; }
+.footer-col a, .footer-col button.footer-link { display: inline-block; margin: 0 10px 8px; }
+.footer-copy { text-align: center; }
+@media (max-width: 900px) {
+  .hero { min-height: auto; padding: 100px 20px 120px; }
+  .hero-content { grid-template-columns: 1fr; text-align: center; }
+  .hero-subtitle { margin-left: auto; margin-right: auto; }
+  .hero-buttons { justify-content: center; }
+  .hero-visual { order: 2; margin-top: 28px; min-height: 320px; }
+  .hero-copy { order: 1; }
+  .floating-chip.one { left: 4px; }
+  .floating-chip.two { right: 4px; }
+  .stitch-section { padding: 64px 20px; }
+  .stitch-section h2 { font-size: clamp(30px, 8vw, 44px); }
+  .stitch-tool-row { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .stitch-tool-row .stitch-tool:last-child { grid-column: 1 / -1; max-width: 200px; justify-self: center; }
+  .hero-tool-strip {
+    width: calc(100% - 32px); max-width: 100%;
+    flex-wrap: wrap; justify-content: center;
+    padding: 14px 16px; gap: 10px;
+  }
+  .stitch-join-panel { padding: 28px 20px; }
+  .showcase-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .showcase-cta-row { flex-direction: column; align-items: stretch; }
+  .showcase-cta-row .btn-primary,
+  .showcase-cta-row .btn-secondary { width: 100%; }
+}
+@media (max-width: 600px) {
+  .hero { padding: 96px 16px 108px; }
+  .stitch-section { padding: 56px 16px; }
+  .stitch-hero-img { width: min(260px, 78vw); }
+  .floating-chip { font-size: 10px; padding: 8px 11px; }
+  .floating-chip.three { display: none; }
+  .hero-tool-strip a,
+  .hero-tool-strip button { width: 34px; height: 34px; font-size: 16px; border-radius: 10px; }
+  .premium-keywords-track { font-size: 11px; gap: 32px; }
+  .showcase-preview { min-height: 132px; padding: 14px; }
+  .showcase-title { font-size: 16px; }
+  .showcase-body { padding: 16px; }
+  .stitch-join .waitlist-form { flex-direction: column; width: 100%; }
+  .stitch-join .waitlist-form input,
+  .stitch-join .waitlist-form button { width: 100%; }
+  .stitch-perk { min-width: 0; flex: 1 1 calc(50% - 8px); }
+  .stitch-perks { gap: 10px; }
+  .footer-col a, .footer-col button.footer-link { margin: 0 6px 8px; font-size: 13px; }
+}
+@media (max-width: 560px) {
+  .showcase-grid { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: 1fr; gap: 14px; }
+  .stitch-tool-row .stitch-tool:last-child { grid-column: auto; max-width: none; }
+}
+@media (max-width: 375px) {
+  .nav-contact { padding: 8px 14px; font-size: 12px; }
+  .stitch-section h2 { font-size: 28px; }
+  .hero-tool-strip { gap: 8px; padding: 12px; }
+}
+
+/* Focused landing page: show only AI news, learning, analytics, join, and about. */
+.knowledge-feed,
+.marquee-strip,
+.stats-bar,
+#services-legacy,
+#industries,
+#live-links,
+#projects,
+#proof,
+#why,
+#ahead,
+#process,
+#pricing,
+.explainer-bg,
+#faq,
+#cta,
+#contact-legacy,
+.mobile-sticky-cta {
+  display: none !important;
+}
 </style>
 </head>
 <body>
+<div class="welcome-overlay" id="welcome-overlay" role="dialog" aria-label="Welcome" aria-modal="true">
+  <img src="logo.jpg" alt="" class="welcome-logo" width="72" height="72"/>
+  <p class="welcome-kicker">Welcome to</p>
+  <h1 class="welcome-title"><span class="grad-text">AI Workflows</span></h1>
+  <p class="welcome-sub">Explore AI news, learning resources, and what AI Workflows is building for modern businesses.</p>
+  <p class="welcome-hint">Tap anywhere to enter</p>
+</div>
 <a class="skip-link" href="#main">Skip to content</a>
 <div class="ambient-particles" aria-hidden="true">
   <span></span><span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span>
 </div>
 
 <!-- ── Navbar ──────────────────────────────────────────────── -->
@@ -1233,101 +2303,438 @@ section { padding: var(--section-y) 40px; position: relative; }
     <div class="nav-logo-mark" style="display:none" aria-hidden="true">AI</div>
     <span>AI Workflows</span>
   </a>
-  <div class="nav-links">
-    <button class="nav-link" data-section="services" onclick="scrollToSection('services')">Services</button>
-    <button class="nav-link" data-section="industries" onclick="scrollToSection('industries')">Industries</button>
-    <button class="nav-link" data-section="live-links" onclick="scrollToSection('live-links')">Demos</button>
-    <button class="nav-link" data-section="projects" onclick="scrollToSection('projects')">Projects</button>
-    <button class="nav-link" data-section="process" onclick="scrollToSection('process')">Process</button>
-    <button class="nav-link" data-section="pricing" onclick="scrollToSection('pricing')">Pricing</button>
-    <button class="nav-link" data-section="faq" onclick="scrollToSection('faq')">FAQ</button>
-    <button class="nav-link" data-section="contact" onclick="scrollToSection('contact')">Contact</button>
-  </div>
-  <button class="nav-cta" onclick="scrollToSection('contact')">Book Free Demo</button>
-  <div class="nav-hamburger" id="hamburger" role="button" aria-label="Open navigation menu" aria-expanded="false" onclick="toggleMenu()">
-    <span></span><span></span><span></span>
-  </div>
+  <button class="nav-contact" type="button" onclick="scrollToSection('contact')">Contact Us</button>
 </nav>
-<div class="mobile-menu" id="mobile-menu">
-  <button class="mobile-link" data-section="services" onclick="scrollToSection('services');toggleMenu()">Services</button>
-  <button class="mobile-link" data-section="industries" onclick="scrollToSection('industries');toggleMenu()">Industries</button>
-  <button class="mobile-link" data-section="live-links" onclick="scrollToSection('live-links');toggleMenu()">Demos</button>
-  <button class="mobile-link" data-section="projects" onclick="scrollToSection('projects');toggleMenu()">Projects</button>
-  <button class="mobile-link" data-section="process" onclick="scrollToSection('process');toggleMenu()">Process</button>
-  <button class="mobile-link" data-section="pricing" onclick="scrollToSection('pricing');toggleMenu()">Pricing</button>
-  <button class="mobile-link" data-section="faq" onclick="scrollToSection('faq');toggleMenu()">FAQ</button>
-  <button class="mobile-link" data-section="contact" onclick="scrollToSection('contact');toggleMenu()">Contact</button>
-  <button class="btn-primary" style="margin-top:8px" onclick="scrollToSection('contact');toggleMenu()">Book Free Demo</button>
-</div>
 
 <main id="main">
 <!-- ── Hero ────────────────────────────────────────────────── -->
 <section class="hero" id="hero">
-  <div class="hero-bg"></div>
+  <div class="hero-bg">
+    <div class="hero-mesh"></div>
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-beams" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="hero-orb-float hero-orb-float--1"></div>
+    <div class="hero-orb-float hero-orb-float--2"></div>
+    <div class="hero-orb-float hero-orb-float--3"></div>
+  </div>
   <div class="hero-content">
     <div class="hero-copy">
-      <div class="hero-badge">
-        <div class="hero-badge-dot"></div>
-        Bihar & India's AI Business Partner
-      </div>
+      <p class="hero-kicker"><span class="hero-kicker-dot"></span> AI Hub · India</p>
       <h1 class="hero-title">
-        Smart Websites &<br/>
-        <span class="grad-text">AI Automation</span><br/>
-        for Growing Businesses
+        Welcome to <strong>AI Workflows</strong><br/>
+        Your <strong>AI Learning</strong> Hub
       </h1>
-      <p class="hero-subtitle">
-        We build premium websites, dashboards, WhatsApp automation, and AI workflows that help local businesses save time, manage customers, and grow faster — without complicated tech talk.
-      </p>
+      <p class="hero-subtitle">AI news, learning &amp; ideas — plus websites, chatbots, WhatsApp automation &amp; web apps.</p>
       <div class="hero-buttons">
-        <button class="btn-primary" onclick="scrollToSection('contact')">Book Free Demo</button>
-        <button class="btn-secondary" onclick="scrollToSection('live-links')">View Live Projects</button>
-        <button class="btn-whatsapp" onclick="openWhatsApp('Hi AI Workflows, I want to discuss my business requirement.')">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="#25d366" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          WhatsApp Us
-        </button>
-      </div>
-      <div class="hero-proof">
-        <div class="hero-proof-item"><strong>7 days</strong><span>Website launch</span></div>
-        <div class="hero-proof-item"><strong>24/7</strong><span>Automation support</span></div>
-        <div class="hero-proof-item"><strong>100%</strong><span>Custom built</span></div>
-      </div>
-      <div class="hero-trust">
-        <span>Restaurants</span>
-        <span>Cyber Cafés</span>
-        <span>Distributors</span>
-        <span>Clinics</span>
-        <span>Schools</span>
-        <span>Shops</span>
+        <button class="btn-primary" onclick="scrollToSection('join')">Join the Waitlist</button>
       </div>
     </div>
     <div class="hero-visual fade-in" style="transition-delay:0.2s">
-      <p class="hero-panel-label">What we build for you</p>
-      <div class="hero-card-grid">
-        <div class="hero-card">
-          <div class="hero-card-icon">🌐</div>
-          <div class="hero-card-title">Business Website</div>
-          <div class="hero-card-sub">Mobile-first, fast, professional</div>
-          <div class="hero-card-stat">Live in 7 days</div>
-        </div>
-        <div class="hero-card">
-          <div class="hero-card-icon">🤖</div>
-          <div class="hero-card-title">WhatsApp Bot</div>
-          <div class="hero-card-sub">Auto-replies 24×7</div>
-          <div class="hero-card-stat">Save 4 hrs/day</div>
-        </div>
-        <div class="hero-card">
-          <div class="hero-card-icon">📊</div>
-          <div class="hero-card-title">AI Dashboard</div>
-          <div class="hero-card-sub">Orders, customers, reports</div>
-          <div class="hero-card-stat">Real-time insights</div>
-        </div>
-        <div class="hero-card">
-          <div class="hero-card-icon">🚀</div>
-          <div class="hero-card-title">Custom Software</div>
-          <div class="hero-card-sub">Built around your daily workflow</div>
-          <div class="hero-card-stat">Workflow-ready</div>
+      <div class="stitch-ribbon"></div>
+      <div class="stitch-ribbon second"></div>
+      <div class="stitch-visual-ring"></div>
+      <img src="logo.jpg" alt="AI Workflows" class="stitch-hero-img" width="300" height="300"/>
+      <div class="floating-chip one">📡 AI News</div>
+      <div class="floating-chip two">📚 Learning</div>
+      <div class="floating-chip three">📊 Analytics</div>
+    </div>
+  </div>
+  <div class="hero-tool-strip" aria-label="Focused landing tools">
+    <a href="/learn/hub.html#news" title="AI News & Updates">📡</a>
+    <a href="/learn/hub.html#learning" title="Learning Uploads">📚</a>
+    <a href="/learn/hub.html#analytics" title="AI Analytics">📊</a>
+    <button type="button" title="Join AI Workflows" onclick="openWhatsApp('Hi AI Workflows, I want to join AI Workflows.')">🤝</button>
+    <button type="button" title="Our Services" onclick="scrollToSection('services')">🛠️</button>
+    <button type="button" title="Our Projects" onclick="scrollToSection('showcase')">🚀</button>
+    <button type="button" title="Contact Us" onclick="scrollToSection('contact')">📞</button>
+    <button type="button" title="About AI Workflows" onclick="scrollToSection('about')">✨</button>
+  </div>
+</section>
+
+<div class="premium-keywords" aria-hidden="true">
+  <div class="premium-keywords-track">
+    <span>Websites</span><span>AI Chatbots</span><span>WhatsApp</span><span>Web Apps</span><span>AI News</span><span>Learning</span><span>Live Projects</span>
+    <span>Websites</span><span>AI Chatbots</span><span>WhatsApp</span><span>Web Apps</span><span>AI News</span><span>Learning</span><span>Live Projects</span>
+  </div>
+</div>
+
+<!-- ── Tools (Stitch-style) ─────────────────────────────────── -->
+<section class="stitch-section stitch-tools" id="explore-hub">
+  <div class="stitch-tools-blob stitch-tools-blob--1" aria-hidden="true"></div>
+  <div class="stitch-tools-blob stitch-tools-blob--2" aria-hidden="true"></div>
+  <h2 class="fade-in">All the tools<br/><strong>you need</strong></h2>
+  <p class="stitch-lead fade-in">Services · AI News · Learning · Analytics · Join</p>
+  <div class="stitch-tool-row fade-in">
+    <a class="stitch-tool" href="/learn/hub.html#news">
+      <div class="stitch-tool-preview stitch-tool-preview--news"></div>
+      <span class="stitch-tool-icon">📡</span>
+      <span class="stitch-tool-name">AI News</span>
+    </a>
+    <a class="stitch-tool" href="/learn/hub.html#learning">
+      <div class="stitch-tool-preview stitch-tool-preview--learn"></div>
+      <span class="stitch-tool-icon">📚</span>
+      <span class="stitch-tool-name">Learning</span>
+    </a>
+    <a class="stitch-tool" href="/learn/hub.html#analytics">
+      <div class="stitch-tool-preview stitch-tool-preview--analytics"></div>
+      <span class="stitch-tool-icon">📊</span>
+      <span class="stitch-tool-name">Analytics</span>
+    </a>
+    <a class="stitch-tool" href="/learn/hub.html#ideas">
+      <div class="stitch-tool-preview stitch-tool-preview--web"></div>
+      <span class="stitch-tool-icon">🌐</span>
+      <span class="stitch-tool-name">Web Ideas</span>
+    </a>
+    <button class="stitch-tool" type="button" onclick="scrollToSection('services')">
+      <div class="stitch-tool-preview stitch-tool-preview--join"></div>
+      <span class="stitch-tool-icon">🛠️</span>
+      <span class="stitch-tool-name">Services</span>
+    </button>
+    <button class="stitch-tool" type="button" onclick="scrollToSection('showcase')">
+      <div class="stitch-tool-preview stitch-tool-preview--web"></div>
+      <span class="stitch-tool-icon">🚀</span>
+      <span class="stitch-tool-name">Our Work</span>
+    </button>
+    <button class="stitch-tool" type="button" onclick="scrollToSection('join')">
+      <div class="stitch-tool-preview stitch-tool-preview--join"></div>
+      <span class="stitch-tool-icon">🤝</span>
+      <span class="stitch-tool-name">Join Us</span>
+    </button>
+    <button class="stitch-tool" type="button" onclick="scrollToSection('contact')">
+      <div class="stitch-tool-preview stitch-tool-preview--join"></div>
+      <span class="stitch-tool-icon">📞</span>
+      <span class="stitch-tool-name">Contact</span>
+    </button>
+    <button class="stitch-tool" type="button" onclick="scrollToSection('about')">
+      <div class="stitch-tool-preview stitch-tool-preview--about"></div>
+      <span class="stitch-tool-icon">✨</span>
+      <span class="stitch-tool-name">About</span>
+    </button>
+  </div>
+
+  <div class="daily-hub-tools fade-in">
+    <div class="daily-hub-head">
+      <p class="daily-hub-kicker">Updated daily · 6 AM IST</p>
+      <p class="daily-hub-updated" id="hub-feed-updated">Loading…</p>
+      <a class="daily-hub-open" href="/learn/hub.html">Read full hub →</a>
+    </div>
+    <div class="daily-hub-grid">
+      <div class="daily-hub-card">
+        <div class="daily-hub-card-top"><span>📡 AI News</span><a href="/learn/hub.html#news">All →</a></div>
+        <div class="hub-feed-list" id="hub-feed-news"><p class="hub-feed-empty">Loading…</p></div>
+      </div>
+      <div class="daily-hub-card">
+        <div class="daily-hub-card-top"><span>📚 Learning</span><a href="/learn/hub.html#learning">All →</a></div>
+        <div class="hub-feed-list" id="hub-feed-learning"><p class="hub-feed-empty">Loading…</p></div>
+      </div>
+      <div class="daily-hub-card">
+        <div class="daily-hub-card-top"><span>📊 Analytics</span><a href="/learn/hub.html#analytics">All →</a></div>
+        <div class="hub-feed-list" id="hub-feed-analytics"><p class="hub-feed-empty">Loading…</p></div>
+      </div>
+      <div class="daily-hub-card">
+        <div class="daily-hub-card-top"><span>🌐 Web Ideas</span><a href="/learn/hub.html#ideas">All →</a></div>
+        <div class="hub-feed-list" id="hub-feed-ideas"><p class="hub-feed-empty">Loading…</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Project Showcase ─────────────────────────────────────── -->
+<section class="stitch-section stitch-showcase" id="showcase">
+  <div class="stitch-tools-blob stitch-tools-blob--1" aria-hidden="true"></div>
+  <div class="stitch-tools-blob stitch-tools-blob--2" aria-hidden="true"></div>
+  <h2 class="fade-in">Our <strong>work</strong></h2>
+  <p class="stitch-lead fade-in">Live demos · Real builds · Open &amp; explore</p>
+  <div class="showcase-grid fade-in">
+    <a class="showcase-card" href="https://mirch.ai-workflows.cloud/" target="_blank" rel="noopener">
+      <div class="showcase-preview showcase-preview--food">
+        <img class="showcase-shot" src="images/projects/mirch.jpg" alt="" loading="lazy" width="640" height="360" onerror="this.classList.add('is-missing')"/>
+        <div class="showcase-preview-overlay" aria-hidden="true"></div>
+        <div class="showcase-preview-content">
+          <div class="showcase-preview-top">
+            <span class="showcase-icon">🍽️</span>
+            <span class="showcase-status live">Live</span>
+          </div>
+          <div class="showcase-mock">
+            <div class="showcase-mock-line mid"></div>
+            <div class="showcase-mock-pills"><span>Menu</span><span>Orders</span><span>Booking</span></div>
+          </div>
         </div>
       </div>
+      <div class="showcase-body">
+        <div class="showcase-type">Restaurant</div>
+        <div class="showcase-title">Mirch Masala</div>
+        <div class="showcase-keywords">Website · Digital menu · WhatsApp orders</div>
+        <span class="showcase-link">Open demo →</span>
+      </div>
+    </a>
+    <a class="showcase-card" href="https://mirchapp.ai-workflows.cloud/" target="_blank" rel="noopener">
+      <div class="showcase-preview showcase-preview--app">
+        <img class="showcase-shot" src="images/projects/mirch-app.jpg" alt="" loading="lazy" width="640" height="360" onerror="this.classList.add('is-missing')"/>
+        <div class="showcase-preview-overlay" aria-hidden="true"></div>
+        <div class="showcase-preview-content">
+          <div class="showcase-preview-top">
+            <span class="showcase-icon">📱</span>
+            <span class="showcase-status live">Live</span>
+          </div>
+          <div class="showcase-mock">
+            <div class="showcase-mock-line"></div>
+            <div class="showcase-mock-line short"></div>
+            <div class="showcase-mock-pills"><span>Dashboard</span><span>Kitchen</span><span>Orders</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="showcase-body">
+        <div class="showcase-type">Web App</div>
+        <div class="showcase-title">Mirch App Demo</div>
+        <div class="showcase-keywords">Owner panel · Live orders · Kitchen view</div>
+        <span class="showcase-link">Open demo →</span>
+      </div>
+    </a>
+    <a class="showcase-card" href="https://play.google.com/store/apps/details?id=com.mirchapp" target="_blank" rel="noopener">
+      <div class="showcase-preview showcase-preview--store">
+        <img class="showcase-shot" src="images/projects/mirch-playstore.jpg" alt="" loading="lazy" width="640" height="360" onerror="this.classList.add('is-missing')"/>
+        <div class="showcase-preview-overlay" aria-hidden="true"></div>
+        <div class="showcase-preview-content">
+          <div class="showcase-preview-top">
+            <span class="showcase-icon">▶️</span>
+            <span class="showcase-status store">Play Store</span>
+          </div>
+          <div class="showcase-mock">
+            <div class="showcase-mock-line mid"></div>
+            <div class="showcase-mock-pills"><span>Android</span><span>Published</span><span>Mirch</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="showcase-body">
+        <div class="showcase-type">Mobile App</div>
+        <div class="showcase-title">Mirch on Play Store</div>
+        <div class="showcase-keywords">Real app · Restaurant ordering · India</div>
+        <span class="showcase-link">View listing →</span>
+      </div>
+    </a>
+    <a class="showcase-card" href="https://formfiller.ai-workflows.cloud/" target="_blank" rel="noopener">
+      <div class="showcase-preview showcase-preview--form">
+        <img class="showcase-shot" src="images/projects/formfiller.jpg" alt="" loading="lazy" width="640" height="360" onerror="this.classList.add('is-missing')"/>
+        <div class="showcase-preview-overlay" aria-hidden="true"></div>
+        <div class="showcase-preview-content">
+          <div class="showcase-preview-top">
+            <span class="showcase-icon">🤖</span>
+            <span class="showcase-status ongoing">Ongoing</span>
+          </div>
+          <div class="showcase-mock">
+            <div class="showcase-mock-line"></div>
+            <div class="showcase-mock-pills"><span>OCR</span><span>Auto-fill</span><span>Cyber Cafe</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="showcase-body">
+        <div class="showcase-type">AI Tool</div>
+        <div class="showcase-title">AI Form Filler</div>
+        <div class="showcase-keywords">Scan ID · Fill forms · Save time</div>
+        <span class="showcase-link">Open preview →</span>
+      </div>
+    </a>
+    <a class="showcase-card" href="https://bhuvanbhaskardham.ai-workflows.cloud/" target="_blank" rel="noopener">
+      <div class="showcase-preview showcase-preview--temple">
+        <img class="showcase-shot" src="images/projects/bhuvan.jpg" alt="" loading="lazy" width="640" height="360" onerror="this.classList.add('is-missing')"/>
+        <div class="showcase-preview-overlay" aria-hidden="true"></div>
+        <div class="showcase-preview-content">
+          <div class="showcase-preview-top">
+            <span class="showcase-icon">🛕</span>
+            <span class="showcase-status live">Live</span>
+          </div>
+          <div class="showcase-mock">
+            <div class="showcase-mock-line mid"></div>
+            <div class="showcase-mock-pills"><span>Events</span><span>Gallery</span><span>Contact</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="showcase-body">
+        <div class="showcase-type">Website</div>
+        <div class="showcase-title">Bhuvan Bhaskar Dham</div>
+        <div class="showcase-keywords">Spiritual site · Events · Mobile-first</div>
+        <span class="showcase-link">Open demo →</span>
+      </div>
+    </a>
+    <a class="showcase-card" href="https://mast-magan.onrender.com/" target="_blank" rel="noopener">
+      <div class="showcase-preview showcase-preview--brand">
+        <img class="showcase-shot" src="images/projects/mast-magan.jpg" alt="" loading="lazy" width="640" height="360" onerror="this.classList.add('is-missing')"/>
+        <div class="showcase-preview-overlay" aria-hidden="true"></div>
+        <div class="showcase-preview-content">
+          <div class="showcase-preview-top">
+            <span class="showcase-icon">✨</span>
+            <span class="showcase-status live">Live</span>
+          </div>
+          <div class="showcase-mock">
+            <div class="showcase-mock-line"></div>
+            <div class="showcase-mock-pills"><span>Brand</span><span>Landing</span><span>CTA</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="showcase-body">
+        <div class="showcase-type">Website</div>
+        <div class="showcase-title">Mast Magan</div>
+        <div class="showcase-keywords">Business brand · Lead capture · Mobile</div>
+        <span class="showcase-link">Open demo →</span>
+      </div>
+    </a>
+    <a class="showcase-card" href="https://galaxy-decor.onrender.com/" target="_blank" rel="noopener">
+      <div class="showcase-preview showcase-preview--decor">
+        <img class="showcase-shot" src="images/projects/galaxy-decor.jpg" alt="" loading="lazy" width="640" height="360" onerror="this.classList.add('is-missing')"/>
+        <div class="showcase-preview-overlay" aria-hidden="true"></div>
+        <div class="showcase-preview-content">
+          <div class="showcase-preview-top">
+            <span class="showcase-icon">🏠</span>
+            <span class="showcase-status preview">Preview</span>
+          </div>
+          <div class="showcase-mock">
+            <div class="showcase-mock-line mid"></div>
+            <div class="showcase-mock-pills"><span>Gallery</span><span>Services</span><span>Leads</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="showcase-body">
+        <div class="showcase-type">Interior</div>
+        <div class="showcase-title">Galaxy Decor</div>
+        <div class="showcase-keywords">Portfolio · Services · Enquiries</div>
+        <span class="showcase-link">Open preview →</span>
+      </div>
+    </a>
+    <a class="showcase-card" href="https://radiant-classes.onrender.com/" target="_blank" rel="noopener">
+      <div class="showcase-preview showcase-preview--edu">
+        <img class="showcase-shot" src="images/projects/radiant-classes.jpg" alt="" loading="lazy" width="640" height="360" onerror="this.classList.add('is-missing')"/>
+        <div class="showcase-preview-overlay" aria-hidden="true"></div>
+        <div class="showcase-preview-content">
+          <div class="showcase-preview-top">
+            <span class="showcase-icon">🎓</span>
+            <span class="showcase-status preview">Preview</span>
+          </div>
+          <div class="showcase-mock">
+            <div class="showcase-mock-line"></div>
+            <div class="showcase-mock-pills"><span>Batches</span><span>Admissions</span><span>Contact</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="showcase-body">
+        <div class="showcase-type">Education</div>
+        <div class="showcase-title">Radiant Classes</div>
+        <div class="showcase-keywords">Coaching site · Admissions · Mobile</div>
+        <span class="showcase-link">Open preview →</span>
+      </div>
+    </a>
+  </div>
+  <div class="showcase-cta-row fade-in">
+    <button class="btn-primary" type="button" onclick="openWhatsApp('Hi AI Workflows, I want a website or app like your demos.')">Build Like This</button>
+    <button class="btn-secondary" type="button" onclick="scrollToSection('join')">Join Waitlist</button>
+  </div>
+</section>
+
+<!-- ── Services ─────────────────────────────────────────────── -->
+<section class="stitch-section stitch-services" id="services">
+  <div class="stitch-tools-blob stitch-tools-blob--1" aria-hidden="true"></div>
+  <div class="stitch-tools-blob stitch-tools-blob--2" aria-hidden="true"></div>
+  <h2 class="fade-in">What we <strong>build</strong></h2>
+  <p class="stitch-lead fade-in">Websites · AI Chatbots · WhatsApp · Web Apps</p>
+  <div class="services-grid fade-in">
+    <article class="service-card service-card--web">
+      <div class="service-card-icon">🌐</div>
+      <h3>Website Building</h3>
+      <p>Premium business sites — mobile-first, fast, SEO-ready, built for leads.</p>
+      <div class="service-tags"><span>Landing</span><span>SEO</span><span>Mobile</span></div>
+      <button class="service-card-cta" type="button" onclick="openWhatsApp('Hi AI Workflows, I need a business website built.')">Get a quote →</button>
+    </article>
+    <article class="service-card service-card--ai">
+      <div class="service-card-icon">🤖</div>
+      <h3>AI Chatbots</h3>
+      <p>Smart assistants for FAQs, lead capture, and support — connected to your workflow.</p>
+      <div class="service-tags"><span>AI</span><span>Leads</span><span>24/7</span></div>
+      <button class="service-card-cta" type="button" onclick="openWhatsApp('Hi AI Workflows, I want an AI chatbot for my business.')">Get a quote →</button>
+    </article>
+    <article class="service-card service-card--wa">
+      <div class="service-card-icon">💬</div>
+      <h3>WhatsApp Automation</h3>
+      <p>Orders, updates, menus, bookings &amp; auto-replies — where your customers already are.</p>
+      <div class="service-tags"><span>Orders</span><span>Menu</span><span>Booking</span></div>
+      <button class="service-card-cta" type="button" onclick="openWhatsApp('Hi AI Workflows, I need WhatsApp automation for my business.')">Get a quote →</button>
+    </article>
+    <article class="service-card service-card--app">
+      <div class="service-card-icon">📱</div>
+      <h3>Web App Design</h3>
+      <p>Owner dashboards, order panels, kitchen views &amp; custom apps — demo before you buy.</p>
+      <div class="service-tags"><span>Dashboard</span><span>Web App</span><span>Live Demo</span></div>
+      <button class="service-card-cta" type="button" onclick="openWhatsApp('Hi AI Workflows, I need a web app or dashboard designed.')">Get a quote →</button>
+    </article>
+  </div>
+  <div class="services-cta-row fade-in">
+    <button class="btn-primary" type="button" onclick="scrollToSection('showcase')">See Live Demos</button>
+    <button class="btn-secondary" type="button" onclick="openWhatsApp('Hi AI Workflows, I want to discuss a project.')">Talk on WhatsApp</button>
+  </div>
+</section>
+
+<!-- ── Join Waitlist ────────────────────────────────────────── -->
+<section class="stitch-section stitch-join" id="join">
+  <div class="stitch-join-sparkle stitch-join-sparkle--1" aria-hidden="true"></div>
+  <div class="stitch-join-sparkle stitch-join-sparkle--2" aria-hidden="true"></div>
+  <div class="stitch-join-panel">
+    <h2 class="fade-in">Join the <strong>waitlist</strong></h2>
+    <p class="stitch-lead fade-in">Early access to AI updates &amp; learning.</p>
+    <div class="waitlist-form fade-in">
+      <input id="waitlist-email" type="email" placeholder="Your Email" aria-label="Your Email"/>
+      <button type="button" onclick="joinWaitlist()">Join</button>
+    </div>
+    <div class="stitch-perks fade-in">
+      <div class="stitch-perk"><strong>Early Access</strong><span>First updates</span></div>
+      <div class="stitch-perk"><strong>New Learning</strong><span>Fresh uploads</span></div>
+      <div class="stitch-perk"><strong>AI Insights</strong><span>Weekly drops</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Contact ──────────────────────────────────────────────── -->
+<section class="stitch-section stitch-contact" id="contact">
+  <div class="stitch-tools-blob stitch-tools-blob--1" aria-hidden="true"></div>
+  <div class="stitch-tools-blob stitch-tools-blob--2" aria-hidden="true"></div>
+  <h2 class="fade-in">Get in <strong>touch</strong></h2>
+  <p class="stitch-lead fade-in">WhatsApp · Phone · Email · Bihar, India</p>
+  <div class="stitch-contact-panel fade-in">
+    <div class="stitch-contact-grid">
+      <div class="stitch-contact-item">
+        <div class="stitch-contact-item-icon">📞</div>
+        <div>
+          <div class="stitch-contact-item-label">Phone / WhatsApp</div>
+          <div class="stitch-contact-item-value">
+            <a href="tel:+917999614511">+91 79996 14511</a>
+          </div>
+        </div>
+      </div>
+      <div class="stitch-contact-item">
+        <div class="stitch-contact-item-icon">✉️</div>
+        <div>
+          <div class="stitch-contact-item-label">Email</div>
+          <div class="stitch-contact-item-value">
+            <a href="mailto:aiworkflows007@gmail.com">aiworkflows007@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="stitch-contact-item">
+        <div class="stitch-contact-item-icon">💬</div>
+        <div>
+          <div class="stitch-contact-item-label">Fastest reply</div>
+          <div class="stitch-contact-item-value">Message us on WhatsApp</div>
+        </div>
+      </div>
+      <div class="stitch-contact-item">
+        <div class="stitch-contact-item-icon">📍</div>
+        <div>
+          <div class="stitch-contact-item-label">Location</div>
+          <div class="stitch-contact-item-value">Bihar, India</div>
+        </div>
+      </div>
+    </div>
+    <div class="stitch-contact-actions">
+      <button class="btn-whatsapp" type="button" onclick="openWhatsApp('Hi AI Workflows, I want to discuss a project.')">Message on WhatsApp</button>
+      <button class="btn-primary" type="button" onclick="openWhatsApp('Hi AI Workflows, I want to book a free demo.')">Book Free Demo</button>
     </div>
   </div>
 </section>
@@ -1361,7 +2768,7 @@ section { padding: var(--section-y) 40px; position: relative; }
 </div>
 
 <!-- ── Services ────────────────────────────────────────────── -->
-<section id="services" class="services-bg">
+<section id="services-legacy" class="services-bg">
   <div class="section-inner">
     <div class="section-header fade-in">
       <div class="section-tag">What We Do</div>
@@ -2084,52 +3491,14 @@ section { padding: var(--section-y) 40px; position: relative; }
   </div>
 </section>
 
-<!-- ── Our Team ─────────────────────────────────────────────── -->
-<section id="team" class="team-bg">
-  <div class="section-inner">
-    <div class="section-header fade-in" style="text-align:center;margin:0 auto 60px;">
-      <div class="section-tag">Meet The Team</div>
-      <h2 class="section-title">A Small Team Building<br/><span class="grad-text">Practical AI Systems</span></h2>
-      <p class="section-sub" style="margin:0 auto">A focused team for product thinking, automation, design, operations, and delivery.</p>
-    </div>
-    <div class="team-grid">
-      <div class="team-card fade-in">
-        <div class="team-avatar">🧑‍💼</div>
-        <div class="team-name">Ashok</div>
-        <div class="team-title">Product / Backend / Decision Making</div>
-        <div class="team-desc">
-          <div class="team-exp">Owns project direction, backend logic, workflow planning, and final delivery decisions.</div>
-          <div class="service-tags"><span class="service-tag">Product</span><span class="service-tag">Backend</span><span class="service-tag">AI</span></div>
-        </div>
-      </div>
-      <div class="team-card fade-in" style="transition-delay:0.1s">
-        <div class="team-avatar">👨‍💻</div>
-        <div class="team-name">Anubhav</div>
-        <div class="team-title">Operations / QA / Documentation</div>
-        <div class="team-desc">
-          <div class="team-exp">Helps keep workflows clear, checks real-use cases, and supports delivery documentation.</div>
-          <div class="service-tags"><span class="service-tag">QA</span><span class="service-tag">Ops</span><span class="service-tag">Docs</span></div>
-        </div>
-      </div>
-      <div class="team-card fade-in" style="transition-delay:0.15s">
-        <div class="team-avatar">📱</div>
-        <div class="team-name">Anmol</div>
-        <div class="team-title">AI Tools / Automation / Social Media</div>
-        <div class="team-desc">
-          <div class="team-exp">Supports AI tool workflows, social promotion, and practical business content.</div>
-          <div class="service-tags"><span class="service-tag">AI Tools</span><span class="service-tag">Content</span><span class="service-tag">Automation</span></div>
-        </div>
-      </div>
-      <div class="team-card fade-in" style="transition-delay:0.2s">
-        <div class="team-avatar">🎨</div>
-        <div class="team-name">Kamal</div>
-        <div class="team-title">UI/UX / Creative / Branding</div>
-        <div class="team-desc">
-          <div class="team-exp">Shapes polished user interfaces, brand visuals, and client-facing presentation.</div>
-          <div class="service-tags"><span class="service-tag">UI/UX</span><span class="service-tag">Brand</span><span class="service-tag">Creative</span></div>
-        </div>
-      </div>
-    </div>
+<!-- ── About Us ─────────────────────────────────────────────── -->
+<section id="about" class="stitch-section stitch-about">
+  <h2 class="fade-in">About <strong>AI Workflows</strong></h2>
+  <p class="fade-in">We share AI news, learning uploads, and practical web &amp; analytics ideas — built in India for curious builders and businesses.</p>
+  <div class="stitch-about-badges fade-in">
+    <span class="stitch-about-badge"><em>🇮🇳</em> Made in India</span>
+    <span class="stitch-about-badge"><em>🤖</em> AI First</span>
+    <span class="stitch-about-badge"><em>🚀</em> Builders Hub</span>
   </div>
 </section>
 
@@ -2296,8 +3665,8 @@ section { padding: var(--section-y) 40px; position: relative; }
   </div>
 </section>
 
-<!-- ── Contact ───────────────────────────────────────────────── -->
-<section id="contact">
+<!-- ── Contact (legacy) ─────────────────────────────────────── -->
+<section id="contact-legacy">
   <div class="section-inner">
     <div class="section-header fade-in">
       <div class="section-tag">Contact</div>
@@ -2410,47 +3779,30 @@ section { padding: var(--section-y) 40px; position: relative; }
 
 </main>
 
-<!-- AdSense: uncomment after Google AdSense approval -->
-<!-- <div class="ad-slot" id="adsense-footer" aria-label="Advertisement"></div> -->
+<div class="ad-slot" id="adsense-footer" aria-label="Advertisement" hidden></div>
 
 <!-- ── Footer ─────────────────────────────────────────────────── -->
 <footer class="footer">
   <div class="footer-grid">
     <div class="footer-col">
-      <div class="footer-logo">
-        <img src="logo.jpg" alt="AI Workflows" class="footer-logo-image" width="240" height="80" loading="lazy"/>
-      </div>
-      <p class="footer-copy" style="text-align:left;margin-top:12px">
-        Smart websites, WhatsApp automation, AI dashboards, and custom business software for Indian SMBs.
-      </p>
-    </div>
-    <div class="footer-col">
-      <h4>Explore</h4>
-      <button class="footer-link" onclick="scrollToSection('services')">Services</button>
-      <button class="footer-link" onclick="scrollToSection('live-links')">Live Demos</button>
-      <button class="footer-link" onclick="scrollToSection('pricing')">Pricing</button>
-      <button class="footer-link" onclick="scrollToSection('faq')">FAQ</button>
-    </div>
-    <div class="footer-col">
-      <h4>Industries</h4>
-      <button class="footer-link" onclick="scrollToSection('industries')">Restaurants</button>
-      <button class="footer-link" onclick="scrollToSection('industries')">Cyber Cafés</button>
-      <button class="footer-link" onclick="scrollToSection('industries')">Distributors</button>
-      <button class="footer-link" onclick="scrollToSection('industries')">Local Shops</button>
-    </div>
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <a href="https://wa.me/917999614511" target="_blank" rel="noopener">WhatsApp</a>
-      <a href="mailto:aiworkflows007@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/company/112720692/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="privacy.html">Privacy Policy</a>
+      <a href="/learn/hub.html#news">AI News</a>
+      <a href="/learn/hub.html#learning">Learning</a>
+      <button class="footer-link" type="button" onclick="scrollToSection('showcase')">Projects</button>
+      <button class="footer-link" type="button" onclick="scrollToSection('services')">Services</button>
+      <button class="footer-link" type="button" onclick="scrollToSection('contact')">Contact</button>
+      <button class="footer-link" type="button" onclick="scrollToSection('join')">Join</button>
+      <a href="privacy.html">Privacy</a>
     </div>
   </div>
+  <div class="footer-contact">
+    <a href="tel:+917999614511">+91 79996 14511</a>
+    <span class="footer-contact-sep" aria-hidden="true">·</span>
+    <a href="mailto:aiworkflows007@gmail.com">aiworkflows007@gmail.com</a>
+    <span class="footer-contact-sep" aria-hidden="true">·</span>
+    <a href="https://wa.me/917999614511" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
   <div class="footer-bottom">
-    <p class="footer-copy">
-      Bihar, India · +91 79996 14511 · Founded by Ashok<br/>
-      © 2026 AI Workflows. All rights reserved.
-    </p>
+    <p class="footer-copy">© 2026 AI Workflows · Bihar, India</p>
   </div>
 </footer>
 
@@ -2559,7 +3911,31 @@ const countObserver = new IntersectionObserver((entries) => {
 countEls.forEach(el => countObserver.observe(el));
 
 // ── Active section indicator ──────────────────────────────────
-const sectionIds = ['services', 'industries', 'live-links', 'projects', 'proof', 'process', 'team', 'pricing', 'faq', 'contact'];
+const sectionIds = ['explore-hub', 'showcase', 'services', 'join', 'about'];
+
+function initWelcomeOverlay() {
+  const overlay = document.getElementById('welcome-overlay');
+  if (!overlay) return;
+  const forceWelcome = new URLSearchParams(location.search).get('welcome') === '1';
+  if (!forceWelcome && sessionStorage.getItem('aw_welcome_seen')) {
+    overlay.remove();
+    return;
+  }
+  document.body.classList.add('welcome-active');
+  const dismiss = () => {
+    overlay.classList.add('hide');
+    document.body.classList.remove('welcome-active');
+    if (!forceWelcome) sessionStorage.setItem('aw_welcome_seen', '1');
+    window.trackMarketingEvent?.('welcome_dismissed', { location: 'landing' });
+    setTimeout(() => overlay.remove(), 900);
+  };
+  overlay.addEventListener('click', dismiss);
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') dismiss();
+  }, { once: true });
+  setTimeout(dismiss, 3400);
+}
+initWelcomeOverlay();
 
 document.querySelectorAll('.faq-q').forEach(btn => {
   btn.addEventListener('click', () => {
@@ -2594,6 +3970,11 @@ sectionIds.forEach(id => {
 function handleSubmit(e) {
   e.preventDefault();
   const btn = e.target;
+  window.trackMarketingEvent?.('generate_lead', {
+    method: 'whatsapp_form',
+    business: document.getElementById('lead-business')?.value || '',
+    budget: document.getElementById('lead-budget')?.value || ''
+  });
   const name = document.getElementById('lead-name')?.value.trim() || 'Not provided';
   const phone = document.getElementById('lead-phone')?.value.trim() || 'Not provided';
   const city = document.getElementById('lead-city')?.value.trim() || 'Not provided';
@@ -2611,7 +3992,14 @@ function handleSubmit(e) {
 }
 
 function openWhatsApp(message) {
+  window.trackMarketingEvent?.('contact_whatsapp', { channel: 'whatsapp' });
   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, '_blank');
+}
+
+function joinWaitlist() {
+  const email = document.getElementById('waitlist-email')?.value.trim() || 'Not provided';
+  window.trackMarketingEvent?.('join_waitlist', { source: 'landing', has_email: email !== 'Not provided' });
+  openWhatsApp(`Hi AI Workflows, I want to join the AI Workflows waitlist.%0AEmail: ${email}`);
 }
 
 // ── Navbar shadow on scroll ───────────────────────────────────

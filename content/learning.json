@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "AI Workflows Daily Learning",
+    "updatedAt": "2026-06-06T14:14:37+05:30",
+    "refreshNote": "One precise lesson every morning — 2 min read."
+  },
+  "items": [
+    {
+      "id": "daily-2026-06-06-learning",
+      "title": "Today: Proof on every claim",
+      "summary": "Visitors trust dates, sources, and live demos — not adjectives.",
+      "type": "Daily Tip",
+      "format": "Micro-lesson",
+      "level": "Beginner",
+      "date": "2026-06-06",
+      "publishedAt": "2026-06-06T14:14:36+05:30",
+      "readMinutes": 2,
+      "topics": [
+        "Daily",
+        "Action"
+      ],
+      "steps": [
+        "Link to live demo or screenshot",
+        "Show updated date/time",
+        "Name the source"
+      ],
+      "proof": "Published 6 AM IST on ai-workflows.cloud/learn/hub.html",
+      "source": "AI Workflows Learning",
+      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#learning",
+      "body": "Do this today: add 'Last updated' to one section."
+    },
+    {
+      "id": "daily-2026-06-06-json-feed",
+      "title": "Daily Learning Drop: Update JSON in 5 Minutes",
+      "summary": "Add one lesson to content/learning.json — precise title, 3 bullets, one action step.",
+      "type": "Daily Tip",
+      "format": "Micro-lesson",
+      "level": "Beginner",
+      "date": "2026-06-06",
+      "publishedAt": "2026-06-06T07:00:00+05:30",
+      "readMinutes": 2,
+      "topics": [
+        "Content",
+        "Hub",
+        "Daily"
+      ],
+      "steps": [
+        "Copy yesterday's item block in learning.json",
+        "Change id, title, date, publishedAt to today",
+        "Write one problem → one fix → one action in body"
+      ],
+      "proof": "Feeds /learn/hub.html#learning automatically after deploy",
+      "source": "AI Workflows hub",
+      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#learning",
+      "body": "Keep lessons under 120 words. End with: 'Do this today: …' Readers return when each drop is actionable, not vague."
+    },
+    {
+      "id": "daily-2026-06-05-waitlist-cta",
+      "title": "One CTA Per Page Rule",
+      "summary": "Landing pages convert better with a single primary action — waitlist OR WhatsApp, not five buttons.",
+      "type": "Daily Tip",
+      "format": "Micro-lesson",
+      "level": "Beginner",
+      "date": "2026-06-05",
+      "publishedAt": "2026-06-05T07:00:00+05:30",
+      "readMinutes": 2,
+      "topics": [
+        "Landing",
+        "Conversion"
+      ],
+      "steps": [
+        "Pick one primary CTA above the fold",
+        "Move secondary links to footer or lower sections",
+        "Measure clicks for 7 days before adding more CTAs"
+      ],
+      "proof": "Stitch-style ai-workflows.cloud homepage uses single waitlist CTA",
+      "source": "AI Workflows landing",
+      "sourceUrl": "https://ai-workflows.cloud/",
+      "body": "Extra buttons create decision fatigue. One bold action + proof section + showcase builds trust without noise."
+    },
+    {
+      "id": "website-checklist",
+      "title": "Business Website Launch Checklist",
+      "summary": "Pages, contact flow, mobile checks, and SEO basics before you go live.",
+      "type": "Checklist",
+      "format": "Guide",
+      "level": "Beginner",
+      "date": "2026-05-30",
+      "publishedAt": "2026-05-30T08:00:00+05:30",
+      "readMinutes": 6,
+      "topics": [
+        "Website",
+        "SEO",
+        "Launch"
+      ],
+      "steps": [
+        "Homepage offer + one CTA",
+        "Contact / WhatsApp works on mobile",
+        "Privacy + sitemap + fast load"
+      ],
+      "proof": "Checklist used on Mast Magan & Galaxy Decor launches",
+      "source": "AI Workflows launch process",
+      "sourceUrl": "https://ai-workflows.cloud/#showcase",
+      "body": "Cover homepage offer, services, contact/WhatsApp, about, privacy policy, sitemap, fast mobile layout, and one clear call-to-action above the fold."
+    },
+    {
+      "id": "dashboard-metrics",
+      "title": "Owner Dashboard Metrics 101",
+      "summary": "What to show on a simple dashboard so owners run the business from one screen.",
+      "type": "Tutorial",
+      "format": "Article",
+      "level": "Intermediate",
+      "date": "2026-05-18",
+      "publishedAt": "2026-05-18T09:00:00+05:30",
+      "readMinutes": 5,
+      "topics": [
+        "Dashboard",
+        "Analytics"
+      ],
+      "steps": [
+        "Show today's orders/leads first",
+        "Add pending tasks staff must clear",
+        "Weekly trend — not 20 charts on day one"
+      ],
+      "proof": "Mirch owner panel pattern",
+      "source": "Mirch App Demo",
+      "sourceUrl": "https://mirchapp.ai-workflows.cloud/",
+      "body": "Start with today's orders/leads, pending tasks, revenue snapshot, and staff activity. Add trends weekly."
+    }
+  ]
+}

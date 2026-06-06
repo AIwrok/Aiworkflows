@@ -1,0 +1,33 @@
+name: Validate Website
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check required site files
+        run: |
+          set -e
+          for file in index.html logo.jpg privacy.html robots.txt sitemap.xml ads.txt; do
+            if [ ! -f "$file" ]; then
+              echo "Missing required file: $file"
+              exit 1
+            fi
+          done
+          echo "All required files present."
+
+      - name: Basic HTML checks
+        run: |
+          set -e
+          grep -q '<title>' index.html
+          grep -q 'application/ld+json' index.html
+          grep -q 'canonical' index.html
+          echo "index.html passes basic SEO checks."

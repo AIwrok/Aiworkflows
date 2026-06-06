@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Learning Center — Guides, Tutorials & Resources | AI Workflows</title>
+<meta name="description" content="Free learning resources on websites, WhatsApp automation, dashboards, and AI tools for business teams."/>
+<link rel="canonical" href="https://ai-workflows.cloud/learn/"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&display=swap"/>
+<link rel="stylesheet" href="/learn/learn.css"/>
+</head>
+<body>
+<header class="learn-nav">
+  <a class="home-link" href="/">← AI Workflows</a>
+  <nav class="tabs" aria-label="Learn sections">
+    <a class="tab" href="/learn/hub.html#news">AI News</a>
+    <a class="tab" href="/learn/hub.html">Daily Hub</a>
+    <a class="tab active" href="/learn/">Learning</a>
+    <a class="tab" href="/learn/hub.html#analytics">Analytics</a>
+    <a class="tab" href="/learn/hub.html#ideas">Web Ideas</a>
+  </nav>
+</header>
+<section class="learn-hero">
+  <div class="eyebrow">Learning Library</div>
+  <h1>Guides, Tutorials & <span class="grad-text">Uploads</span></h1>
+  <p>Step-by-step learning for websites, automation, dashboards, and AI workflows. New uploads added regularly.</p>
+</section>
+<main class="learn-main">
+  <div class="learn-grid" id="learning-grid">Loading resources…</div>
+</main>
+<script src="/learn/learn.js"></script>
+<script>
+loadLearnData("/content/learning.json")
+  .then(function (data) { renderCards(data.items || [], document.getElementById("learning-grid"), { tagKey: "topics" }); })
+  .catch(function () {
+    document.getElementById("learning-grid").innerHTML = '<p class="learn-empty">Could not load resources. Please try again later.</p>';
+  });
+</script>
+</body>
+</html>
