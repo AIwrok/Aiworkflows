@@ -31,6 +31,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# temp extraction files
+/pdf_pages
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

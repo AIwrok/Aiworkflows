@@ -3,10 +3,27 @@ export interface IMenuItem {
     url: string;
 }
 
+export interface IPhoneScreenItem {
+    icon: string;
+    text: string;
+    status?: string;
+    incoming?: boolean;
+}
+
+export interface IPhoneScreen {
+    id: string;
+    label: string;
+    title: string;
+    subtitle: string;
+    accent: string;
+    items: IPhoneScreenItem[];
+    footer?: string;
+}
+
 export interface IBenefit {
     title: string;
     description: string;
-    imageSrc: string;
+    phoneScreen: IPhoneScreen;
     bullets: IBenefitBullet[]
 }
 
@@ -14,6 +31,62 @@ export interface IBenefitBullet {
     title: string;
     description: string;
     icon: JSX.Element;
+}
+
+export interface IPortfolioItem {
+    title: string;
+    description: string;
+    tags: string[];
+    highlights: string[];
+    phoneScreen: IPhoneScreen;
+    featured?: boolean;
+    demoUrl?: string;
+    videoUrl?: string;
+}
+
+export interface ITeamMember {
+    role: string;
+    title: string;
+    description: string;
+    icon: JSX.Element;
+}
+
+export interface IBlogPostMeta {
+    slug: string;
+    title: string;
+    description: string;
+    date: string;
+    category: string;
+    tags: string[];
+    author: string;
+    readingTime: string;
+    videoUrl?: string;
+}
+
+export interface ITool {
+    slug: string;
+    title: string;
+    description: string;
+    category: string;
+    tags: string[];
+    seoContent: string;
+}
+
+export interface IToolHubItem {
+    id: string;
+    title: string;
+    icon: string;
+    description: string;
+    link?: string;
+}
+
+export interface IToolHub {
+    id: string;
+    name: string;
+    tagline: string;
+    description: string;
+    accent: string;
+    tools: IToolHubItem[];
 }
 
 export interface IPricing {

@@ -1,6 +1,6 @@
 export const ctaDetails = {
-    heading: 'Join Over 1 Million Users To Transform Your Finances',
-    subheading: 'Your journey to financial freedom starts here. Download Finwise today and take the first step towards a brighter financial future!',
-    appStoreUrl: '#',
-    googlePlayUrl: '#'
+    heading: 'Ready to Automate Your Business with AI?',
+    subheading: 'Let AI Workflows design and build the intelligent systems your business needs — from full-stack apps to agentic automation pipelines.',
+    primaryCta: { text: 'Get in Touch', url: 'mailto:ashokkumar1112.ch@gmail.com' },
+    secondaryCta: { text: 'Explore AI Tool Hub', url: '/tools' },
 }

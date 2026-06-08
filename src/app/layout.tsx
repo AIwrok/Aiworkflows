@@ -1,5 +1,4 @@
-import type { Metadata } from "next";
-import { GoogleAnalytics } from '@next/third-parties/google';
+import type { Metadata, Viewport } from "next";
 import { Source_Sans_3, Manrope } from "next/font/google";
 
 import Header from "@/components/Header";
@@ -11,14 +10,24 @@ import "./globals.css";
 const manrope = Manrope({ subsets: ['latin'] });
 const sourceSans = Source_Sans_3({ subsets: ['latin'] });
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: '#0a0a0f',
+};
+
 export const metadata: Metadata = {
   title: siteDetails.metadata.title,
   description: siteDetails.metadata.description,
+  keywords: siteDetails.metadata.keywords,
+  metadataBase: new URL(siteDetails.siteUrl),
   openGraph: {
     title: siteDetails.metadata.title,
     description: siteDetails.metadata.description,
     url: siteDetails.siteUrl,
     type: 'website',
+    siteName: siteDetails.siteName,
     images: [
       {
         url: '/images/og-image.jpg',
@@ -34,6 +43,10 @@ export const metadata: Metadata = {
     description: siteDetails.metadata.description,
     images: ['/images/twitter-image.jpg'],
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -46,7 +59,6 @@ export default function RootLayout({
       <body
         className={`${manrope.className} ${sourceSans.className} antialiased`}
       >
-        {siteDetails.googleAnalyticsId && <GoogleAnalytics gaId={siteDetails.googleAnalyticsId} />}
         <Header />
         <main>
           {children}

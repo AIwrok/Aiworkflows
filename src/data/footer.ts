@@ -7,31 +7,17 @@ export const footerDetails: {
     telephone: string;
     socials: ISocials;
 } = {
-    subheading: "Empowering businesses with cutting-edge financial technology solutions.",
+    subheading: "Full-stack development, agentic AI, and workflow automation — engineered for growth.",
     quickLinks: [
-        {
-            text: "Features",
-            url: "#features"
-        },
-        {
-            text: "Pricing",
-            url: "#pricing"
-        },
-        {
-            text: "Testimonials",
-            url: "#testimonials"
-        }
+        { text: "Services", url: "/#services" },
+        { text: "Portfolio", url: "/#portfolio" },
+        { text: "Blog (AI Insights)", url: "/blog" },
+        { text: "AI Tool Hub", url: "/tools" },
     ],
-    email: 'address@yoursite.com',
-    telephone: '+1 (123) 456-7890',
+    email: 'ashokkumar1112.ch@gmail.com',
+    telephone: '+91 7999614511',
     socials: {
-        // github: 'https://github.com',
-        // x: 'https://twitter.com/x',
-        twitter: 'https://twitter.com/Twitter',
-        facebook: 'https://facebook.com',
-        // youtube: 'https://youtube.com',
-        linkedin: 'https://www.linkedin.com',
-        // threads: 'https://www.threads.net',
-        instagram: 'https://www.instagram.com',
+        github: 'https://github.com/aiworkflows007-ai',
+        linkedin: 'https://www.linkedin.com/company/112720692',
     }
 }

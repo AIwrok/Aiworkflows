@@ -2,15 +2,20 @@ import { IMenuItem } from "@/types";
 
 export const menuItems: IMenuItem[] = [
     {
-        text: "Features",
-        url: "#features"
+        text: "Services",
+        url: "/#services"
     },
     {
-        text: "Pricing",
-        url: "#pricing"
+        text: "Portfolio",
+        url: "/#portfolio"
     },
     {
-        text: "Testimonials",
-        url: "#testimonials"
+        text: "Blog (AI Insights)",
+        url: "/blog"
     }
 ];
+
+export const ctaMenuItem: IMenuItem = {
+    text: "AI Tool Hub",
+    url: "/tools"
+};

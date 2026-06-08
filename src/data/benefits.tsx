@@ -1,72 +1,111 @@
-import { FiBarChart2, FiBriefcase, FiDollarSign, FiLock, FiPieChart, FiShield, FiTarget, FiTrendingUp, FiUser } from "react-icons/fi";
+import { FiCode, FiCpu, FiGitBranch, FiLayers, FiMessageCircle, FiServer, FiZap } from "react-icons/fi";
 
 import { IBenefit } from "@/types"
 
 export const benefits: IBenefit[] = [
     {
-        title: "Smart Budgeting",
-        description: "Take the guesswork out of managing your money. Our AI-powered budgeting tool adapts to your lifestyle and helps you stay on track.",
+        title: "Full-Stack Web Development",
+        description: "Production-grade web applications built with modern stacks — blazing-fast, SEO-optimized, and designed to convert.",
+        phoneScreen: {
+            id: 'svc-fullstack',
+            label: 'Next.js App',
+            title: 'Code & Deploy',
+            subtitle: 'App Router · TypeScript · Vercel',
+            accent: '#6366f1',
+            items: [
+                { icon: '📁', text: 'src/app/page.tsx — Agency homepage', status: 'Built' },
+                { icon: '📁', text: 'src/app/blog/[slug] — AI blog', status: 'Built' },
+                { icon: '📁', text: 'src/app/tools/[slug] — Free tools', status: 'Built' },
+                { icon: '✅', text: 'Lighthouse score: 95+', status: 'Live' },
+            ],
+            footer: 'Next.js 14 · Tailwind · Supabase',
+        },
         bullets: [
             {
-                title: "Intelligent Categorization",
-                description: "Automatically sorts your transactions for crystal-clear insights.",
-                icon: <FiBarChart2 size={26} />
+                title: "Next.js & React",
+                description: "Server-rendered apps with App Router, ISR, and edge-ready performance.",
+                icon: <FiCode size={26} />
             },
             {
-                title: "Customizable Goals",
-                description: "Set and track financial objectives that matter to you.",
-                icon: <FiTarget size={26} />
+                title: "Tailwind CSS",
+                description: "Pixel-perfect, responsive UI with a consistent design system.",
+                icon: <FiLayers size={26} />
             },
             {
-                title: "Predictive Analysis",
-                description: "Get ahead of your finances with spending forecasts and alerts.",
-                icon: <FiTrendingUp size={26} />
+                title: "Supabase Backend",
+                description: "Auth, real-time databases, and serverless functions in one platform.",
+                icon: <FiServer size={26} />
             }
         ],
-        imageSrc: "/images/mockup-1.webp"
     },
     {
-        title: "Seamless Investing",
-        description: "Start building wealth today, no financial degree required. Finwise makes investing accessible and straightforward.",
+        title: "Workflow Automation",
+        description: "Eliminate manual tasks with custom automation pipelines — from simple integrations to enterprise-grade orchestration.",
+        phoneScreen: {
+            id: 'svc-automation',
+            label: 'n8n Editor',
+            title: 'Active Workflow',
+            subtitle: 'Self-hosted · 14 nodes connected',
+            accent: '#FED835',
+            items: [
+                { icon: '1️⃣', text: 'Webhook: New WhatsApp message', status: 'Trigger' },
+                { icon: '2️⃣', text: 'OpenAI: Classify customer intent', status: 'AI' },
+                { icon: '3️⃣', text: 'Supabase: Fetch menu & pricing', status: 'DB' },
+                { icon: '4️⃣', text: 'WhatsApp: Send order confirmation', status: 'Send' },
+            ],
+            footer: 'Running · 847 executions today',
+        },
         bullets: [
             {
-                title: "Micro-Investing",
-                description: "Begin with as little as $1 and watch your money grow.",
-                icon: <FiDollarSign size={26} />
+                title: "Custom n8n Workflows",
+                description: "Tailored automations connecting your CRM, email, payments, and APIs.",
+                icon: <FiGitBranch size={26} />
             },
             {
-                title: "Expert Portfolios",
-                description: "Choose from investment strategies tailored to your risk tolerance.",
-                icon: <FiBriefcase size={26} />
+                title: "Self-Hosted n8n",
+                description: "Full data sovereignty with dedicated, self-hosted n8n instances.",
+                icon: <FiZap size={26} />
             },
             {
-                title: "Real-Time Performance",
-                description: "Track your investments with easy-to-understand metrics and visuals.",
-                icon: <FiPieChart size={26} />
+                title: "AI-Powered Pipelines",
+                description: "LLM-integrated workflows for content generation, classification, and routing.",
+                icon: <FiCpu size={26} />
             }
         ],
-        imageSrc: "/images/mockup-2.webp"
     },
     {
-        title: "Bank-Grade Security",
-        description: "Your financial data deserves the best protection. Rest easy knowing Finwise employs cutting-edge security measures.",
+        title: "AI Tool & Browser Extension Development",
+        description: "Purpose-built AI utilities and browser extensions that augment productivity and deliver intelligent experiences.",
+        phoneScreen: {
+            id: 'svc-aitools',
+            label: 'Tools Hub',
+            title: 'AI Utilities',
+            subtitle: 'Free tools · No sign-up',
+            accent: '#a855f7',
+            items: [
+                { icon: '🔧', text: 'Word Counter — 847 words', status: 'Active' },
+                { icon: '📝', text: 'JSON Formatter — Valid ✓', status: 'Active' },
+                { icon: '🔍', text: 'Meta Tag Generator — 12 tags', status: 'Active' },
+                { icon: '🧩', text: 'Extension: AI page summarizer', status: 'v2.1' },
+            ],
+            footer: 'aiworkflows.dev/tools',
+        },
         bullets: [
             {
-                title: "Military-Grade Encryption",
-                description: "Your information is safeguarded with the highest level of encryption.",
-                icon: <FiLock size={26} />
+                title: "Custom AI Tools",
+                description: "Interactive web tools powered by GPT, Claude, and open-source models.",
+                icon: <FiCpu size={26} />
             },
             {
-                title: "Biometric Authentication",
-                description: "Access your account securely with fingerprint or facial recognition.",
-                icon: <FiUser size={26} />
+                title: "Browser Extensions",
+                description: "Chrome & Firefox extensions that bring AI directly into user workflows.",
+                icon: <FiZap size={26} />
             },
             {
-                title: "Real-Time Fraud Detection",
-                description: "Our system constantly monitors for suspicious activity to keep your money safe.",
-                icon: <FiShield size={26} />
+                title: "Content Pipelines",
+                description: "Automated content creation, scheduling, and multi-channel distribution.",
+                icon: <FiMessageCircle size={26} />
             }
         ],
-        imageSrc: "/images/mockup-1.webp"
     },
 ]

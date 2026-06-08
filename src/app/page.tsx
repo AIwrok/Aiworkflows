@@ -1,46 +1,43 @@
-import Hero from "@/components/Hero";
-import Testimonials from "@/components/Testimonials";
-import Pricing from "@/components/Pricing/Pricing";
-import FAQ from "@/components/FAQ";
-import Logos from "@/components/Logos";
-import Benefits from "@/components/Benefits/Benefits";
-import Container from "@/components/Container";
-import Section from "@/components/Section";
-import Stats from "@/components/Stats";
-import CTA from "@/components/CTA";
-
-const HomePage: React.FC = () => {
-  return (
-    <>
-      <Hero />
-      <Logos />
-      <Container>
-        <Benefits />
-
-        <Section
-          id="pricing"
-          title="Pricing"
-          description="Simple, transparent pricing. No surprises."
-        >
-          <Pricing />
-        </Section>
-
-        <Section
-          id="testimonials"
-          title="What Our Clients Say"
-          description="Hear from those who have partnered with us."
-        >
-          <Testimonials />
-        </Section>
-
-        <FAQ />
-
-        <Stats />
-        
-        <CTA />
-      </Container>
-    </>
-  );
-};
-
-export default HomePage;
+import Hero from "@/components/Hero";
+import FAQ from "@/components/FAQ";
+import Logos from "@/components/Logos";
+import Benefits from "@/components/Benefits/Benefits";
+import Portfolio from "@/components/Portfolio/Portfolio";
+import Container from "@/components/Container";
+import Section from "@/components/Section";
+import Stats from "@/components/Stats";
+import CTA from "@/components/CTA";
+
+const HomePage: React.FC = () => {
+  return (
+    <>
+      <Hero />
+      <Logos />
+      <Container>
+        <Section
+          id="services"
+          title="Our Services"
+          description="Three core pillars that power intelligent, automated businesses."
+        >
+          <Benefits />
+        </Section>
+
+        <Section
+          id="portfolio"
+          title="Portfolio & Case Studies"
+          description="Real-world systems we've engineered end to end."
+        >
+          <Portfolio />
+        </Section>
+
+        <FAQ />
+
+        <Stats />
+
+        <CTA />
+      </Container>
+    </>
+  );
+};
+
+export default HomePage;

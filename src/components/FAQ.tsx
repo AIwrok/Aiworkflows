@@ -17,7 +17,8 @@ const FAQ: React.FC = () => {
                     <p className="lg:mt-10 text-foreground-accent text-center lg:text-left">
                         Ask us anything!
                     </p>
-                    <a href="mailto:" className="mt-3 block text-xl lg:text-4xl text-secondary font-semibold hover:underline text-center lg:text-left">help@finwise.com</a>
+                    <a href="mailto:ashokkumar1112.ch@gmail.com" className="mt-3 block text-base sm:text-xl lg:text-4xl text-secondary font-semibold hover:underline text-center lg:text-left break-all">ashokkumar1112.ch@gmail.com</a>
+                    <a href="tel:+917999614511" className="mt-2 block text-lg text-foreground-accent hover:text-primary text-center lg:text-left">+91 7999614511</a>
                 </div>
 
                 <div className="w-full lg:max-w-2xl mx-auto border-b">
@@ -26,9 +27,9 @@ const FAQ: React.FC = () => {
                             <Disclosure>
                                 {({ open }) => (
                                     <>
-                                        <DisclosureButton className="flex items-center justify-between w-full px-4 pt-7 text-lg text-left border-t">
-                                            <span className="text-2xl font-semibold">{faq.question}</span>
-                                            {open ? <BiMinus className="w-5 h-5 text-secondary" /> : <BiPlus className="w-5 h-5 text-secondary" />}
+                                        <DisclosureButton className="flex items-start sm:items-center justify-between gap-3 w-full px-2 sm:px-4 pt-7 text-left border-t">
+                                            <span className="text-base sm:text-lg lg:text-2xl font-semibold flex-1 min-w-0">{faq.question}</span>
+                                            {open ? <BiMinus className="w-5 h-5 text-secondary flex-shrink-0 mt-1 sm:mt-0" /> : <BiPlus className="w-5 h-5 text-secondary flex-shrink-0 mt-1 sm:mt-0" />}
                                         </DisclosureButton>
                                         <DisclosurePanel className="px-4 pt-4 pb-2 text-foreground-accent">
                                             {faq.answer}

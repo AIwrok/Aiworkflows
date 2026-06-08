@@ -1,7 +1,6 @@
-import { ctaDetails } from "@/data/cta"
+import Link from 'next/link';
 
-import AppStoreButton from "./AppStoreButton"
-import PlayStoreButton from "./PlayStoreButton"
+import { ctaDetails } from "@/data/cta"
 
 const CTA: React.FC = () => {
     return (
@@ -15,11 +14,15 @@ const CTA: React.FC = () => {
                     <div className="h-full flex flex-col items-center justify-center text-white text-center px-5">
                         <h2 className="text-2xl sm:text-3xl md:text-5xl md:leading-tight font-semibold mb-4 max-w-2xl">{ctaDetails.heading}</h2>
 
-                        <p className="mx-auto max-w-xl md:px-5">{ctaDetails.subheading}</p>
+                        <p className="mx-auto max-w-xl md:px-5 text-foreground-accent">{ctaDetails.subheading}</p>
 
-                        <div className="mt-4 flex flex-col sm:flex-row items-center sm:gap-4">
-                        <AppStoreButton />
-                        <PlayStoreButton />
+                        <div className="mt-6 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 w-full sm:w-auto max-w-xs sm:max-w-none mx-auto">
+                            <Link href={ctaDetails.primaryCta.url} className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors font-semibold text-center">
+                                {ctaDetails.primaryCta.text}
+                            </Link>
+                            <Link href={ctaDetails.secondaryCta.url} className="text-foreground border border-white/20 hover:border-primary/50 px-8 py-3 rounded-full transition-colors text-center">
+                                {ctaDetails.secondaryCta.text}
+                            </Link>
                         </div>
                     </div>
                 </div>

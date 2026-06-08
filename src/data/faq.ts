@@ -3,23 +3,23 @@ import { siteDetails } from "./siteDetails";
 
 export const faqs: IFAQ[] = [
     {
-        question: `Is ${siteDetails.siteName} secure?`,
-        answer: 'Absolutely. We use bank-level encryption to protect your data and never store your login information. Plus, our biometric authentication adds an extra layer of security.',
+        question: `What services does ${siteDetails.siteName} offer?`,
+        answer: 'We specialize in full-stack web development (Next.js, Tailwind, Supabase), workflow automation with custom and self-hosted n8n instances, and AI tool & browser extension development.',
     },
     {
-        question: `Can I use ${siteDetails.siteName} on multiple devices?`,
-        answer: 'Absolutely! Your Finwise account syncs seamlessly across all your devices - smartphone, tablet, and computer.',
+        question: 'Do you build custom automation workflows?',
+        answer: 'Yes. We design and deploy custom n8n workflows tailored to your business — from simple API integrations to complex multi-step AI-powered pipelines. We also offer self-hosted n8n instances for full data control.',
     },
     {
-        question: 'Can I connect all my bank accounts?',
-        answer: `Yes! ${siteDetails.siteName} supports connections with over 10,000 financial institutions worldwide. Simply log in through our secure portal to link your accounts.`
+        question: 'What is agentic AI and how can it help my business?',
+        answer: 'Agentic AI refers to autonomous AI agents that can plan, execute, and adapt tasks without constant human intervention. We build agentic solutions for customer support, content generation, data processing, and workflow orchestration.',
     },
     {
-        question: 'Do I need any financial expertise to use the investing features?',
-        answer: 'Not at all! Our expert-curated portfolios and educational resources make investing accessible to everyone, regardless of experience level.',
+        question: 'Can you integrate WhatsApp into my business operations?',
+        answer: 'Absolutely. Our flagship WhatsApp Restaurant Automation System demonstrates our expertise in building end-to-end messaging pipelines — automated ordering, menu management, and customer communication via WhatsApp.',
     },
     {
-        question: 'What if I need help using the app?',
-        answer: 'Our dedicated support team is available 24/7 via chat or email. Plus, we offer extensive in-app tutorials and a comprehensive knowledge base to help you make the most of Finwise.'
+        question: 'How do I get started with AI Workflows?',
+        answer: 'Reach out via our contact section or explore our free tools hub to see our capabilities in action. We offer consultations to scope your project and recommend the right technology stack.',
     }
 ];

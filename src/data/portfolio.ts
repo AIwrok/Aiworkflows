@@ -1,0 +1,107 @@
+import { IPortfolioItem } from "@/types";
+
+export const portfolioItems: IPortfolioItem[] = [
+    {
+        title: "WhatsApp Restaurant Automation System",
+        description: "An end-to-end restaurant automation platform powered by WhatsApp — enabling automated ordering, dynamic menu management, and intelligent customer messaging pipelines.",
+        tags: ["WhatsApp API", "n8n", "Next.js", "Supabase", "AI"],
+        highlights: [
+            "Automated order intake via WhatsApp with natural language processing",
+            "Dynamic menu management with real-time availability updates",
+            "Customer messaging pipelines for confirmations, upsells, and feedback",
+            "Admin dashboard for order tracking, analytics, and menu control",
+        ],
+        phoneScreen: {
+            id: 'portfolio-whatsapp',
+            label: 'WhatsApp',
+            title: 'Spice Garden Restaurant',
+            subtitle: 'Automated ordering · Online',
+            accent: '#25D366',
+            items: [
+                { icon: '👤', text: 'Hi, I want 2 chicken biryani', incoming: true },
+                { icon: '🤖', text: 'Added! 2× Chicken Biryani — ₹360. Confirm?', incoming: true },
+                { icon: '👤', text: 'Yes, confirm order', incoming: true },
+                { icon: '🤖', text: 'Order #1042 placed! ETA 30 mins 🎉', incoming: true },
+            ],
+            footer: 'Powered by n8n + AI Workflows',
+        },
+        featured: true,
+    },
+    {
+        title: "AI Tool Hub Platform",
+        description: "A unified SaaS platform hosting 15+ AI utilities across five hubs — Career, Study, Analytics, Business, and Creator — with shared auth, search, and dashboards.",
+        tags: ["Next.js", "Supabase", "FastAPI", "SaaS", "AI Tools"],
+        highlights: [
+            "5 specialized hubs with 3 tools each (ATS checker, CSV analyzer, GST calculator, and more)",
+            "Single sign-on and cross-hub AI search",
+            "Planned live dashboard for usage metrics and analytics",
+            "Scalable architecture for 50+ upcoming micro-tools",
+        ],
+        phoneScreen: {
+            id: 'portfolio-toolhub',
+            label: 'AI Tool Hub',
+            title: 'Career Hub',
+            subtitle: '15 tools · 5 hubs',
+            accent: '#84cc16',
+            items: [
+                { icon: '📄', text: 'ATS Checker & Optimizer', status: 'Soon' },
+                { icon: '📊', text: 'Smart CSV Analyzer', status: 'Soon' },
+                { icon: '🧮', text: 'GST/Tax Calculator', status: 'Soon' },
+                { icon: '▶️', text: 'YouTube Title Optimizer', status: 'Soon' },
+            ],
+            footer: 'Explore at /tools',
+        },
+        demoUrl: '/tools',
+    },
+    {
+        title: "n8n Workflow Automation Pipelines",
+        description: "Production-grade automation pipelines connecting WhatsApp, CRMs, payment gateways, and AI classification — reducing manual ops for restaurants, clinics, and SMBs.",
+        tags: ["n8n", "Webhooks", "AI Classification", "CRM", "Automation"],
+        highlights: [
+            "WhatsApp trigger → AI intent classify → Supabase order store → confirmation",
+            "Webhook-based integrations with Razorpay, Google Sheets, and email",
+            "Error handling, retries, and human-in-the-loop approval steps",
+            "Self-hosted deployment for full data control",
+        ],
+        phoneScreen: {
+            id: 'portfolio-n8n',
+            label: 'n8n Pipeline',
+            title: 'Order Workflow',
+            subtitle: 'Trigger → AI → DB → Notify',
+            accent: '#ff6d5a',
+            items: [
+                { icon: '📱', text: 'WhatsApp message received', status: 'Trigger' },
+                { icon: '🧠', text: 'AI classifies: new order', status: 'Done' },
+                { icon: '💾', text: 'Saved to Supabase', status: 'Done' },
+                { icon: '✅', text: 'Confirmation sent to customer', status: 'Live' },
+            ],
+            footer: 'Self-hosted n8n + AI Workflows',
+        },
+    },
+    {
+        title: "AI Workflows Agency Website",
+        description: "This site — a premium Next.js agency landing page with animated phone mockups, AI blog, searchable tool hub, and dark-theme design system built for conversion.",
+        tags: ["Next.js 14", "Tailwind", "Framer Motion", "Blog", "SEO"],
+        highlights: [
+            "Hero with rotating phone screens showcasing services and portfolio",
+            "Markdown blog with search, categories, and YouTube-embedded articles",
+            "Filterable AI Tool Hub with hub-based accent colors and animations",
+            "Mobile-first responsive layout with dark ultra-modern theme",
+        ],
+        phoneScreen: {
+            id: 'portfolio-agency',
+            label: 'Agency Site',
+            title: 'AI Workflows',
+            subtitle: 'Full-stack · Agentic AI',
+            accent: '#FED835',
+            items: [
+                { icon: '🏠', text: 'Homepage — services & portfolio', status: 'Live' },
+                { icon: '📝', text: 'Blog — AI industry insights', status: 'Live' },
+                { icon: '🛠️', text: 'Tool Hub — 15 utilities', status: 'Live' },
+                { icon: '📧', text: 'Contact — email & WhatsApp', status: 'Live' },
+            ],
+            footer: 'Built with Next.js + Tailwind',
+        },
+        demoUrl: '/',
+    },
+];

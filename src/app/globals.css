@@ -3,23 +3,25 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0f;
+  --foreground: #f0f0f5;
   --primary: #FED835;
-  --secondary: #304fff;
+  --secondary: #6366f1;
 
   --primary-accent: #e5c230;
-  --foreground-accent: #454545;
-  --hero-background: #F3F3F5;
+  --foreground-accent: #a1a1aa;
+  --hero-background: #111118;
 }
 
 html {
   @apply scroll-smooth;
+  overflow-x: hidden;
 }
 
 body {
-  @apply text-lg;
-  
+  @apply text-base md:text-lg;
+  overflow-x: hidden;
+
   color: var(--foreground);
   background: var(--background);
   font-family: "Source Sans 3", sans-serif;
@@ -51,4 +53,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .benefit-section:last-of-type > div {
   @apply mb-10;
+}
+
+.prose-invert {
+  --tw-prose-body: var(--foreground-accent);
+  --tw-prose-headings: var(--foreground);
+  --tw-prose-links: var(--primary);
+  --tw-prose-bold: var(--foreground);
+  --tw-prose-code: var(--primary);
 }
