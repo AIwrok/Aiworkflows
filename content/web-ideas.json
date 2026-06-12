@@ -1,10 +1,29 @@
 {
   "meta": {
     "title": "Daily Web & Product Ideas",
-    "updatedAt": "2026-06-11T10:37:40+05:30",
+    "updatedAt": "2026-06-12T10:42:53+05:30",
     "refreshNote": "One practical website or app idea every morning."
   },
   "items": [
+    {
+      "id": "daily-2026-06-12-idea",
+      "title": "Idea of the Day: Salon booking slot",
+      "summary": "Pick service → pick slot → WhatsApp confirm.",
+      "ideaType": "Daily Idea",
+      "difficulty": "Easy",
+      "buildTime": "4–6 days",
+      "date": "2026-06-12",
+      "publishedAt": "2026-06-12T10:42:53+05:30",
+      "tags": [
+        "Booking",
+        "SMB",
+        "Today"
+      ],
+      "proof": "Buildable pattern — see live demos on ai-workflows.cloud/#showcase",
+      "source": "AI Workflows Ideas",
+      "sourceUrl": "https://ai-workflows.cloud/#showcase",
+      "body": "No app install; owner sees calendar."
+    },
     {
       "id": "daily-2026-06-11-idea",
       "title": "Idea of the Day: Restaurant kitchen board",

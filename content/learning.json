@@ -1,10 +1,34 @@
 {
   "meta": {
     "title": "AI Workflows Daily Learning",
-    "updatedAt": "2026-06-11T10:37:40+05:30",
+    "updatedAt": "2026-06-12T10:42:53+05:30",
     "refreshNote": "One precise lesson every morning — 2 min read."
   },
   "items": [
+    {
+      "id": "daily-2026-06-12-learning",
+      "title": "Today: Proof on every claim",
+      "summary": "Visitors trust dates, sources, and live demos — not adjectives.",
+      "type": "Daily Tip",
+      "format": "Micro-lesson",
+      "level": "Beginner",
+      "date": "2026-06-12",
+      "publishedAt": "2026-06-12T10:42:53+05:30",
+      "readMinutes": 2,
+      "topics": [
+        "Daily",
+        "Action"
+      ],
+      "steps": [
+        "Link to live demo or screenshot",
+        "Show updated date/time",
+        "Name the source"
+      ],
+      "proof": "Published 6 AM IST on ai-workflows.cloud/learn/hub.html",
+      "source": "AI Workflows Learning",
+      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#learning",
+      "body": "Do this today: add 'Last updated' to one section."
+    },
     {
       "id": "daily-2026-06-11-learning",
       "title": "Today: WhatsApp handoff",
