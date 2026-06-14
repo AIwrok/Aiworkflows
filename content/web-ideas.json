@@ -1,10 +1,29 @@
 {
   "meta": {
     "title": "Daily Web & Product Ideas",
-    "updatedAt": "2026-06-13T10:28:22+05:30",
+    "updatedAt": "2026-06-14T10:44:46+05:30",
     "refreshNote": "One practical website or app idea every morning."
   },
   "items": [
+    {
+      "id": "daily-2026-06-14-idea",
+      "title": "Idea of the Day: Cyber cafe form AI",
+      "summary": "Scan ID → auto-fill forms → staff review.",
+      "ideaType": "Daily Idea",
+      "difficulty": "Medium",
+      "buildTime": "2–3 weeks",
+      "date": "2026-06-14",
+      "publishedAt": "2026-06-14T10:44:46+05:30",
+      "tags": [
+        "AI",
+        "Forms",
+        "Today"
+      ],
+      "proof": "Buildable pattern — see live demos on ai-workflows.cloud/#showcase",
+      "source": "AI Workflows Ideas",
+      "sourceUrl": "https://ai-workflows.cloud/#showcase",
+      "body": "More customers per hour at cafés."
+    },
     {
       "id": "daily-2026-06-13-idea",
       "title": "Idea of the Day: Distributor OTP delivery",
