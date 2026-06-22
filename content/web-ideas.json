@@ -1,10 +1,29 @@
 {
   "meta": {
     "title": "Daily Web & Product Ideas",
-    "updatedAt": "2026-06-21T10:54:22+05:30",
+    "updatedAt": "2026-06-22T11:10:04+05:30",
     "refreshNote": "One practical website or app idea every morning."
   },
   "items": [
+    {
+      "id": "daily-2026-06-22-idea",
+      "title": "Idea of the Day: Coaching daily tip",
+      "summary": "One tip per day + admission CTA for coaching centers.",
+      "ideaType": "Daily Idea",
+      "difficulty": "Easy",
+      "buildTime": "2–4 days",
+      "date": "2026-06-22",
+      "publishedAt": "2026-06-22T11:10:03+05:30",
+      "tags": [
+        "Education",
+        "Content",
+        "Today"
+      ],
+      "proof": "Buildable pattern — see live demos on ai-workflows.cloud/#showcase",
+      "source": "AI Workflows Ideas",
+      "sourceUrl": "https://ai-workflows.cloud/#showcase",
+      "body": "Parents bookmark; institute gets steady enquiries."
+    },
     {
       "id": "daily-2026-06-21-idea",
       "title": "Idea of the Day: Local shop catalog",
