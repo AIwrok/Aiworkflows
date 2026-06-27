@@ -1,10 +1,34 @@
 {
   "meta": {
     "title": "AI Workflows Daily Learning",
-    "updatedAt": "2026-06-26T10:18:31+05:30",
+    "updatedAt": "2026-06-27T10:01:46+05:30",
     "refreshNote": "One precise lesson every morning — 2 min read."
   },
   "items": [
+    {
+      "id": "daily-2026-06-27-learning",
+      "title": "Today: Ship one CTA only",
+      "summary": "Landing pages convert when visitors see one clear action.",
+      "type": "Daily Tip",
+      "format": "Micro-lesson",
+      "level": "Beginner",
+      "date": "2026-06-27",
+      "publishedAt": "2026-06-27T10:01:46+05:30",
+      "readMinutes": 2,
+      "topics": [
+        "Daily",
+        "Action"
+      ],
+      "steps": [
+        "Pick waitlist OR WhatsApp as primary",
+        "Move other links below fold",
+        "Track clicks 7 days"
+      ],
+      "proof": "Published 6 AM IST on ai-workflows.cloud/learn/hub.html",
+      "source": "AI Workflows Learning",
+      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#learning",
+      "body": "Do this today: remove one extra button from your homepage."
+    },
     {
       "id": "daily-2026-06-26-learning",
       "title": "Today: SEO one URL per topic",
