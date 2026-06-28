@@ -1,10 +1,34 @@
 {
   "meta": {
     "title": "AI Workflows Daily Learning",
-    "updatedAt": "2026-06-27T10:01:46+05:30",
+    "updatedAt": "2026-06-28T10:28:27+05:30",
     "refreshNote": "One precise lesson every morning — 2 min read."
   },
   "items": [
+    {
+      "id": "daily-2026-06-28-learning",
+      "title": "Today: Mobile-first forms",
+      "summary": "80% of Indian SMB traffic is mobile — forms must be thumb-friendly.",
+      "type": "Daily Tip",
+      "format": "Micro-lesson",
+      "level": "Beginner",
+      "date": "2026-06-28",
+      "publishedAt": "2026-06-28T10:28:27+05:30",
+      "readMinutes": 2,
+      "topics": [
+        "Daily",
+        "Action"
+      ],
+      "steps": [
+        "Full-width inputs on phone",
+        "Large tap targets (44px+)",
+        "Test on real Android device"
+      ],
+      "proof": "Published 6 AM IST on ai-workflows.cloud/learn/hub.html",
+      "source": "AI Workflows Learning",
+      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#learning",
+      "body": "Do this today: open your site on phone and try the contact form."
+    },
     {
       "id": "daily-2026-06-27-learning",
       "title": "Today: Ship one CTA only",
