@@ -1,10 +1,27 @@
 {
   "meta": {
     "title": "AI Workflows Market Pulse",
-    "updatedAt": "2026-06-29T10:40:11+05:30",
+    "updatedAt": "2026-06-30T10:12:06+05:30",
     "refreshNote": "Daily trend scan — what's hot, cooling, and stable."
   },
   "items": [
+    {
+      "id": "daily-2026-06-30-analytics",
+      "title": "Market Pulse: Owner dashboards",
+      "summary": "Single-screen ops beats scattered spreadsheets.",
+      "trend": "rising",
+      "signal": "Strong pull",
+      "date": "2026-06-30",
+      "publishedAt": "2026-06-30T10:12:05+05:30",
+      "tags": [
+        "Daily",
+        "Market"
+      ],
+      "proof": "Rising: WhatsApp automation, Owner dashboards, Vertical SaaS landing · Cooling: Static brochure sites, AI agent chat only",
+      "source": "AI Workflows Analytics",
+      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#analytics",
+      "body": "Trending up: WhatsApp automation, Owner dashboards, Vertical SaaS landing. Cooling: Static brochure sites, AI agent chat only. Stable niches still pay when tied to real workflows."
+    },
     {
       "id": "daily-2026-06-29-analytics",
       "title": "Market Pulse: AI agent chat only",

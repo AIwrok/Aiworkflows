@@ -1,10 +1,28 @@
 {
   "meta": {
     "title": "AI Workflows Daily News",
-    "updatedAt": "2026-06-29T10:40:11+05:30",
+    "updatedAt": "2026-06-30T10:12:06+05:30",
     "refreshNote": "Updated daily at 6 AM IST — date, time, and source proof."
   },
   "items": [
+    {
+      "id": "daily-2026-06-30-news",
+      "title": "Don't post generated/AI-edited comments. HN is for conversation between humans",
+      "summary": "Today's top AI story — 4229 points, 1668 comments on Hacker News.",
+      "category": "AI News",
+      "date": "2026-06-30",
+      "publishedAt": "2026-06-30T10:12:05+05:30",
+      "readMinutes": 2,
+      "tags": [
+        "Today",
+        "AI",
+        "HN"
+      ],
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/newsguidelines.html#generated",
+      "proof": "Verified HN story #47340079 — open source to confirm",
+      "body": "Fresh daily pull at 6 AM IST. Read the source, then check our learning & ideas tabs for what to build next."
+    },
     {
       "id": "daily-2026-06-29-news",
       "title": "Don't post generated/AI-edited comments. HN is for conversation between humans",
