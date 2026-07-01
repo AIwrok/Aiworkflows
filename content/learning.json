@@ -1,10 +1,35 @@
 {
   "meta": {
     "title": "AI Workflows Daily Learning",
-    "updatedAt": "2026-06-30T10:12:06+05:30",
+    "updatedAt": "2026-07-01T10:33:37+05:30",
     "refreshNote": "One precise lesson every morning — 2 min read."
   },
   "items": [
+    {
+      "id": "daily-2026-07-01-learning",
+      "title": "Today: Dashboard rule of 4",
+      "summary": "Owners need four numbers daily, not forty charts.",
+      "type": "Daily Tip",
+      "format": "Micro-lesson",
+      "level": "Beginner",
+      "date": "2026-07-01",
+      "publishedAt": "2026-07-01T10:33:36+05:30",
+      "readMinutes": 2,
+      "topics": [
+        "Daily",
+        "Action"
+      ],
+      "steps": [
+        "Today's leads/orders",
+        "Pending tasks",
+        "Response time",
+        "Repeat customers"
+      ],
+      "proof": "Published 6 AM IST on ai-workflows.cloud/learn/hub.html",
+      "source": "AI Workflows Learning",
+      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#learning",
+      "body": "Do this today: list the 4 metrics your client checks every morning."
+    },
     {
       "id": "daily-2026-06-30-learning",
       "title": "Today: Proof on every claim",

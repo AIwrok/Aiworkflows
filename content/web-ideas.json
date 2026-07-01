@@ -1,10 +1,29 @@
 {
   "meta": {
     "title": "Daily Web & Product Ideas",
-    "updatedAt": "2026-06-30T10:12:06+05:30",
+    "updatedAt": "2026-07-01T10:33:37+05:30",
     "refreshNote": "One practical website or app idea every morning."
   },
   "items": [
+    {
+      "id": "daily-2026-07-01-idea",
+      "title": "Idea of the Day: Distributor OTP delivery",
+      "summary": "Shop orders → rider OTP → owner dashboard.",
+      "ideaType": "Daily Idea",
+      "difficulty": "Hard",
+      "buildTime": "4–6 weeks",
+      "date": "2026-07-01",
+      "publishedAt": "2026-07-01T10:33:36+05:30",
+      "tags": [
+        "B2B",
+        "Logistics",
+        "Today"
+      ],
+      "proof": "Buildable pattern — see live demos on ai-workflows.cloud/#showcase",
+      "source": "AI Workflows Ideas",
+      "sourceUrl": "https://ai-workflows.cloud/#showcase",
+      "body": "Proof of delivery reduces disputes."
+    },
     {
       "id": "daily-2026-06-30-idea",
       "title": "Idea of the Day: Salon booking slot",
