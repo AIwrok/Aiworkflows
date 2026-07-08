@@ -1,10 +1,28 @@
 {
   "meta": {
     "title": "AI Workflows Daily News",
-    "updatedAt": "2026-07-07T10:00:58+05:30",
+    "updatedAt": "2026-07-08T09:22:47+05:30",
     "refreshNote": "Updated daily at 6 AM IST — date, time, and source proof."
   },
   "items": [
+    {
+      "id": "daily-2026-07-08-news",
+      "title": "Don't post generated/AI-edited comments. HN is for conversation between humans",
+      "summary": "Today's top AI story — 4229 points, 1668 comments on Hacker News.",
+      "category": "AI News",
+      "date": "2026-07-08",
+      "publishedAt": "2026-07-08T09:22:47+05:30",
+      "readMinutes": 2,
+      "tags": [
+        "Today",
+        "AI",
+        "HN"
+      ],
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/newsguidelines.html#generated",
+      "proof": "Verified HN story #47340079 — open source to confirm",
+      "body": "Fresh daily pull at 6 AM IST. Read the source, then check our learning & ideas tabs for what to build next."
+    },
     {
       "id": "daily-2026-07-07-news",
       "title": "Don't post generated/AI-edited comments. HN is for conversation between humans",
@@ -706,23 +724,6 @@
       "sourceUrl": "https://ai-workflows.cloud/",
       "proof": "Backed by live launches: Mirch, Mast Magan, Bhuvan Bhaskar Dham",
       "body": "Business owners no longer want static brochure websites. They want pages that capture leads, answer questions, and connect to WhatsApp or dashboards."
-    },
-    {
-      "id": "whatsapp-automation-roi",
-      "title": "WhatsApp Automation ROI for Local Businesses",
-      "summary": "Restaurants, shops, and service businesses save hours weekly with auto-replies and order updates.",
-      "category": "Automation",
-      "date": "2026-05-28",
-      "publishedAt": "2026-05-28T10:00:00+05:30",
-      "readMinutes": 4,
-      "tags": [
-        "WhatsApp",
-        "Automation"
-      ],
-      "source": "AI Workflows Mirch case",
-      "sourceUrl": "https://mirch.ai-workflows.cloud/",
-      "proof": "Live restaurant flow: menu → cart → staff approval → kitchen updates",
-      "body": "When customers message on WhatsApp, speed matters. Automation handles FAQs, shares menus, confirms orders, and routes serious enquiries to staff."
     }
   ]
 }
