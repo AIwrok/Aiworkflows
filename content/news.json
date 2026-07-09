@@ -1,10 +1,28 @@
 {
   "meta": {
     "title": "AI Workflows Daily News",
-    "updatedAt": "2026-07-08T09:22:47+05:30",
+    "updatedAt": "2026-07-09T09:58:00+05:30",
     "refreshNote": "Updated daily at 6 AM IST — date, time, and source proof."
   },
   "items": [
+    {
+      "id": "daily-2026-07-09-news",
+      "title": "Don't post generated/AI-edited comments. HN is for conversation between humans",
+      "summary": "Today's top AI story — 4229 points, 1668 comments on Hacker News.",
+      "category": "AI News",
+      "date": "2026-07-09",
+      "publishedAt": "2026-07-09T09:57:59+05:30",
+      "readMinutes": 2,
+      "tags": [
+        "Today",
+        "AI",
+        "HN"
+      ],
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/newsguidelines.html#generated",
+      "proof": "Verified HN story #47340079 — open source to confirm",
+      "body": "Fresh daily pull at 6 AM IST. Read the source, then check our learning & ideas tabs for what to build next."
+    },
     {
       "id": "daily-2026-07-08-news",
       "title": "Don't post generated/AI-edited comments. HN is for conversation between humans",
@@ -706,24 +724,6 @@
       "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#news",
       "proof": "Mirch WhatsApp bot uses bilingual buttons; form filler demo handles ID OCR in Roman fields",
       "body": "Products that ignore Hinglish UX lose trust fast. Prefer short button flows over long typed conversations for food, retail, and service businesses."
-    },
-    {
-      "id": "ai-websites-2026",
-      "title": "How AI Is Changing Business Websites in 2026",
-      "summary": "Smart forms, chat assistants, and analytics dashboards are becoming standard for Indian SMB websites.",
-      "category": "Web Development",
-      "date": "2026-06-01",
-      "publishedAt": "2026-06-01T08:00:00+05:30",
-      "readMinutes": 5,
-      "tags": [
-        "AI",
-        "Websites",
-        "SMB"
-      ],
-      "source": "AI Workflows research",
-      "sourceUrl": "https://ai-workflows.cloud/",
-      "proof": "Backed by live launches: Mirch, Mast Magan, Bhuvan Bhaskar Dham",
-      "body": "Business owners no longer want static brochure websites. They want pages that capture leads, answer questions, and connect to WhatsApp or dashboards."
     }
   ]
 }
