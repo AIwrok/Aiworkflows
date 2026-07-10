@@ -1,10 +1,28 @@
 {
   "meta": {
     "title": "AI Workflows Daily News",
-    "updatedAt": "2026-07-09T09:58:00+05:30",
+    "updatedAt": "2026-07-10T10:01:14+05:30",
     "refreshNote": "Updated daily at 6 AM IST — date, time, and source proof."
   },
   "items": [
+    {
+      "id": "daily-2026-07-10-news",
+      "title": "Don't post generated/AI-edited comments. HN is for conversation between humans",
+      "summary": "Today's top AI story — 4229 points, 1668 comments on Hacker News.",
+      "category": "AI News",
+      "date": "2026-07-10",
+      "publishedAt": "2026-07-10T10:01:13+05:30",
+      "readMinutes": 2,
+      "tags": [
+        "Today",
+        "AI",
+        "HN"
+      ],
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/newsguidelines.html#generated",
+      "proof": "Verified HN story #47340079 — open source to confirm",
+      "body": "Fresh daily pull at 6 AM IST. Read the source, then check our learning & ideas tabs for what to build next."
+    },
     {
       "id": "daily-2026-07-09-news",
       "title": "Don't post generated/AI-edited comments. HN is for conversation between humans",
@@ -706,24 +724,6 @@
       "sourceUrl": "https://news.ycombinator.com/",
       "proof": "Cross-checked with top HN AI discussions and our live automation demos",
       "body": "Business buyers in India ask for one outcome: fewer manual steps. Agents win when connected to order flows, document OCR, and owner alerts — not standalone chat windows."
-    },
-    {
-      "id": "daily-2026-06-05-gemini-india",
-      "title": "Multilingual AI Assistants Gain Traction for Indian SMBs",
-      "summary": "Hindi/English mixed support in bots and form tools is becoming a default expectation.",
-      "category": "AI News",
-      "date": "2026-06-05",
-      "publishedAt": "2026-06-05T11:00:00+05:30",
-      "readMinutes": 4,
-      "tags": [
-        "India",
-        "Language",
-        "Chatbots"
-      ],
-      "source": "Industry reports + client feedback",
-      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#news",
-      "proof": "Mirch WhatsApp bot uses bilingual buttons; form filler demo handles ID OCR in Roman fields",
-      "body": "Products that ignore Hinglish UX lose trust fast. Prefer short button flows over long typed conversations for food, retail, and service businesses."
     }
   ]
 }
