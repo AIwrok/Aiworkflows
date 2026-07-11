@@ -1,10 +1,28 @@
 {
   "meta": {
     "title": "AI Workflows Daily News",
-    "updatedAt": "2026-07-10T10:01:14+05:30",
+    "updatedAt": "2026-07-11T09:20:17+05:30",
     "refreshNote": "Updated daily at 6 AM IST — date, time, and source proof."
   },
   "items": [
+    {
+      "id": "daily-2026-07-11-news",
+      "title": "Don't post generated/AI-edited comments. HN is for conversation between humans",
+      "summary": "Today's top AI story — 4229 points, 1668 comments on Hacker News.",
+      "category": "AI News",
+      "date": "2026-07-11",
+      "publishedAt": "2026-07-11T09:20:17+05:30",
+      "readMinutes": 2,
+      "tags": [
+        "Today",
+        "AI",
+        "HN"
+      ],
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/newsguidelines.html#generated",
+      "proof": "Verified HN story #47340079 — open source to confirm",
+      "body": "Fresh daily pull at 6 AM IST. Read the source, then check our learning & ideas tabs for what to build next."
+    },
     {
       "id": "daily-2026-07-10-news",
       "title": "Don't post generated/AI-edited comments. HN is for conversation between humans",
@@ -706,24 +724,6 @@
       "sourceUrl": "https://news.ycombinator.com/newsguidelines.html#generated",
       "proof": "HN story id 47340079 — points/comments visible on source",
       "body": "Automated daily pull. Open source link for full article. We add editorial context on ai-workflows.cloud/learn/hub.html."
-    },
-    {
-      "id": "daily-2026-06-06-agent-tools",
-      "title": "AI Agent Tools Moving From Chat to Real Workflows",
-      "summary": "Teams want agents that trigger forms, dashboards, and WhatsApp — not just text replies.",
-      "category": "AI News",
-      "date": "2026-06-06",
-      "publishedAt": "2026-06-06T09:15:00+05:30",
-      "readMinutes": 3,
-      "tags": [
-        "Agents",
-        "Automation",
-        "SMB"
-      ],
-      "source": "Hacker News + AI Workflows editorial",
-      "sourceUrl": "https://news.ycombinator.com/",
-      "proof": "Cross-checked with top HN AI discussions and our live automation demos",
-      "body": "Business buyers in India ask for one outcome: fewer manual steps. Agents win when connected to order flows, document OCR, and owner alerts — not standalone chat windows."
     }
   ]
 }
