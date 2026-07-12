@@ -1,10 +1,34 @@
 {
   "meta": {
     "title": "AI Workflows Daily Learning",
-    "updatedAt": "2026-07-11T09:20:17+05:30",
+    "updatedAt": "2026-07-12T09:35:38+05:30",
     "refreshNote": "One precise lesson every morning — 2 min read."
   },
   "items": [
+    {
+      "id": "daily-2026-07-12-learning",
+      "title": "Today: Proof on every claim",
+      "summary": "Visitors trust dates, sources, and live demos — not adjectives.",
+      "type": "Daily Tip",
+      "format": "Micro-lesson",
+      "level": "Beginner",
+      "date": "2026-07-12",
+      "publishedAt": "2026-07-12T09:35:38+05:30",
+      "readMinutes": 2,
+      "topics": [
+        "Daily",
+        "Action"
+      ],
+      "steps": [
+        "Link to live demo or screenshot",
+        "Show updated date/time",
+        "Name the source"
+      ],
+      "proof": "Published 6 AM IST on ai-workflows.cloud/learn/hub.html",
+      "source": "AI Workflows Learning",
+      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#learning",
+      "body": "Do this today: add 'Last updated' to one section."
+    },
     {
       "id": "daily-2026-07-11-learning",
       "title": "Today: WhatsApp handoff",
@@ -948,30 +972,6 @@
       "source": "AI Workflows launch process",
       "sourceUrl": "https://ai-workflows.cloud/#showcase",
       "body": "Cover homepage offer, services, contact/WhatsApp, about, privacy policy, sitemap, fast mobile layout, and one clear call-to-action above the fold."
-    },
-    {
-      "id": "dashboard-metrics",
-      "title": "Owner Dashboard Metrics 101",
-      "summary": "What to show on a simple dashboard so owners run the business from one screen.",
-      "type": "Tutorial",
-      "format": "Article",
-      "level": "Intermediate",
-      "date": "2026-05-18",
-      "publishedAt": "2026-05-18T09:00:00+05:30",
-      "readMinutes": 5,
-      "topics": [
-        "Dashboard",
-        "Analytics"
-      ],
-      "steps": [
-        "Show today's orders/leads first",
-        "Add pending tasks staff must clear",
-        "Weekly trend — not 20 charts on day one"
-      ],
-      "proof": "Mirch owner panel pattern",
-      "source": "Mirch App Demo",
-      "sourceUrl": "https://mirchapp.ai-workflows.cloud/",
-      "body": "Start with today's orders/leads, pending tasks, revenue snapshot, and staff activity. Add trends weekly."
     }
   ]
 }
