@@ -1,10 +1,29 @@
 {
   "meta": {
     "title": "Daily Web & Product Ideas",
-    "updatedAt": "2026-07-12T09:35:38+05:30",
+    "updatedAt": "2026-07-13T09:37:48+05:30",
     "refreshNote": "One practical website or app idea every morning."
   },
   "items": [
+    {
+      "id": "daily-2026-07-13-idea",
+      "title": "Idea of the Day: Distributor OTP delivery",
+      "summary": "Shop orders → rider OTP → owner dashboard.",
+      "ideaType": "Daily Idea",
+      "difficulty": "Hard",
+      "buildTime": "4–6 weeks",
+      "date": "2026-07-13",
+      "publishedAt": "2026-07-13T09:37:47+05:30",
+      "tags": [
+        "B2B",
+        "Logistics",
+        "Today"
+      ],
+      "proof": "Buildable pattern — see live demos on ai-workflows.cloud/#showcase",
+      "source": "AI Workflows Ideas",
+      "sourceUrl": "https://ai-workflows.cloud/#showcase",
+      "body": "Proof of delivery reduces disputes."
+    },
     {
       "id": "daily-2026-07-12-idea",
       "title": "Idea of the Day: Salon booking slot",
@@ -751,25 +770,6 @@
       "source": "Mirch Masala demo",
       "sourceUrl": "https://mirch.ai-workflows.cloud/",
       "body": "No app download for customers. Owner sees orders in admin web app. Add UPI link in chat for prepaid orders."
-    },
-    {
-      "id": "idea-2026-06-04-coaching-daily-drop",
-      "title": "Coaching Center Daily Tip Drop",
-      "summary": "One micro-lesson + PDF upload per day on a simple learning page. Parents bookmark; admissions CTA on every post.",
-      "ideaType": "Education site",
-      "difficulty": "Easy",
-      "buildTime": "2–4 days",
-      "date": "2026-06-04",
-      "publishedAt": "2026-06-04T07:30:00+05:30",
-      "tags": [
-        "Education",
-        "Content",
-        "Leads"
-      ],
-      "proof": "Radiant Classes preview structure",
-      "source": "AI Workflows learning hub pattern",
-      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#learning",
-      "body": "Use learning.json for daily uploads. SEO: one URL per topic. WhatsApp button: 'Ask about batches'."
     }
   ]
 }

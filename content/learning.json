@@ -1,10 +1,35 @@
 {
   "meta": {
     "title": "AI Workflows Daily Learning",
-    "updatedAt": "2026-07-12T09:35:38+05:30",
+    "updatedAt": "2026-07-13T09:37:48+05:30",
     "refreshNote": "One precise lesson every morning — 2 min read."
   },
   "items": [
+    {
+      "id": "daily-2026-07-13-learning",
+      "title": "Today: Dashboard rule of 4",
+      "summary": "Owners need four numbers daily, not forty charts.",
+      "type": "Daily Tip",
+      "format": "Micro-lesson",
+      "level": "Beginner",
+      "date": "2026-07-13",
+      "publishedAt": "2026-07-13T09:37:47+05:30",
+      "readMinutes": 2,
+      "topics": [
+        "Daily",
+        "Action"
+      ],
+      "steps": [
+        "Today's leads/orders",
+        "Pending tasks",
+        "Response time",
+        "Repeat customers"
+      ],
+      "proof": "Published 6 AM IST on ai-workflows.cloud/learn/hub.html",
+      "source": "AI Workflows Learning",
+      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#learning",
+      "body": "Do this today: list the 4 metrics your client checks every morning."
+    },
     {
       "id": "daily-2026-07-12-learning",
       "title": "Today: Proof on every claim",
@@ -947,31 +972,6 @@
       "source": "AI Workflows landing",
       "sourceUrl": "https://ai-workflows.cloud/",
       "body": "Extra buttons create decision fatigue. One bold action + proof section + showcase builds trust without noise."
-    },
-    {
-      "id": "website-checklist",
-      "title": "Business Website Launch Checklist",
-      "summary": "Pages, contact flow, mobile checks, and SEO basics before you go live.",
-      "type": "Checklist",
-      "format": "Guide",
-      "level": "Beginner",
-      "date": "2026-05-30",
-      "publishedAt": "2026-05-30T08:00:00+05:30",
-      "readMinutes": 6,
-      "topics": [
-        "Website",
-        "SEO",
-        "Launch"
-      ],
-      "steps": [
-        "Homepage offer + one CTA",
-        "Contact / WhatsApp works on mobile",
-        "Privacy + sitemap + fast load"
-      ],
-      "proof": "Checklist used on Mast Magan & Galaxy Decor launches",
-      "source": "AI Workflows launch process",
-      "sourceUrl": "https://ai-workflows.cloud/#showcase",
-      "body": "Cover homepage offer, services, contact/WhatsApp, about, privacy policy, sitemap, fast mobile layout, and one clear call-to-action above the fold."
     }
   ]
 }
