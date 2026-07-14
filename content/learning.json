@@ -1,10 +1,34 @@
 {
   "meta": {
     "title": "AI Workflows Daily Learning",
-    "updatedAt": "2026-07-13T09:37:48+05:30",
+    "updatedAt": "2026-07-14T09:13:03+05:30",
     "refreshNote": "One precise lesson every morning — 2 min read."
   },
   "items": [
+    {
+      "id": "daily-2026-07-14-learning",
+      "title": "Today: SEO one URL per topic",
+      "summary": "One focused article beats ten thin pages.",
+      "type": "Daily Tip",
+      "format": "Micro-lesson",
+      "level": "Beginner",
+      "date": "2026-07-14",
+      "publishedAt": "2026-07-14T09:13:03+05:30",
+      "readMinutes": 2,
+      "topics": [
+        "Daily",
+        "Action"
+      ],
+      "steps": [
+        "One H1 per page",
+        "Internal link to hub",
+        "Update sitemap weekly"
+      ],
+      "proof": "Published 6 AM IST on ai-workflows.cloud/learn/hub.html",
+      "source": "AI Workflows Learning",
+      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#learning",
+      "body": "Do this today: pick one keyword and one URL for this week."
+    },
     {
       "id": "daily-2026-07-13-learning",
       "title": "Today: Dashboard rule of 4",
@@ -948,30 +972,6 @@
       "source": "AI Workflows hub",
       "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#learning",
       "body": "Keep lessons under 120 words. End with: 'Do this today: …' Readers return when each drop is actionable, not vague."
-    },
-    {
-      "id": "daily-2026-06-05-waitlist-cta",
-      "title": "One CTA Per Page Rule",
-      "summary": "Landing pages convert better with a single primary action — waitlist OR WhatsApp, not five buttons.",
-      "type": "Daily Tip",
-      "format": "Micro-lesson",
-      "level": "Beginner",
-      "date": "2026-06-05",
-      "publishedAt": "2026-06-05T07:00:00+05:30",
-      "readMinutes": 2,
-      "topics": [
-        "Landing",
-        "Conversion"
-      ],
-      "steps": [
-        "Pick one primary CTA above the fold",
-        "Move secondary links to footer or lower sections",
-        "Measure clicks for 7 days before adding more CTAs"
-      ],
-      "proof": "Stitch-style ai-workflows.cloud homepage uses single waitlist CTA",
-      "source": "AI Workflows landing",
-      "sourceUrl": "https://ai-workflows.cloud/",
-      "body": "Extra buttons create decision fatigue. One bold action + proof section + showcase builds trust without noise."
     }
   ]
 }

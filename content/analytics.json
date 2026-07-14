@@ -1,10 +1,27 @@
 {
   "meta": {
     "title": "AI Workflows Market Pulse",
-    "updatedAt": "2026-07-13T09:37:48+05:30",
+    "updatedAt": "2026-07-14T09:13:03+05:30",
     "refreshNote": "Daily trend scan — what's hot, cooling, and stable."
   },
   "items": [
+    {
+      "id": "daily-2026-07-14-analytics",
+      "title": "Market Pulse: Vertical SaaS landing",
+      "summary": "Niche waitlist + daily content hubs attract repeat visits.",
+      "trend": "rising",
+      "signal": "SEO traffic",
+      "date": "2026-07-14",
+      "publishedAt": "2026-07-14T09:13:03+05:30",
+      "tags": [
+        "Daily",
+        "Market"
+      ],
+      "proof": "Rising: WhatsApp automation, Owner dashboards, Vertical SaaS landing · Cooling: Static brochure sites, AI agent chat only",
+      "source": "AI Workflows Analytics",
+      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#analytics",
+      "body": "Trending up: WhatsApp automation, Owner dashboards, Vertical SaaS landing. Cooling: Static brochure sites, AI agent chat only. Stable niches still pay when tied to real workflows."
+    },
     {
       "id": "daily-2026-07-13-analytics",
       "title": "Market Pulse: Document OCR forms",
@@ -668,23 +685,6 @@
       "source": "AI Workflows field research",
       "sourceUrl": "https://ai-workflows.cloud/#showcase",
       "body": "Trending: bilingual button flows, menu carts, staff handoff, payment links. Not trending: generic English-only bots with no CRM handoff. Action: pair bot + owner dashboard."
-    },
-    {
-      "id": "static-brochure-sites-cooling",
-      "title": "Static Brochure Sites — Cooling",
-      "summary": "Plain 5-page websites without WhatsApp, forms, or analytics are harder to sell. Buyers want proof of leads and automation.",
-      "trend": "falling",
-      "signal": "Low ROI perception",
-      "date": "2026-06-06",
-      "publishedAt": "2026-06-06T08:00:00+05:30",
-      "tags": [
-        "Websites",
-        "Strategy"
-      ],
-      "proof": "Enquiry patterns from 2026 demo calls — owners ask for dashboards, not just design",
-      "source": "AI Workflows sales notes",
-      "sourceUrl": "https://ai-workflows.cloud/",
-      "body": "Falling: design-only sites with no CTA tracking. Rising: landing + waitlist + WhatsApp + simple owner metrics. Package websites with one measurable outcome."
     }
   ]
 }
