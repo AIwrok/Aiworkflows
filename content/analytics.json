@@ -1,10 +1,27 @@
 {
   "meta": {
     "title": "AI Workflows Market Pulse",
-    "updatedAt": "2026-07-14T09:13:03+05:30",
+    "updatedAt": "2026-07-15T09:13:21+05:30",
     "refreshNote": "Daily trend scan — what's hot, cooling, and stable."
   },
   "items": [
+    {
+      "id": "daily-2026-07-15-analytics",
+      "title": "Market Pulse: WhatsApp automation",
+      "summary": "SMBs want orders + FAQs inside WhatsApp, not email.",
+      "trend": "rising",
+      "signal": "High demand",
+      "date": "2026-07-15",
+      "publishedAt": "2026-07-15T09:13:21+05:30",
+      "tags": [
+        "Daily",
+        "Market"
+      ],
+      "proof": "Rising: WhatsApp automation, Owner dashboards, Vertical SaaS landing · Cooling: Static brochure sites, AI agent chat only",
+      "source": "AI Workflows Analytics",
+      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#analytics",
+      "body": "Trending up: WhatsApp automation, Owner dashboards, Vertical SaaS landing. Cooling: Static brochure sites, AI agent chat only. Stable niches still pay when tied to real workflows."
+    },
     {
       "id": "daily-2026-07-14-analytics",
       "title": "Market Pulse: Vertical SaaS landing",
@@ -667,24 +684,6 @@
       "source": "AI Workflows Analytics",
       "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#analytics",
       "body": "Trending up: WhatsApp automation, Owner dashboards, Vertical SaaS landing. Cooling: Static brochure sites, AI agent chat only. Stable niches still pay when tied to real workflows."
-    },
-    {
-      "id": "whatsapp-ai-bots-rising",
-      "title": "WhatsApp AI Bots — Rising Fast in India",
-      "summary": "Restaurants and shops want order + FAQ automation inside WhatsApp. Demand up; generic chatbots without local language support are cooling off.",
-      "trend": "rising",
-      "signal": "High demand",
-      "date": "2026-06-06",
-      "publishedAt": "2026-06-06T08:00:00+05:30",
-      "tags": [
-        "WhatsApp",
-        "Automation",
-        "SMB"
-      ],
-      "proof": "Live client demos + Meta Business API adoption in India SMB segment",
-      "source": "AI Workflows field research",
-      "sourceUrl": "https://ai-workflows.cloud/#showcase",
-      "body": "Trending: bilingual button flows, menu carts, staff handoff, payment links. Not trending: generic English-only bots with no CRM handoff. Action: pair bot + owner dashboard."
     }
   ]
 }

@@ -1,10 +1,30 @@
 {
   "meta": {
     "title": "Daily Web & Product Ideas",
-    "updatedAt": "2026-07-14T09:13:03+05:30",
+    "updatedAt": "2026-07-15T09:13:21+05:30",
     "refreshNote": "One practical website or app idea every morning."
   },
   "items": [
+    {
+      "id": "daily-2026-07-15-idea",
+      "title": "Idea of the Day: Local shop catalog",
+      "summary": "WhatsApp catalog + simple website for a neighborhood store.",
+      "ideaType": "Daily Idea",
+      "difficulty": "Easy",
+      "buildTime": "3–5 days",
+      "date": "2026-07-15",
+      "publishedAt": "2026-07-15T09:13:21+05:30",
+      "tags": [
+        "Catalog",
+        "WhatsApp",
+        "Leads",
+        "Today"
+      ],
+      "proof": "Buildable pattern — see live demos on ai-workflows.cloud/#showcase",
+      "source": "AI Workflows Ideas",
+      "sourceUrl": "https://ai-workflows.cloud/#showcase",
+      "body": "Shops upload products; customers browse prices before visiting."
+    },
     {
       "id": "daily-2026-07-14-idea",
       "title": "Idea of the Day: Cyber cafe form AI",
@@ -751,25 +771,6 @@
       "source": "AI Workflows Ideas",
       "sourceUrl": "https://ai-workflows.cloud/#showcase",
       "body": "No app install; owner sees calendar."
-    },
-    {
-      "id": "idea-2026-06-06-waitlist-hub",
-      "title": "Niche Waitlist + Content Hub",
-      "summary": "Combine Stitch-style landing, daily AI news feed, and email/WhatsApp waitlist for any vertical (coaching, decor, food).",
-      "ideaType": "SaaS landing",
-      "difficulty": "Easy",
-      "buildTime": "3–5 days",
-      "date": "2026-06-06",
-      "publishedAt": "2026-06-06T07:30:00+05:30",
-      "tags": [
-        "Landing",
-        "Waitlist",
-        "Content"
-      ],
-      "proof": "Live on ai-workflows.cloud — news, learning, analytics, ideas as daily tools",
-      "source": "AI Workflows",
-      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html",
-      "body": "Stack: static site + JSON feeds + optional automation script. Monetize: lead gen for your service or paid templates. Ship one vertical per week."
     }
   ]
 }

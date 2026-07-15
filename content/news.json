@@ -1,10 +1,28 @@
 {
   "meta": {
     "title": "AI Workflows Daily News",
-    "updatedAt": "2026-07-14T09:13:03+05:30",
+    "updatedAt": "2026-07-15T09:13:21+05:30",
     "refreshNote": "Updated daily at 6 AM IST — date, time, and source proof."
   },
   "items": [
+    {
+      "id": "daily-2026-07-15-news",
+      "title": "Don't post generated/AI-edited comments. HN is for conversation between humans",
+      "summary": "Today's top AI story — 4229 points, 1668 comments on Hacker News.",
+      "category": "AI News",
+      "date": "2026-07-15",
+      "publishedAt": "2026-07-15T09:13:21+05:30",
+      "readMinutes": 2,
+      "tags": [
+        "Today",
+        "AI",
+        "HN"
+      ],
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/newsguidelines.html#generated",
+      "proof": "Verified HN story #47340079 — open source to confirm",
+      "body": "Fresh daily pull at 6 AM IST. Read the source, then check our learning & ideas tabs for what to build next."
+    },
     {
       "id": "daily-2026-07-14-news",
       "title": "Don't post generated/AI-edited comments. HN is for conversation between humans",
@@ -706,24 +724,6 @@
       "sourceUrl": "https://news.ycombinator.com/newsguidelines.html#generated",
       "proof": "Verified HN story #47340079 — open source to confirm",
       "body": "Fresh daily pull at 6 AM IST. Read the source, then check our learning & ideas tabs for what to build next."
-    },
-    {
-      "id": "hn-44163063",
-      "title": "My AI skeptic friends are all nuts",
-      "summary": "Trending on Hacker News — 2356 points, 2826 comments.",
-      "category": "AI News",
-      "date": "2026-06-06",
-      "publishedAt": "2026-06-06T12:45:16+05:30",
-      "readMinutes": 2,
-      "tags": [
-        "HN",
-        "AI",
-        "Trending"
-      ],
-      "source": "Hacker News",
-      "sourceUrl": "https://fly.io/blog/youre-all-nuts/",
-      "proof": "HN story id 44163063 — points/comments visible on source",
-      "body": "Automated daily pull. Open source link for full article. We add editorial context on ai-workflows.cloud/learn/hub.html."
     }
   ]
 }

@@ -1,10 +1,34 @@
 {
   "meta": {
     "title": "AI Workflows Daily Learning",
-    "updatedAt": "2026-07-14T09:13:03+05:30",
+    "updatedAt": "2026-07-15T09:13:21+05:30",
     "refreshNote": "One precise lesson every morning — 2 min read."
   },
   "items": [
+    {
+      "id": "daily-2026-07-15-learning",
+      "title": "Today: Ship one CTA only",
+      "summary": "Landing pages convert when visitors see one clear action.",
+      "type": "Daily Tip",
+      "format": "Micro-lesson",
+      "level": "Beginner",
+      "date": "2026-07-15",
+      "publishedAt": "2026-07-15T09:13:21+05:30",
+      "readMinutes": 2,
+      "topics": [
+        "Daily",
+        "Action"
+      ],
+      "steps": [
+        "Pick waitlist OR WhatsApp as primary",
+        "Move other links below fold",
+        "Track clicks 7 days"
+      ],
+      "proof": "Published 6 AM IST on ai-workflows.cloud/learn/hub.html",
+      "source": "AI Workflows Learning",
+      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#learning",
+      "body": "Do this today: remove one extra button from your homepage."
+    },
     {
       "id": "daily-2026-07-14-learning",
       "title": "Today: SEO one URL per topic",
@@ -947,31 +971,6 @@
       "source": "AI Workflows Learning",
       "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#learning",
       "body": "Do this today: add 'Last updated' to one section."
-    },
-    {
-      "id": "daily-2026-06-06-json-feed",
-      "title": "Daily Learning Drop: Update JSON in 5 Minutes",
-      "summary": "Add one lesson to content/learning.json — precise title, 3 bullets, one action step.",
-      "type": "Daily Tip",
-      "format": "Micro-lesson",
-      "level": "Beginner",
-      "date": "2026-06-06",
-      "publishedAt": "2026-06-06T07:00:00+05:30",
-      "readMinutes": 2,
-      "topics": [
-        "Content",
-        "Hub",
-        "Daily"
-      ],
-      "steps": [
-        "Copy yesterday's item block in learning.json",
-        "Change id, title, date, publishedAt to today",
-        "Write one problem → one fix → one action in body"
-      ],
-      "proof": "Feeds /learn/hub.html#learning automatically after deploy",
-      "source": "AI Workflows hub",
-      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#learning",
-      "body": "Keep lessons under 120 words. End with: 'Do this today: …' Readers return when each drop is actionable, not vague."
     }
   ]
 }
