@@ -1,10 +1,35 @@
 {
   "meta": {
     "title": "AI Workflows Daily Learning",
-    "updatedAt": "2026-07-18T09:10:32+05:30",
+    "updatedAt": "2026-07-19T09:32:37+05:30",
     "refreshNote": "One precise lesson every morning — 2 min read."
   },
   "items": [
+    {
+      "id": "daily-2026-07-19-learning",
+      "title": "Today: Dashboard rule of 4",
+      "summary": "Owners need four numbers daily, not forty charts.",
+      "type": "Daily Tip",
+      "format": "Micro-lesson",
+      "level": "Beginner",
+      "date": "2026-07-19",
+      "publishedAt": "2026-07-19T09:32:36+05:30",
+      "readMinutes": 2,
+      "topics": [
+        "Daily",
+        "Action"
+      ],
+      "steps": [
+        "Today's leads/orders",
+        "Pending tasks",
+        "Response time",
+        "Repeat customers"
+      ],
+      "proof": "Published 6 AM IST on ai-workflows.cloud/learn/hub.html",
+      "source": "AI Workflows Learning",
+      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#learning",
+      "body": "Do this today: list the 4 metrics your client checks every morning."
+    },
     {
       "id": "daily-2026-07-18-learning",
       "title": "Today: Proof on every claim",
@@ -946,30 +971,6 @@
       "source": "AI Workflows Learning",
       "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#learning",
       "body": "Do this today: open your site on phone and try the contact form."
-    },
-    {
-      "id": "daily-2026-06-09-learning",
-      "title": "Today: Ship one CTA only",
-      "summary": "Landing pages convert when visitors see one clear action.",
-      "type": "Daily Tip",
-      "format": "Micro-lesson",
-      "level": "Beginner",
-      "date": "2026-06-09",
-      "publishedAt": "2026-06-09T10:13:45+05:30",
-      "readMinutes": 2,
-      "topics": [
-        "Daily",
-        "Action"
-      ],
-      "steps": [
-        "Pick waitlist OR WhatsApp as primary",
-        "Move other links below fold",
-        "Track clicks 7 days"
-      ],
-      "proof": "Published 6 AM IST on ai-workflows.cloud/learn/hub.html",
-      "source": "AI Workflows Learning",
-      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#learning",
-      "body": "Do this today: remove one extra button from your homepage."
     }
   ]
 }
