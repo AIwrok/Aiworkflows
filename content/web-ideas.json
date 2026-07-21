@@ -1,10 +1,30 @@
 {
   "meta": {
     "title": "Daily Web & Product Ideas",
-    "updatedAt": "2026-07-20T09:43:13+05:30",
+    "updatedAt": "2026-07-21T09:24:01+05:30",
     "refreshNote": "One practical website or app idea every morning."
   },
   "items": [
+    {
+      "id": "daily-2026-07-21-idea",
+      "title": "Idea of the Day: Local shop catalog",
+      "summary": "WhatsApp catalog + simple website for a neighborhood store.",
+      "ideaType": "Daily Idea",
+      "difficulty": "Easy",
+      "buildTime": "3–5 days",
+      "date": "2026-07-21",
+      "publishedAt": "2026-07-21T09:24:01+05:30",
+      "tags": [
+        "Catalog",
+        "WhatsApp",
+        "Leads",
+        "Today"
+      ],
+      "proof": "Buildable pattern — see live demos on ai-workflows.cloud/#showcase",
+      "source": "AI Workflows Ideas",
+      "sourceUrl": "https://ai-workflows.cloud/#showcase",
+      "body": "Shops upload products; customers browse prices before visiting."
+    },
     {
       "id": "daily-2026-07-20-idea",
       "title": "Idea of the Day: Cyber cafe form AI",
@@ -751,25 +771,6 @@
       "source": "AI Workflows Ideas",
       "sourceUrl": "https://ai-workflows.cloud/#showcase",
       "body": "No app install; owner sees calendar."
-    },
-    {
-      "id": "daily-2026-06-11-idea",
-      "title": "Idea of the Day: Restaurant kitchen board",
-      "summary": "Web kitchen screen synced with WhatsApp orders.",
-      "ideaType": "Daily Idea",
-      "difficulty": "Medium",
-      "buildTime": "1–2 weeks",
-      "date": "2026-06-11",
-      "publishedAt": "2026-06-11T10:37:39+05:30",
-      "tags": [
-        "Restaurant",
-        "Ops",
-        "Today"
-      ],
-      "proof": "Buildable pattern — see live demos on ai-workflows.cloud/#showcase",
-      "source": "AI Workflows Ideas",
-      "sourceUrl": "https://ai-workflows.cloud/#showcase",
-      "body": "Reduces missed tickets vs paper chits."
     }
   ]
 }
