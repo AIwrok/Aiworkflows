@@ -1,10 +1,29 @@
 {
   "meta": {
     "title": "Daily Web & Product Ideas",
-    "updatedAt": "2026-07-21T09:24:01+05:30",
+    "updatedAt": "2026-07-22T09:25:51+05:30",
     "refreshNote": "One practical website or app idea every morning."
   },
   "items": [
+    {
+      "id": "daily-2026-07-22-idea",
+      "title": "Idea of the Day: Coaching daily tip",
+      "summary": "One tip per day + admission CTA for coaching centers.",
+      "ideaType": "Daily Idea",
+      "difficulty": "Easy",
+      "buildTime": "2–4 days",
+      "date": "2026-07-22",
+      "publishedAt": "2026-07-22T09:25:50+05:30",
+      "tags": [
+        "Education",
+        "Content",
+        "Today"
+      ],
+      "proof": "Buildable pattern — see live demos on ai-workflows.cloud/#showcase",
+      "source": "AI Workflows Ideas",
+      "sourceUrl": "https://ai-workflows.cloud/#showcase",
+      "body": "Parents bookmark; institute gets steady enquiries."
+    },
     {
       "id": "daily-2026-07-21-idea",
       "title": "Idea of the Day: Local shop catalog",
@@ -752,25 +771,6 @@
       "source": "AI Workflows Ideas",
       "sourceUrl": "https://ai-workflows.cloud/#showcase",
       "body": "Proof of delivery reduces disputes."
-    },
-    {
-      "id": "daily-2026-06-12-idea",
-      "title": "Idea of the Day: Salon booking slot",
-      "summary": "Pick service → pick slot → WhatsApp confirm.",
-      "ideaType": "Daily Idea",
-      "difficulty": "Easy",
-      "buildTime": "4–6 days",
-      "date": "2026-06-12",
-      "publishedAt": "2026-06-12T10:42:53+05:30",
-      "tags": [
-        "Booking",
-        "SMB",
-        "Today"
-      ],
-      "proof": "Buildable pattern — see live demos on ai-workflows.cloud/#showcase",
-      "source": "AI Workflows Ideas",
-      "sourceUrl": "https://ai-workflows.cloud/#showcase",
-      "body": "No app install; owner sees calendar."
     }
   ]
 }
