@@ -1,10 +1,27 @@
 {
   "meta": {
     "title": "AI Workflows Market Pulse",
-    "updatedAt": "2026-08-15T07:25:32+05:30",
+    "updatedAt": "2026-08-16T07:33:59+05:30",
     "refreshNote": "Daily trend scan — what's hot, cooling, and stable."
   },
   "items": [
+    {
+      "id": "daily-2026-08-16-analytics",
+      "title": "Market Pulse: AI agent chat only",
+      "summary": "Chat without workflow integration is losing buyer interest.",
+      "trend": "falling",
+      "signal": "Hype fatigue",
+      "date": "2026-08-16",
+      "publishedAt": "2026-08-16T07:33:58+05:30",
+      "tags": [
+        "Daily",
+        "Market"
+      ],
+      "proof": "Rising: WhatsApp automation, Owner dashboards, Vertical SaaS landing · Cooling: Static brochure sites, AI agent chat only",
+      "source": "AI Workflows Analytics",
+      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#analytics",
+      "body": "Trending up: WhatsApp automation, Owner dashboards, Vertical SaaS landing. Cooling: Static brochure sites, AI agent chat only. Stable niches still pay when tied to real workflows."
+    },
     {
       "id": "daily-2026-08-15-analytics",
       "title": "Market Pulse: Static brochure sites",
@@ -659,23 +676,6 @@
       "signal": "SEO traffic",
       "date": "2026-07-08",
       "publishedAt": "2026-07-08T09:22:47+05:30",
-      "tags": [
-        "Daily",
-        "Market"
-      ],
-      "proof": "Rising: WhatsApp automation, Owner dashboards, Vertical SaaS landing · Cooling: Static brochure sites, AI agent chat only",
-      "source": "AI Workflows Analytics",
-      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#analytics",
-      "body": "Trending up: WhatsApp automation, Owner dashboards, Vertical SaaS landing. Cooling: Static brochure sites, AI agent chat only. Stable niches still pay when tied to real workflows."
-    },
-    {
-      "id": "daily-2026-07-07-analytics",
-      "title": "Market Pulse: Document OCR forms",
-      "summary": "Cyber cafés and consultants still pay for time saved.",
-      "trend": "stable",
-      "signal": "Steady niche",
-      "date": "2026-07-07",
-      "publishedAt": "2026-07-07T10:00:58+05:30",
       "tags": [
         "Daily",
         "Market"
