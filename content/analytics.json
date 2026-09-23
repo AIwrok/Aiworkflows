@@ -1,10 +1,27 @@
 {
   "meta": {
     "title": "AI Workflows Market Pulse",
-    "updatedAt": "2026-09-22T10:42:59+05:30",
+    "updatedAt": "2026-09-23T10:27:29+05:30",
     "refreshNote": "Daily trend scan — what's hot, cooling, and stable."
   },
   "items": [
+    {
+      "id": "daily-2026-09-23-analytics",
+      "title": "Market Pulse: Document OCR forms",
+      "summary": "Cyber cafés and consultants still pay for time saved.",
+      "trend": "stable",
+      "signal": "Steady niche",
+      "date": "2026-09-23",
+      "publishedAt": "2026-09-23T10:27:29+05:30",
+      "tags": [
+        "Daily",
+        "Market"
+      ],
+      "proof": "Rising: WhatsApp automation, Owner dashboards, Vertical SaaS landing · Cooling: Static brochure sites, AI agent chat only",
+      "source": "AI Workflows Analytics",
+      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#analytics",
+      "body": "Trending up: WhatsApp automation, Owner dashboards, Vertical SaaS landing. Cooling: Static brochure sites, AI agent chat only. Stable niches still pay when tied to real workflows."
+    },
     {
       "id": "daily-2026-09-22-analytics",
       "title": "Market Pulse: Owner dashboards",
@@ -659,23 +676,6 @@
       "signal": "Low ROI",
       "date": "2026-08-15",
       "publishedAt": "2026-08-15T07:25:31+05:30",
-      "tags": [
-        "Daily",
-        "Market"
-      ],
-      "proof": "Rising: WhatsApp automation, Owner dashboards, Vertical SaaS landing · Cooling: Static brochure sites, AI agent chat only",
-      "source": "AI Workflows Analytics",
-      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#analytics",
-      "body": "Trending up: WhatsApp automation, Owner dashboards, Vertical SaaS landing. Cooling: Static brochure sites, AI agent chat only. Stable niches still pay when tied to real workflows."
-    },
-    {
-      "id": "daily-2026-08-14-analytics",
-      "title": "Market Pulse: WhatsApp automation",
-      "summary": "SMBs want orders + FAQs inside WhatsApp, not email.",
-      "trend": "rising",
-      "signal": "High demand",
-      "date": "2026-08-14",
-      "publishedAt": "2026-08-14T08:35:23+05:30",
       "tags": [
         "Daily",
         "Market"
