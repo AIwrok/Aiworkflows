@@ -1,10 +1,27 @@
 {
   "meta": {
     "title": "AI Workflows Market Pulse",
-    "updatedAt": "2026-10-12T11:46:05+05:30",
+    "updatedAt": "2026-10-13T12:26:43+05:30",
     "refreshNote": "Daily trend scan — what's hot, cooling, and stable."
   },
   "items": [
+    {
+      "id": "daily-2026-10-13-analytics",
+      "title": "Market Pulse: WhatsApp automation",
+      "summary": "SMBs want orders + FAQs inside WhatsApp, not email.",
+      "trend": "rising",
+      "signal": "High demand",
+      "date": "2026-10-13",
+      "publishedAt": "2026-10-13T12:26:42+05:30",
+      "tags": [
+        "Daily",
+        "Market"
+      ],
+      "proof": "Rising: WhatsApp automation, Owner dashboards, Vertical SaaS landing · Cooling: Static brochure sites, AI agent chat only",
+      "source": "AI Workflows Analytics",
+      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#analytics",
+      "body": "Trending up: WhatsApp automation, Owner dashboards, Vertical SaaS landing. Cooling: Static brochure sites, AI agent chat only. Stable niches still pay when tied to real workflows."
+    },
     {
       "id": "daily-2026-10-12-analytics",
       "title": "Market Pulse: Vertical SaaS landing",
@@ -659,23 +676,6 @@
       "signal": "Strong pull",
       "date": "2026-09-04",
       "publishedAt": "2026-09-04T10:22:19+05:30",
-      "tags": [
-        "Daily",
-        "Market"
-      ],
-      "proof": "Rising: WhatsApp automation, Owner dashboards, Vertical SaaS landing · Cooling: Static brochure sites, AI agent chat only",
-      "source": "AI Workflows Analytics",
-      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#analytics",
-      "body": "Trending up: WhatsApp automation, Owner dashboards, Vertical SaaS landing. Cooling: Static brochure sites, AI agent chat only. Stable niches still pay when tied to real workflows."
-    },
-    {
-      "id": "daily-2026-09-03-analytics",
-      "title": "Market Pulse: AI agent chat only",
-      "summary": "Chat without workflow integration is losing buyer interest.",
-      "trend": "falling",
-      "signal": "Hype fatigue",
-      "date": "2026-09-03",
-      "publishedAt": "2026-09-03T10:19:35+05:30",
       "tags": [
         "Daily",
         "Market"
