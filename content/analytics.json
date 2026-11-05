@@ -1,10 +1,27 @@
 {
   "meta": {
     "title": "AI Workflows Market Pulse",
-    "updatedAt": "2026-11-04T12:18:01+05:30",
+    "updatedAt": "2026-11-05T12:37:52+05:30",
     "refreshNote": "Daily trend scan — what's hot, cooling, and stable."
   },
   "items": [
+    {
+      "id": "daily-2026-11-05-analytics",
+      "title": "Market Pulse: Vertical SaaS landing",
+      "summary": "Niche waitlist + daily content hubs attract repeat visits.",
+      "trend": "rising",
+      "signal": "SEO traffic",
+      "date": "2026-11-05",
+      "publishedAt": "2026-11-05T12:37:52+05:30",
+      "tags": [
+        "Daily",
+        "Market"
+      ],
+      "proof": "Rising: WhatsApp automation, Owner dashboards, Vertical SaaS landing · Cooling: Static brochure sites, AI agent chat only",
+      "source": "AI Workflows Analytics",
+      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#analytics",
+      "body": "Trending up: WhatsApp automation, Owner dashboards, Vertical SaaS landing. Cooling: Static brochure sites, AI agent chat only. Stable niches still pay when tied to real workflows."
+    },
     {
       "id": "daily-2026-11-04-analytics",
       "title": "Market Pulse: Document OCR forms",
@@ -659,23 +676,6 @@
       "signal": "Hype fatigue",
       "date": "2026-09-27",
       "publishedAt": "2026-09-27T11:00:28+05:30",
-      "tags": [
-        "Daily",
-        "Market"
-      ],
-      "proof": "Rising: WhatsApp automation, Owner dashboards, Vertical SaaS landing · Cooling: Static brochure sites, AI agent chat only",
-      "source": "AI Workflows Analytics",
-      "sourceUrl": "https://ai-workflows.cloud/learn/hub.html#analytics",
-      "body": "Trending up: WhatsApp automation, Owner dashboards, Vertical SaaS landing. Cooling: Static brochure sites, AI agent chat only. Stable niches still pay when tied to real workflows."
-    },
-    {
-      "id": "daily-2026-09-26-analytics",
-      "title": "Market Pulse: Static brochure sites",
-      "summary": "Design-only sites without leads tracking are harder to sell.",
-      "trend": "falling",
-      "signal": "Low ROI",
-      "date": "2026-09-26",
-      "publishedAt": "2026-09-26T10:45:37+05:30",
       "tags": [
         "Daily",
         "Market"
